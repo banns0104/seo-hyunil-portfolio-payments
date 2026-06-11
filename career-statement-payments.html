@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S2C9BC9JKH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-S2C9BC9JKH');
+</script>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>서현일 · Hyunil Seo — 경력기술서 2026 · Payments</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..600&family=Noto+Serif+KR:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&display=swap">
+<link rel="stylesheet" href="assets/editorial.css" />
+<style>
+body{background:var(--paper-2);}
+
+.toolbar{position:sticky;top:0;z-index:50;background:rgba(236,231,218,0.9);backdrop-filter:saturate(120%) blur(10px);border-bottom:1px solid var(--line);}
+.toolbar-inner{max-width:940px;margin:0 auto;padding:13px 28px;display:flex;justify-content:space-between;align-items:center;gap:14px;}
+.crumb{font-family:var(--serif);font-size:16px;font-weight:560;color:var(--ink);}
+.crumb .muted{font-style:italic;color:var(--muted);font-weight:420;margin-left:6px;font-size:14px;}
+.actions{display:flex;gap:7px;flex-wrap:wrap;}
+
+.page{max-width:940px;margin:34px auto 90px;background:var(--card);border:1px solid var(--line);box-shadow:var(--sh-3);padding:72px 78px 60px;}
+
+/* Hero */
+.cs-hero{border-bottom:2px solid var(--ink);padding-bottom:28px;margin-bottom:34px;}
+.cs-hero .eyebrow{margin-bottom:20px;}
+.cs-hero h1{font-family:var(--serif);font-size:48px;font-weight:560;color:var(--ink);letter-spacing:-0.024em;line-height:1.04;}
+.cs-hero h1 .en{font-style:italic;font-weight:420;color:var(--quiet);font-size:0.5em;margin-left:10px;}
+.cs-hero .role{font-family:var(--serif);font-size:17px;color:var(--ink);font-weight:440;margin-top:14px;line-height:1.5;letter-spacing:-0.01em;}
+.cs-hero .role b{color:var(--accent);font-weight:600;}
+.cs-hero .role .light{display:block;font-family:var(--sans);color:var(--sub);font-weight:500;font-size:12.5px;margin-top:7px;letter-spacing:0.01em;}
+.cs-contact{margin-top:22px;display:flex;flex-wrap:wrap;gap:0;}
+.cs-contact span{font-family:var(--sans);font-size:13px;color:var(--ink);font-weight:500;padding-right:22px;margin-right:22px;border-right:1px solid var(--line);}
+.cs-contact span:last-child{border-right:none;}
+.cs-contact .l{font-family:var(--sans);font-size:10px;color:var(--muted);font-weight:700;letter-spacing:0.12em;text-transform:uppercase;margin-right:9px;}
+.cs-contact a{color:var(--accent);font-weight:600;}
+
+/* Section */
+section.s{margin-top:52px;}
+.s-head{display:flex;justify-content:space-between;align-items:baseline;padding-bottom:12px;border-bottom:1px solid var(--ink);margin-bottom:24px;}
+.s-head .label{font-family:var(--serif);font-size:22px;font-weight:580;color:var(--ink);letter-spacing:-0.016em;}
+.s-head .label .scope{font-family:var(--sans);color:var(--muted);font-weight:600;font-size:12px;margin-left:10px;letter-spacing:0.04em;text-transform:uppercase;}
+.s-head .num{font-family:var(--serif);font-style:italic;font-size:14px;color:var(--accent);}
+
+/* Summary */
+.summary-block{display:grid;grid-template-columns:1fr 1.7fr;gap:40px;padding:30px 0;border-bottom:1px solid var(--line);margin-bottom:26px;align-items:start;}
+.summary-block .pull{font-family:var(--serif);font-size:25px;font-weight:560;color:var(--ink);letter-spacing:-0.018em;line-height:1.28;}
+.summary-block .pull .accent{font-style:italic;color:var(--accent);}
+.summary-block .body{font-family:var(--serif);font-size:16.5px;line-height:1.62;color:var(--body);font-weight:380;letter-spacing:-0.008em;}
+.summary-block .body b{color:var(--ink);font-weight:600;}
+
+/* KPI grid */
+.kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line);}
+.kpi-grid.five{grid-template-columns:repeat(5,1fr);}
+.kpi-grid.five .num{font-size:25px;letter-spacing:-0.026em;}
+.kpi-cell{padding:22px 26px;border-right:1px solid var(--line);}
+.kpi-cell:first-child{padding-left:0;}
+.kpi-cell:last-child{border-right:none;padding-right:0;}
+.kpi-cell .num{font-family:var(--serif);font-size:30px;font-weight:540;color:var(--ink);letter-spacing:-0.022em;line-height:1;font-variant-numeric:tabular-nums lining-nums;}
+.kpi-cell.feat .num{color:var(--accent);}
+.kpi-cell .num .u{font-size:0.46em;color:var(--accent);margin-left:2px;}
+.kpi-cell .label{font-family:var(--sans);font-size:12px;color:var(--sub);margin-top:9px;line-height:1.5;font-weight:600;}
+
+/* Company head */
+.co-head{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:14px;padding-bottom:18px;border-bottom:1px solid var(--line);margin-bottom:24px;}
+.co-name{font-family:var(--serif);font-size:28px;font-weight:580;color:var(--ink);letter-spacing:-0.02em;line-height:1.12;}
+.co-name .en{font-style:italic;font-weight:420;color:var(--muted);font-size:0.6em;margin-left:8px;}
+.co-meta{font-family:var(--sans);font-size:13px;color:var(--sub);margin-top:8px;line-height:1.6;font-weight:500;}
+.co-meta b{color:var(--ink);font-weight:700;}
+.co-period{text-align:right;}
+.co-period .badge{display:inline-block;font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:4px 10px;border:1px solid var(--ink);margin-bottom:7px;}
+.co-period .badge.now{background:var(--accent);border-color:var(--accent);color:var(--paper);}
+.co-period .when{font-family:var(--serif);font-style:italic;font-size:14px;color:var(--ink);font-weight:500;}
+
+/* Bullet block */
+.bullet-block{margin-bottom:20px;}
+.bullet-block .bullet-h{font-family:var(--sans);font-size:10.5px;font-weight:700;color:var(--accent);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:11px;display:flex;align-items:center;gap:9px;}
+.bullet-block .bullet-h::before{content:"";width:18px;height:1px;background:var(--accent);}
+.bullet-block ul{list-style:none;}
+.bullet-block li{position:relative;padding-left:18px;font-family:var(--sans);font-size:14px;color:var(--body);line-height:1.68;margin-bottom:7px;}
+.bullet-block li::before{content:"";position:absolute;left:0;top:11px;width:6px;height:1px;background:var(--accent);}
+.bullet-block li b{color:var(--ink);font-weight:700;}
+.bullet-block.kpi li{color:var(--ink);font-weight:500;}
+.bullet-block.kpi li b{font-weight:700;}
+
+/* Project list */
+.proj-list{display:flex;flex-direction:column;gap:0;margin-top:24px;}
+.proj-item{position:relative;padding:24px 0 24px 26px;border-top:1px solid var(--line);}
+.proj-item::before{content:"";position:absolute;left:0;top:30px;width:11px;height:1px;background:var(--accent);}
+.proj-item h4{font-family:var(--serif);font-size:20px;font-weight:580;color:var(--ink);letter-spacing:-0.016em;line-height:1.25;margin-bottom:8px;}
+.proj-item .role-period{font-family:var(--sans);font-size:10.5px;color:var(--muted);font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:13px;display:flex;flex-wrap:wrap;gap:8px;}
+.proj-item .role-period span::after{content:"·";color:var(--quiet);margin-left:8px;}
+.proj-item .role-period span:last-child::after{display:none;}
+.proj-item .desc{font-family:var(--serif);font-size:16px;color:var(--body);line-height:1.6;margin-bottom:14px;font-weight:380;letter-spacing:-0.006em;}
+.proj-item .desc b{color:var(--ink);font-weight:600;}
+
+/* Chart card */
+.chart-card{margin-top:14px;padding:26px 28px;background:var(--paper-2);border:1px solid var(--line);}
+.chart-card .bullet-h{margin-bottom:16px;}
+.chart-card .cap{font-family:var(--sans);font-size:12.5px;color:var(--sub);line-height:1.6;margin-top:14px;font-weight:500;}
+.chart-card .cap b{color:var(--ink);font-weight:700;}
+
+/* Edu / cred */
+.edu-row{display:grid;grid-template-columns:170px 1fr;gap:32px;padding:13px 0;border-bottom:1px solid var(--line);align-items:baseline;}
+.edu-row .when{font-family:var(--serif);font-size:15px;color:var(--ink);font-weight:520;font-variant-numeric:tabular-nums;}
+.edu-row strong{color:var(--ink);font-weight:700;}
+.edu-row div:last-child{font-family:var(--sans);font-size:14px;color:var(--body);}
+.cred-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;margin-top:8px;}
+.cred-grid h4{font-family:var(--serif);font-size:17px;font-weight:580;color:var(--ink);margin-bottom:13px;padding-bottom:9px;border-bottom:1px solid var(--line);letter-spacing:-0.012em;}
+.cred-grid ul{list-style:none;}
+.cred-grid li{font-family:var(--sans);font-size:13.5px;color:var(--body);padding:7px 0 7px 16px;position:relative;line-height:1.5;}
+.cred-grid li::before{content:"";position:absolute;left:0;top:15px;width:6px;height:1px;background:var(--accent);}
+
+.refs ul{list-style:none;font-family:var(--sans);font-size:14px;line-height:1.85;}
+.refs ul li{padding:11px 0;border-bottom:1px solid var(--line);}
+.refs ul li strong{color:var(--ink);font-weight:700;}
+.refs ul a{color:var(--accent);font-weight:600;}
+
+.colophon{margin-top:56px;padding-top:22px;}
+
+@media print{
+  body{background:#fff;}
+  .toolbar{display:none;}
+  .page{box-shadow:none;border:none;margin:0;padding:26px 30px;max-width:100%;}
+  .proj-item,.kpi-cell,.summary-block,.co-head,.chart-card{break-inside:avoid;}
+  .cs-hero h1{font-size:32px;}
+  section.s{margin-top:30px;}
+}
+@media (max-width:780px){
+  .page{padding:40px 22px;margin:0;}
+  .cs-hero h1{font-size:32px;}
+  .summary-block{grid-template-columns:1fr;gap:18px;}
+  .kpi-grid{grid-template-columns:1fr 1fr;}
+  .kpi-cell{border-right:none;padding:22px 22px;}
+  .kpi-cell:nth-child(odd){border-right:1px solid var(--line);padding-left:0;}
+  .kpi-cell:nth-child(even){padding-right:0;}
+  .co-head{flex-direction:column;}
+  .co-period{text-align:left;}
+  .edu-row{grid-template-columns:1fr;gap:4px;}
+  .cred-grid{grid-template-columns:1fr;gap:24px;}
+  .crumb{display:none;}
+  .cs-contact span{border-right:none;padding-right:0;margin-right:0;width:100%;margin-bottom:8px;}
+}
+</style>
+</head>
+<body>
+
+<div class="toolbar no-print">
+  <div class="toolbar-inner">
+    <div class="crumb">서현일 · 경력기술서 <span class="muted">Payments · 2026</span></div>
+    <div class="actions">
+      <a class="btn ghost" href="resume-payments.html">← 이력서</a>
+      <a class="btn ghost" href="portfolio-payments.html">포트폴리오</a>
+      <a class="btn ghost" href="portfolio-deck-payments.html">덱</a>
+      <a class="btn primary" href="pdf/career-statement-payments.pdf" download="서현일_경력기술서_결제.pdf" type="application/pdf">PDF 다운로드</a>
+    </div>
+  </div>
+</div>
+
+<main class="page" data-edit-root>
+
+  <header class="cs-hero">
+    <div class="eyebrow"><span class="tick"></span>경력기술서 · Payments Product Owner · 2026</div>
+    <h1>서현일 <span class="en">Hyunil Seo</span></h1>
+    <div class="role">
+      <b>결제·머니·정산을 0→1로 설계하고 PG와 직접 협상한 프로덕트 오너</b>
+      <span class="light">PG 수수료 2.53%(VAT 포함) · 주정산 W+5 협상 · 선불충전 구축 · 전자금융 규제 검토 — 어바웃피싱 등기이사·CPO</span>
+    </div>
+    <div class="cs-contact">
+      <span><span class="l">Email</span>banns0104@gmail.com</span>
+      <span><span class="l">Phone</span>010-3333-3768</span>
+      <span><span class="l">Web</span><a href="portfolio-payments.html">포트폴리오</a> · <a href="resume-payments.html">이력서</a></span>
+    </div>
+  </header>
+
+  <!-- Summary -->
+  <section class="s">
+    <div class="s-head"><span class="label">Career Summary</span><span class="num">§ 01</span></div>
+    <div class="summary-block">
+      <div class="pull">결제는 되돌릴 수 없기에,<br/><span class="accent">구조와 규제부터</span> 검증합니다.</div>
+      <div class="body">
+        오프라인의 돈이 소프트웨어로 흐르게 만드는 일을 해왔습니다. 어바웃피싱에서 토스페이먼츠와 직접 협상해 <b>PG 수수료 2.53%(VAT 포함)</b> 인하와 <b>주정산 W+5</b> 전환을 만들었고, 선불충전 수단 <b>'머니'를 0→1로 구축</b>해 결제 회원 매출 대비 <b>사용률 30%</b>의 락인을 만들었습니다. 전자금융거래법·선불업 등록 요건은 설계 전에 직접 검토합니다. 예약·쇼핑·커뮤니티 등 9개 도메인 슈퍼앱은 이 결제 구조가 작동한 무대입니다.
+      </div>
+    </div>
+    <div class="kpi-grid five">
+      <div class="kpi-cell feat"><div class="num">2.53<span class="u">%</span></div><div class="label">PG 수수료 협상 (VAT 포함 · 토스페이먼츠)</div></div>
+      <div class="kpi-cell"><div class="num">W+5</div><div class="label">정산 주기 — 월정산 → 주정산 단축</div></div>
+      <div class="kpi-cell feat"><div class="num">0→1</div><div class="label">선불충전 '머니' 구축</div></div>
+      <div class="kpi-cell"><div class="num">30<span class="u">%</span></div><div class="label">머니 사용률 (결제 회원 매출 대비)</div></div>
+      <div class="kpi-cell"><div class="num">89,925<span class="u">원</span></div><div class="label">자사몰 ARPPU (+34%)</div></div>
+    </div>
+  </section>
+
+  <!-- Experience 1 -->
+  <section class="s">
+    <div class="s-head"><span class="label">Experience <span class="scope">01 · Current</span></span><span class="num">§ 02</span></div>
+
+    <div class="co-head">
+      <div>
+        <div class="co-name">어바웃피싱 <span class="en">AboutFishing</span></div>
+        <div class="co-meta"><b>2024.08 — 현재</b> · 1년 9개월 · 결제·머니·정산 0→1 설계 + PG 직접 협상 · <b>등기이사·CPO(결제·자금집행 포함)</b></div>
+      </div>
+      <div class="co-period">
+        <div class="badge now">Current</div>
+        <div class="when">결제·머니·정산 책임</div>
+      </div>
+    </div>
+
+    <div class="bullet-block">
+      <span class="bullet-h">Role &amp; Scope</span>
+      <ul>
+        <li><b>결제·머니·정산 도메인을 0→1로 설계하고 PG와 직접 협상한 프로덕트 오너</b> — 수수료·정산 주기·머니 정책·어뷰징 방어까지 단일 책임</li>
+        <li>전자금융거래법·선불전자지급수단 등록 요건 직접 검토·판단 — 규제 리스크를 설계 단계에서 차단</li>
+        <li>홈·예약·쇼핑·커뮤니티 등 9개 도메인 슈퍼앱 총괄 — 결제 구조가 작동한 무대</li>
+      </ul>
+    </div>
+
+    <div class="bullet-block">
+      <span class="bullet-h">서비스 정의 / 시장</span>
+      <ul>
+        <li>국내 낚시인 약 800만 명 · 시장 규모 4조원대 · 9개 도메인 통합 슈퍼앱</li>
+        <li>타겟 페르소나 3종 — 50대 베테랑(예약), 30대 입문자(커뮤니티→쇼핑), 40대 가족(홈→예약)</li>
+        <li>단일 커머스나 단일 커뮤니티가 아닌 통합 슈퍼앱으로 1년 9개월 내 시장 선점</li>
+      </ul>
+    </div>
+
+    <!-- Revenue chart -->
+    <div class="chart-card">
+      <span class="bullet-h">매출 추이 — 2025 ~ 2026.04</span>
+      <svg viewBox="0 0 700 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;">
+        <line x1="40" y1="170" x2="680" y2="170" stroke="#D8D1BF" stroke-width="1"/>
+        <line x1="40" y1="120" x2="680" y2="120" stroke="#E4DECF" stroke-width="1" stroke-dasharray="2 4"/>
+        <line x1="40" y1="70"  x2="680" y2="70"  stroke="#E4DECF" stroke-width="1" stroke-dasharray="2 4"/>
+        <text x="34" y="174" font-family="Newsreader,serif" font-size="11" fill="#938C7B" text-anchor="end">0</text>
+        <text x="34" y="124" font-family="Newsreader,serif" font-size="11" fill="#938C7B" text-anchor="end">100M</text>
+        <text x="34" y="74"  font-family="Newsreader,serif" font-size="11" fill="#938C7B" text-anchor="end">200M</text>
+        <g fill="#1B1A16">
+          <rect x="50"  y="158" width="22" height="12"/>
+          <rect x="80"  y="160" width="22" height="10"/>
+          <rect x="110" y="125" width="22" height="45"/>
+          <rect x="140" y="120" width="22" height="50"/>
+          <rect x="170" y="105" width="22" height="65"/>
+          <rect x="200" y="78"  width="22" height="92"/>
+          <rect x="230" y="106" width="22" height="64"/>
+          <rect x="260" y="89"  width="22" height="81"/>
+          <rect x="290" y="33"  width="22" height="137"/>
+          <rect x="320" y="60"  width="22" height="110"/>
+          <rect x="350" y="106" width="22" height="64"/>
+          <rect x="380" y="146" width="22" height="24"/>
+        </g>
+        <g fill="#1E5A40">
+          <rect x="430" y="161" width="22" height="9"/>
+          <rect x="460" y="155" width="22" height="15"/>
+          <rect x="490" y="138" width="22" height="32"/>
+          <rect x="520" y="98"  width="22" height="72"/>
+        </g>
+        <text x="61"  y="190" font-family="Newsreader,serif" font-size="11" fill="#938C7B" text-anchor="middle">’25.1</text>
+        <text x="200" y="190" font-family="Newsreader,serif" font-size="11" fill="#938C7B" text-anchor="middle">6</text>
+        <text x="380" y="190" font-family="Newsreader,serif" font-size="11" fill="#938C7B" text-anchor="middle">12</text>
+        <text x="441" y="190" font-family="Newsreader,serif" font-size="11" font-weight="600" fill="#1E5A40" text-anchor="middle">’26.1</text>
+        <text x="531" y="190" font-family="Newsreader,serif" font-size="11" font-weight="600" fill="#1E5A40" text-anchor="middle">4</text>
+        <line x1="420" y1="33" x2="420" y2="170" stroke="#1E5A40" stroke-width="1" stroke-dasharray="3 3" opacity="0.4"/>
+        <text x="600" y="50" font-family="Newsreader,serif" font-style="italic" font-size="22" font-weight="600" fill="#1E5A40">+10×</text>
+      </svg>
+      <div class="cap"><b>2025 연 14.26억 (KPI 97.6%)</b> · 2026년 1→4월 단월 +10배 · 예약 단월 판매 +86배</div>
+    </div>
+
+    <div class="bullet-block" style="margin-top:24px;">
+      <span class="bullet-h">운영 정량 (1년 9개월 · 사내 대시보드)</span>
+      <ul>
+        <li><b>프로젝트 98건</b> 운영 — 완료율 63%</li>
+        <li><b>배포 122건</b> — QA 검증율 94% · <b>롤백 1건(0.8%)</b></li>
+        <li><b>이슈 930건</b> 처리 — 운영 도달 28% (개발·검수 단계에서 72% 차단)</li>
+        <li><b>백로그 83건</b> 접수 — 자체 발의 95%</li>
+      </ul>
+    </div>
+
+    <div class="proj-list" data-edit-list="af-projects">
+      <div class="proj-item">
+        <h4>PG 수수료·정산 조건 직접 협상 — 2.53% · W+5</h4>
+        <div class="role-period"><span>CPO · 단독 협상</span><span>토스페이먼츠</span><span>Payments</span></div>
+        <div class="bullet-block">
+          <span class="bullet-h">문제 · 원인</span>
+          <ul>
+            <li>월정산 구조라 판매가 늘수록 현금이 오래 묶였습니다. 정산 협의를 요청하자 첫 제안은 <b>W+20 주정산</b> — 수수료 인하 효과의 상당분이 정산 지연으로 상쇄되는 조건이었습니다.</li>
+          </ul>
+        </div>
+        <div class="bullet-block">
+          <span class="bullet-h">액션</span>
+          <ul>
+            <li>거래액·건단가·환불률 데이터로 협상 근거를 만들어 <b>토스페이먼츠와 수수료·정산 조건을 직접 협상</b></li>
+            <li>정산 <b>빈도(월→주)와 지연 일수를 분리</b>해 비교하고, 지연일의 자금 기회비용을 산정해 역제안 — <b>보증보험 증액을 조건으로 W+5까지 단축</b></li>
+            <li><b>PG 교체 프로젝트 추진</b> — 기존 PG → 신규 PG + 자체 선불 결합 구조를 설계 중 (진행 중)</li>
+          </ul>
+        </div>
+        <div class="bullet-block kpi">
+          <span class="bullet-h">결과 · KPI</span>
+          <ul>
+            <li><b>PG 수수료 2.53% (VAT 포함)</b> 확보</li>
+            <li><b>월정산 → 주정산 W+5</b> — 첫 제안 W+20 대비 15일 단축 (보증보험 증액 조건)</li>
+            <li>협상 문서 원본 공개 — <a href="https://banns0104.github.io/tosspayments-negotiation/" target="_blank" rel="noopener">정산 조건 재검토 요청서 ↗</a> · <a href="https://banns0104.github.io/tosspayments-negotiation/2026-04-20/" target="_blank" rel="noopener">정산 주기 W+N 비교 분석 ↗</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="proj-item">
+        <h4>선불충전 '머니' 0→1 — 설계부터 규제 검토까지</h4>
+        <div class="role-period"><span>CPO · 설계 총괄</span><span>운영 중</span><span>Payments · Regulation</span></div>
+        <div class="bullet-block">
+          <span class="bullet-h">문제 · 원인</span>
+          <ul>
+            <li>보상 포인트가 단순 비용으로만 빠져나가 결제·리텐션으로 이어지지 않았고, 선불 수단은 전금법 규제 판단이 선행돼야 했습니다.</li>
+          </ul>
+        </div>
+        <div class="bullet-block">
+          <span class="bullet-h">액션</span>
+          <ul>
+            <li><b>전자금융거래법·선불전자지급수단 등록 요건을 설계 전에 직접 검토·판단</b></li>
+            <li>충전·적립·소멸·전환 정책과 어뷰징 방어를 함께 설계, 도메인별 적립률을 차등화해 머니를 <b>결제를 묶는 장치</b>로 설계</li>
+          </ul>
+        </div>
+        <div class="bullet-block kpi">
+          <span class="bullet-h">결과 · KPI · 2026 1분기</span>
+          <ul>
+            <li><b>결제 회원 매출 대비 머니 사용률 30%</b> 정착 — 보상이 결제를 묶는 락인으로 작동</li>
+            <li>자사몰 ARPPU 89,925원 (+34%) — 머니·쿠폰·등급 보상이 재구매를 견인</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="proj-item">
+        <h4>매출 채널 다각화 — 연매출 14.26억 달성</h4>
+        <div class="role-period"><span>CPO</span><span>2024.12 — 2025.12</span><span>전 도메인</span></div>
+        <div class="bullet-block">
+          <span class="bullet-h">문제 · 원인</span>
+          <ul>
+            <li>매출이 스마트스토어 단일 채널에 쏠려, 한 채널이 흔들리면 사업 전체가 흔들리는 구조였습니다.</li>
+          </ul>
+        </div>
+        <div class="bullet-block">
+          <span class="bullet-h">액션</span>
+          <ul>
+            <li>전 도메인 KPI를 추적하고 마케팅·운영팀을 한 목표로 정렬</li>
+            <li>매출을 <b>스마트스토어·자사몰·예약·외부</b> 네 채널로 다각화해 단일 의존을 해소</li>
+          </ul>
+        </div>
+        <div class="bullet-block kpi">
+          <span class="bullet-h">결과 · KPI</span>
+          <ul>
+            <li>연매출 14.26억 (KPI 13.21억 대비 97.6%)</li>
+            <li>월별 달성률 최고 124% · 평균 WAU 8,307명</li>
+            <li>매출 채널을 단일 의존에서 4개로 분산</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="proj-item">
+        <h4>2026 1분기 — 단월 매출 10배 성장 설계</h4>
+        <div class="role-period"><span>CPO</span><span>2026.01 — 2026.04</span><span>커머스 + 예약</span></div>
+        <div class="bullet-block">
+          <span class="bullet-h">문제 · 원인</span>
+          <ul>
+            <li>신규 매출 동력이 필요했고, 머니 포인트가 단순 비용으로만 빠져나가 리텐션·결제로 이어지지 않았습니다.</li>
+          </ul>
+        </div>
+        <div class="bullet-block">
+          <span class="bullet-h">액션</span>
+          <ul>
+            <li>채널 분산과 자사몰 강화로 단월 매출을 끌어올림</li>
+            <li>발행 대비 사용 비율을 추적하고 도메인별 적립률을 차등화해, 머니를 <b>결제를 묶는 장치</b>로 재설계</li>
+          </ul>
+        </div>
+        <div class="bullet-block kpi">
+          <span class="bullet-h">결과 · KPI · 2026.04 기준</span>
+          <ul>
+            <li>1월 1,450만원 → 4월 1.43억 (+10배) · MAU 3배 · 자사몰 ARPPU 89,925원 (+34%)</li>
+            <li>예약 4개월 누적 3.63억 — 월 판매 86배 (2월 10건 → 3월 865건) · 예약 ARPPU 24.87만원</li>
+            <li>결제 회원 매출 대비 머니 사용률 30% 정착 — 보상이 결제를 묶는 락인으로 작동</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="proj-item">
+        <h4>SK텔레콤 TMAP 협업 — 창업도약패키지 대기업 협업형</h4>
+        <div class="role-period"><span>CPO</span><span>창업도약패키지 · 대기업 협업형 · 설계</span><span>외부 파트너십</span></div>
+        <div class="bullet-block">
+          <span class="bullet-h">문제 · 원인</span>
+          <ul>
+            <li>검색·길안내 트래픽은 대형 플랫폼에 있고, 자사 데이터만으로는 신규 유입에 한계가 있었습니다.</li>
+          </ul>
+        </div>
+        <div class="bullet-block">
+          <span class="bullet-h">액션</span>
+          <ul>
+            <li>창업도약패키지 대기업 협업형 트랙으로 SK텔레콤 TMAP과 위치 기반 낚시 데이터를 연동, <b>검색→예약→길안내</b>를 한 흐름으로 설계</li>
+            <li>설득 포인트: 주말 가족 이동에서 낚시는 가성비 카테고리 · 선박·조황은 자체 구축 대비 ROI 우수 · "낚시 인구 디지털 전환" 공동 메시지</li>
+          </ul>
+        </div>
+        <div class="bullet-block kpi">
+          <span class="bullet-h">결과 · KPI</span>
+          <ul>
+            <li>대기업 협업 성사 · 데이터 연동 스펙 확정</li>
+            <li>검색→예약→길안내 단일 퍼널 설계 완료</li>
+            <li>대형 플랫폼 트래픽을 잇는 신규 유입 채널 확보</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="proj-item">
+        <h4>창업도약패키지 사업계획서 — 단독 작성·선정</h4>
+        <div class="role-period"><span>CPO</span><span>단독 집필 + 발표</span><span>중소벤처기업부</span></div>
+        <div class="bullet-block">
+          <span class="bullet-h">문제 · 원인</span>
+          <ul>
+            <li>슈퍼앱 확장에 운영·R&amp;D 자금이 필요했고, 외부 컨설팅 없이 직접 증명해야 했습니다.</li>
+          </ul>
+        </div>
+        <div class="bullet-block">
+          <span class="bullet-h">액션</span>
+          <ul>
+            <li>시장·솔루션·BM·3개년 추정매출·R&amp;D·팀 역량 전 챕터를 단독 집필하고 발표까지 직접 수행</li>
+          </ul>
+        </div>
+        <div class="bullet-block kpi">
+          <span class="bullet-h">결과 · KPI</span>
+          <ul>
+            <li>중기부 창업도약패키지 최종 선정</li>
+            <li>운영·R&amp;D 자금 확보</li>
+            <li>대기업 협업형(SK텔레콤 TMAP)으로 연결</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="proj-item">
+        <h4>사내 일정관리 대시보드 — 직접 빌드</h4>
+        <div class="role-period"><span>CPO 직접 코드</span><span>운영 중</span><span>Internal Tools</span></div>
+        <div class="bullet-block">
+          <span class="bullet-h">문제 · 원인</span>
+          <ul>
+            <li>기성 도구로는 PM 그룹·외부협업·정부과제를 한 곳에서 관리하기 어렵고, 외주 빌드는 4~8주가 걸렸습니다.</li>
+          </ul>
+        </div>
+        <div class="bullet-block">
+          <span class="bullet-h">액션</span>
+          <ul>
+            <li>우리 팀 스프린트·배포·회고 흐름에 맞춘 대시보드를 외주 없이 직접 빌드</li>
+            <li>실시간 동기화 + 7개 탭, 우선순위 등급 + 5개 트랙(기획·디자인·FE·BE·QA)별 일정, 팀 8명 과부하 시각화·이슈 뷰·데이터 내보내기</li>
+          </ul>
+        </div>
+        <div class="bullet-block kpi">
+          <span class="bullet-h">결과 · KPI</span>
+          <ul>
+            <li>배포 122건 · 롤백 1건(0.8%)을 단일 화면에서 운영</li>
+            <li>이슈 930건 · 프로젝트 98건 추적 · 운영 도달 전 72% 차단</li>
+            <li>외주 4~8주 → 직접 빌드로 즉시 운영</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="proj-item">
+        <h4>AI 추천·예약 서비스 — Gemini · GCP 실서비스</h4>
+        <div class="role-period"><span>CPO · Builder</span><span>설계 + 직접 구현</span><span>AI · 트랜잭션</span></div>
+        <div class="bullet-block">
+          <span class="bullet-h">문제 · 원인</span>
+          <ul>
+            <li>고관여·고단가 상품일수록 "탐색"이 예약 전환의 최대 벽이었습니다.</li>
+          </ul>
+        </div>
+        <div class="bullet-block">
+          <span class="bullet-h">액션</span>
+          <ul>
+            <li><b>Gemini API</b>로 자연어를 해석하고 <b>GCP</b>에서 자사 선박·조황·예약 DB를 끌어와 실데이터 기반 추천 생성</li>
+            <li>추천 카드에 잔여석·요금·바로예약을 붙여 대화가 곧 결제 동선이 되게 설계, 요금 비교·포인트 지도·입문 가이드를 같은 흐름에 통합</li>
+          </ul>
+        </div>
+        <div class="bullet-block kpi">
+          <span class="bullet-h">결과 · KPI</span>
+          <ul>
+            <li>대화 한 줄 → 선박 추천 → 예약 트랜잭션을 실서비스로 구현</li>
+            <li>탐색 단계 이탈 축소 — 추천이 곧 예약 동선으로 작동</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="proj-item">
+        <h4>AI 기획 파이프라인 — 업무 프로세스 자동화</h4>
+        <div class="role-period"><span>CPO · Builder</span><span>운영 중</span><span>Process · AI</span></div>
+        <div class="bullet-block">
+          <span class="bullet-h">문제 · 원인</span>
+          <ul>
+            <li>기획 한 건에도 백로그→PRD→정책→스토리보드→프로토타입→핸드오프가 줄줄이 붙어 산출물에만 며칠이 들었습니다.</li>
+          </ul>
+        </div>
+        <div class="bullet-block">
+          <span class="bullet-h">액션</span>
+          <ul>
+            <li>전 과정에 AI를 붙여 각 단계 초안을 AI가 생성, 정책 판단·최종 검증은 사람이 담당</li>
+            <li>PRD·스토리보드를 템플릿화하고 기존 정책·수정점을 자동 비교, 간단한 기획은 프로토타입까지 직접 빌드</li>
+          </ul>
+        </div>
+        <div class="bullet-block kpi">
+          <span class="bullet-h">결과 · KPI</span>
+          <ul>
+            <li>산출물 공수·기간 대폭 단축</li>
+            <li>핸드오프 정합 유지 · 누락 방지</li>
+            <li>단축한 시간은 의사결정·사용자 검증에 재투입</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="s">
+    <div class="s-head"><span class="label">Experience <span class="scope">02 · Previous</span></span><span class="num">§ 03</span></div>
+
+    <div class="co-head">
+      <div>
+        <div class="co-name">웍스메이트 <span class="en">Workmate · GADA</span></div>
+        <div class="co-meta"><b>2020.12 — 2024.08</b> · 3년 8개월 · <b>PM → PO</b> · 건설 구인구직 O2O '가다'<br/>일평균 1,000명 매칭으로 월 매출 3억(연 36억) 운영 중 PM 합류 → PO 승격</div>
+      </div>
+      <div class="co-period">
+        <div class="badge">Previous</div>
+        <div class="when">3년 8개월</div>
+      </div>
+    </div>
+
+    <div class="bullet-block">
+      <span class="bullet-h">Role &amp; Scope</span>
+      <ul>
+        <li>PM 합류 → 근로자앱 / 관리자앱 / 백오피스 v2~v4 풀 리뉴얼 기획 단독 책임</li>
+        <li>PO 승격 → PM·PD·QA 그룹 운영, 데일리 스크럼·주간 1:1·분기 회고 정착</li>
+        <li>정부·엑셀러레이터 3건(TIPS·NH·NIPA) 단독 작성·선정</li>
+      </ul>
+    </div>
+
+    <div class="proj-list" data-edit-list="wm-projects">
+      <div class="proj-item">
+        <h4>근로자앱 v2 → v4 풀 리뉴얼</h4>
+        <div class="role-period"><span>PM 주도</span><span>7개월</span><span>공동 6인</span></div>
+        <div class="bullet-block">
+          <span class="bullet-h">문제 · 원인</span>
+          <ul>
+            <li>주 사용자가 40~50대 근로자인데 가입·이수증·일자리 매칭의 정보구조가 복잡해, 가입 단계에서 대거 이탈했습니다.</li>
+          </ul>
+        </div>
+        <div class="bullet-block">
+          <span class="bullet-h">액션</span>
+          <ul>
+            <li>근로자 134명 설문·인터뷰로 문제를 진단</li>
+            <li>회원가입·이수증·일자리 매칭의 정보구조를 다시 짜고 40~50대에 맞춘 큰 글자·단순 흐름으로 재설계</li>
+          </ul>
+        </div>
+        <div class="bullet-block kpi">
+          <span class="bullet-h">결과 · KPI</span>
+          <ul>
+            <li>회원가입 만족도 "매우 쉬움" 40.6%</li>
+            <li>이수증 등록 만족도 "매우 쉬움" 43.6%</li>
+            <li>리뉴얼 후 가입·인증 근로자 수 우상향</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="proj-item">
+        <h4>관리자앱 리뉴얼 — 한 손 시나리오</h4>
+        <div class="role-period"><span>PM 주도</span><span>7개월</span><span>현장 관리자 대상</span></div>
+        <div class="bullet-block">
+          <span class="bullet-h">문제 · 원인</span>
+          <ul>
+            <li>현장 관리자는 한 손으로 빠르게 써야 하는데, 일자리 등록·공수·지급 입력 단계가 많아 오기재와 문의가 잦았습니다.</li>
+          </ul>
+        </div>
+        <div class="bullet-block">
+          <span class="bullet-h">액션</span>
+          <ul>
+            <li>일자리 등록→출퇴근→공수→지급을 한 손 시나리오로 다시 설계</li>
+            <li><b>등록 기본값 자동화</b>와 <b>직전 정보 불러오기</b>로 입력 터치 수를 축소</li>
+          </ul>
+        </div>
+        <div class="bullet-block kpi">
+          <span class="bullet-h">결과 · KPI</span>
+          <ul>
+            <li>일자리 등록 평균 터치 수 감소</li>
+            <li>관리자앱 DAU 증가 · 지급 오기재 문의 감소</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="proj-item">
+        <h4>청구·지급 ERP MVP — 운영 인력 절반 절감</h4>
+        <div class="role-period"><span>PM 주도</span><span>3개월</span><span>전체 대신 MVP</span></div>
+        <div class="bullet-block">
+          <span class="bullet-h">문제 · 원인</span>
+          <ul>
+            <li>청구·지급이 전부 수작업이라 매달 인력이 묶였고, 종이·엑셀로 흐르는 돈은 데이터로 남지 않았습니다.</li>
+          </ul>
+        </div>
+        <div class="bullet-block">
+          <span class="bullet-h">액션</span>
+          <ul>
+            <li>전체 시스템을 짓기 전에 <b>가장 비용 큰 청구·지급만 잘라</b> 작은 버전으로 ROI를 빠르게 검증</li>
+            <li>부서별 청구서를 공통 포맷으로 묶고 실수령→청구→지급 결재→정산을 한 화면에 정합</li>
+          </ul>
+        </div>
+        <div class="bullet-block kpi">
+          <span class="bullet-h">결과 · KPI</span>
+          <ul>
+            <li><b>운영 인력 절반 절감 (6→3인/월)</b></li>
+            <li>청구·지급 데이터화 100%</li>
+            <li>다음 단계 SCM 로드맵 정렬 완료</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="proj-item">
+        <h4>P2P 대출 — 한화 EBC × 피플펀드</h4>
+        <div class="role-period"><span>PM 주도</span><span>가다 실작업 0.5개월</span><span>금융 외부협업</span></div>
+        <div class="bullet-block">
+          <span class="bullet-h">문제 · 원인</span>
+          <ul>
+            <li>근로 성실도가 상환 성실도로 이어지는지 검증된 적이 없어, 건설 일용직의 금융 접근이 어려웠습니다.</li>
+          </ul>
+        </div>
+        <div class="bullet-block">
+          <span class="bullet-h">액션</span>
+          <ul>
+            <li>한화 EBC 주도·피플펀드 인프라를 활용해 가다 근로 데이터로 대상자를 선별</li>
+            <li>가다 실작업은 0.5개월로 압축해 가설을 빠르게 검증</li>
+          </ul>
+        </div>
+        <div class="bullet-block kpi">
+          <span class="bullet-h">결과 · KPI</span>
+          <ul>
+            <li>대상 300명 전원 상환 완료 · 이자율 6% · 3개월</li>
+            <li>장기연체 0건</li>
+            <li>근로와 상환의 상관관계를 신규 금융상품 가설로 연결</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="proj-item">
+        <h4>알림 시스템 · B2B 웹 · A/B 테스트 프레임</h4>
+        <div class="role-period"><span>PM 주도</span><span>각 4 / 5 / 0.5개월</span><span>신규 시스템</span></div>
+        <div class="bullet-block">
+          <span class="bullet-h">문제 · 원인</span>
+          <ul>
+            <li>알림 도구가 팀마다 흩어져 비용·운영이 비효율적이었고, 신규 리드 채널과 의사결정용 데이터 기반이 부족했습니다.</li>
+          </ul>
+        </div>
+        <div class="bullet-block">
+          <span class="bullet-h">액션</span>
+          <ul>
+            <li>매칭·마케팅·데이터팀 도구를 통합하고 문자→푸시 전환으로 비용 절감</li>
+            <li>B2B 웹으로 오가닉 리드 채널을 신설, A/B 테스트 프레임으로 재진입 유저 10,730명을 직접 추출·분석</li>
+          </ul>
+        </div>
+        <div class="bullet-block kpi">
+          <span class="bullet-h">결과 · KPI</span>
+          <ul>
+            <li>알림 비용 절감 · 발송 데이터 100% 카테고리·태그화</li>
+            <li>B2B 오가닉 리드 채널 확보 · 가설–실험–결정 사이클 정착</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="proj-item">
+        <h4>TIPS 사업계획서 — 단독 집필 약 100p</h4>
+        <div class="role-period"><span>PM 단독</span><span>2021</span><span>중소벤처기업부</span></div>
+        <div class="bullet-block">
+          <span class="bullet-h">문제 · 원인</span>
+          <ul>
+            <li>매칭 알고리즘 R&amp;D와 사업 확장에 자금이 필요했고, 외부 컨설팅 없이 직접 증명해야 했습니다.</li>
+          </ul>
+        </div>
+        <div class="bullet-block">
+          <span class="bullet-h">액션</span>
+          <ul>
+            <li>시장 분석·솔루션·매칭 알고리즘 R&amp;D·3개년 추정매출·팀 역량·자금 계획까지 약 100쪽을 단독 집필</li>
+          </ul>
+        </div>
+        <div class="bullet-block kpi">
+          <span class="bullet-h">결과 · KPI</span>
+          <ul>
+            <li>TIPS 프로그램 선정 (중기부, 2021)</li>
+            <li>R&amp;D 자금으로 매칭 알고리즘·데이터 트랙 가동</li>
+            <li>이어 NH·NIPA 동일 트랙 연속 선정</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="proj-item">
+        <h4>PO 그룹 운영 — 기획·디자인·QA 정착</h4>
+        <div class="role-period"><span>PO</span><span>2022 — 2024.08</span><span>그룹 리드</span></div>
+        <div class="bullet-block">
+          <span class="bullet-h">문제 · 원인</span>
+          <ul>
+            <li>요청 접수 경로가 흩어져 백로그 진입 장벽이 높고 도달이 느렸으며, 회고가 일회성에 그쳤습니다.</li>
+          </ul>
+        </div>
+        <div class="bullet-block">
+          <span class="bullet-h">액션</span>
+          <ul>
+            <li>백로그 접수를 슬랙 워크플로로 자동화해 진입 장벽·도달 시간을 축소</li>
+            <li>데일리 스크럼·주간 1:1·분기 회고(3Ls)를 그룹에 정착</li>
+          </ul>
+        </div>
+        <div class="bullet-block kpi">
+          <span class="bullet-h">결과 · KPI</span>
+          <ul>
+            <li>요청 접수 → PO 도달 시간 단축</li>
+            <li>PM·PD·QA 그룹 운영 리듬 정착</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Experience 3 -->
+  <section class="s">
+    <div class="s-head"><span class="label">Experience <span class="scope">03 · First</span></span><span class="num">§ 04</span></div>
+
+    <div class="co-head">
+      <div>
+        <div class="co-name">아키마켓 <span class="en">ArchiMarket · ArchiMan</span></div>
+        <div class="co-meta"><b>2019.11 — 2020.12</b> · 1년 1개월 · <b>서비스 기획자</b> · 건설 인력 매칭 + 자재 커머스</div>
+      </div>
+      <div class="co-period">
+        <div class="badge">First</div>
+        <div class="when">1년 1개월</div>
+      </div>
+    </div>
+
+    <div class="proj-list" data-edit-list="archi-projects">
+      <div class="proj-item">
+        <h4>아키맨 — 건설 기능공 매칭 O2O</h4>
+        <div class="role-period"><span>서비스 기획</span><span>전체 기획</span></div>
+        <div class="bullet-block"><span class="bullet-h">문제 · 원인</span><ul><li>건설 기능공과 현장을 잇는 경로가 인맥·전화에 의존해, 공급·수요 매칭이 파편적이었습니다.</li></ul></div>
+        <div class="bullet-block"><span class="bullet-h">액션</span><ul><li>건설 기능공과 현장 관리자를 잇는 O2O 매칭 플랫폼을 전체 기획</li></ul></div>
+        <div class="bullet-block kpi"><span class="bullet-h">결과 · KPI</span><ul><li>O2O 매칭 서비스 구조 수립</li><li>이후 가다로 이어지는 O2O 도메인 경험의 토대</li></ul></div>
+      </div>
+      <div class="proj-item">
+        <h4>아키마켓 — 건축·인테리어 자재 O2O</h4>
+        <div class="role-period"><span>기획 + 운영</span><span>B2B + B2C</span></div>
+        <div class="bullet-block"><span class="bullet-h">문제 · 원인</span><ul><li>자재 구매가 오프라인·분산 채널에 흩어져 가격·재고 비교와 신뢰 확보가 어려웠습니다.</li></ul></div>
+        <div class="bullet-block"><span class="bullet-h">액션</span><ul><li>자사몰·외부 채널을 함께 운영하고 SEO·백링크·상세페이지 카피·비주얼까지 담당</li></ul></div>
+        <div class="bullet-block kpi"><span class="bullet-h">결과 · KPI</span><ul><li>B2B·B2C 매출 채널 동시 운영</li><li>O2O·마켓플레이스 기획·운영 기초 확보</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="s">
+    <div class="s-head"><span class="label">Education</span><span class="num">§ 05</span></div>
+    <div data-edit-list="cs-education">
+    <div class="edu-row"><div class="when">2017.03 — 2019.02</div><div><strong>경희대학교</strong> · 경영학과</div></div>
+    <div class="edu-row"><div class="when">2008.03 — 2016.02</div><div><strong>중앙대학교</strong> · 노어학과</div></div>
+    </div>
+  </section>
+
+  <!-- Awards -->
+  <section class="s">
+    <div class="s-head"><span class="label">Awards · Press · Grants</span><span class="num">§ 06</span></div>
+    <div class="cred-grid">
+      <div class="col">
+        <h4>정부 · 엑셀러레이터 선정 (4건)</h4>
+        <ul>
+          <li>중기부 창업도약패키지 (어바웃피싱)</li>
+          <li>중기부 TIPS (웍스메이트, 2021)</li>
+          <li>NH 디지털챌린지플러스 (웍스메이트)</li>
+          <li>NIPA AI 바우처 (웍스메이트)</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>대외 인터뷰 · 협업</h4>
+        <ul>
+          <li>동아일보 [스타트업人] 인터뷰 (2023.09)</li>
+          <li>SK텔레콤 TMAP 협업 · 창업도약패키지 (어바웃피싱)</li>
+          <li>한화 EBC × 피플펀드 P2P 협업 (가다)</li>
+          <li>건설 근로자 공제회 협업 (가다)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- References -->
+  <section class="s refs">
+    <div class="s-head"><span class="label">References</span><span class="num">§ 07</span></div>
+    <ul>
+      <li><strong>이력서 (1p)</strong> — <a href="resume-payments.html">resume-payments.html</a></li>
+      <li><strong>PG 협상 문서 (원본 공개)</strong> — <a href="https://banns0104.github.io/tosspayments-negotiation/" target="_blank" rel="noopener">정산 조건 재검토 요청서 ↗</a> · <a href="https://banns0104.github.io/tosspayments-negotiation/2026-04-20/" target="_blank" rel="noopener">정산 주기 W+N 비교 분석 ↗</a></li>
+      <li><strong>포트폴리오 (실제 화면 + KPI)</strong> — <a href="portfolio-payments.html">portfolio-payments.html</a></li>
+      <li>창업도약패키지 사업계획서 (단독 작성 원본) — 별도 PDF 제공</li>
+      <li>TIPS 사업계획서 (단독 작성, 약 100p) — 별도 PDF 제공</li>
+      <li>동아일보 인터뷰 — <a href="https://www.donga.com/news/article/all/20230914/121180294/1" target="_blank" rel="noopener">donga.com ↗</a></li>
+    </ul>
+  </section>
+
+  <div class="colophon">
+    <span>© Hyunil Seo · 2026</span>
+    <span>Last revised 2026.05</span>
+    <span>Set in Newsreader · Noto Serif KR · Pretendard</span>
+  </div>
+
+</main>
+
+<script>
+(function(){
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches || /[?&](print|noanim)/.test(location.search)) return;
+  function fmt(v,dec,comma){var s=v.toFixed(dec);if(comma){var p=s.split('.');p[0]=p[0].replace(/\B(?=(\d{3})+(?!\d))/g,',');s=p.join('.');}return s;}
+  function countUp(el){var node=el.firstChild;if(!node||node.nodeType!==3)return;var raw=node.textContent.trim();if(!/^[+\-]?[\d,]+(\.\d+)?$/.test(raw))return;var sign=/^[+\-]/.test(raw)?raw[0]:'';var ns=raw.replace(/^[+\-]/,'');var comma=ns.indexOf(',')>=0;var dec=(ns.split('.')[1]||'').length;var target=parseFloat(ns.replace(/,/g,''));if(isNaN(target))return;var dur=1100,t0=null;function step(ts){if(!t0)t0=ts;var p=Math.min(1,(ts-t0)/dur);var e=1-Math.pow(1-p,3);node.textContent=sign+fmt(target*e,dec,comma);if(p<1)requestAnimationFrame(step);else node.textContent=sign+fmt(target,dec,comma);}node.textContent=sign+fmt(0,dec,comma);requestAnimationFrame(step);}
+  var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){countUp(en.target);io.unobserve(en.target);}});},{threshold:0.6});
+  document.querySelectorAll('.kpi-cell .num, .svc-meta .n').forEach(function(n){io.observe(n);});
+})();
+</script>
+
+<script src="assets/analytics.js"></script>
+<script src="cms/firebase-config.js"></script>
+<script src="cms/edit-engine.js"></script>
+</body>
+</html>

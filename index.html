@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S2C9BC9JKH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-S2C9BC9JKH');
+</script>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>서현일 · Hyunil Seo — Payments Portfolio 2026</title>
+<meta name="description" content="결제·머니·정산을 0→1로 설계하고 PG와 직접 협상한 프로덕트 오너 서현일 — 결제 중심 케이스 포트폴리오." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..600&family=Noto+Serif+KR:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&display=swap">
+<link rel="stylesheet" href="assets/editorial.css" />
+<style>
+/* ───────── COVER ───────── */
+.cover{padding:72px 0 0;}
+.cover-eyebrow{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:14px;border-bottom:1px solid var(--line);padding-bottom:20px;margin-bottom:44px;}
+.cover-eyebrow .issue{font-family:var(--serif);font-style:italic;font-size:15px;color:var(--muted);}
+.cover h1{font-size:clamp(38px,5.6vw,68px);line-height:1.05;letter-spacing:-0.024em;font-weight:560;max-width:18ch;}
+.cover-lede{margin-top:30px;max-width:660px;}
+.cover-meta{margin-top:42px;padding-top:24px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:40px;}
+.cover-meta .item{display:flex;flex-direction:column;gap:5px;}
+.cover-meta .l{font-family:var(--sans);font-size:10.5px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--muted);}
+.cover-meta .v{font-family:var(--serif);font-size:17px;color:var(--ink);font-weight:500;}
+.cover-actions{margin-top:34px;display:flex;gap:8px;flex-wrap:wrap;}
+
+/* ───────── LEDGER ───────── */
+.ledger{margin-top:60px;border-top:2px solid var(--ink);border-bottom:1px solid var(--line);display:grid;grid-template-columns:repeat(4,1fr);}
+.ledger .cell{padding:30px 28px;border-right:1px solid var(--line);}
+.ledger .cell:first-child{padding-left:0;}
+.ledger .cell:last-child{border-right:none;padding-right:0;}
+.ledger .cap{font-family:var(--sans);font-size:10.5px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;}
+.ledger .stat-num{margin-bottom:12px;}
+.ledger .lbl{font-family:var(--serif);font-size:16px;color:var(--ink);font-weight:500;line-height:1.4;margin-bottom:5px;}
+.ledger .sub{font-family:var(--sans);font-size:12.5px;color:var(--sub);line-height:1.5;}
+
+section.band{padding:92px 0;}
+.band.recess{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+
+/* Prologue */
+.prologue{display:grid;grid-template-columns:1.15fr 1fr;gap:64px;align-items:start;}
+.prologue .body p{font-family:var(--serif);font-size:18.5px;line-height:1.66;color:var(--body);margin-bottom:20px;font-weight:380;letter-spacing:-0.01em;}
+.prologue .body p b{color:var(--ink);font-weight:600;}
+.prologue .body p:first-child::first-letter{font-family:var(--serif);float:left;font-size:4.2em;line-height:0.82;font-weight:600;padding:8px 12px 0 0;color:var(--accent);}
+.case-card{background:var(--card);border:1px solid var(--line);padding:34px 32px;box-shadow:var(--sh-2);}
+.case-card .ct{font-family:var(--sans);font-size:10.5px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;}
+.case-card h3{font-family:var(--serif);font-size:23px;font-weight:580;color:var(--ink);margin-bottom:22px;letter-spacing:-0.014em;}
+.case-card .cap{font-family:var(--sans);font-size:13px;color:var(--sub);line-height:1.66;margin-top:22px;padding-top:20px;border-top:1px solid var(--line);}
+
+/* ───────── TABLE OF CONTENTS ───────── */
+.toc{border-top:2px solid var(--ink);}
+.toc a{display:grid;grid-template-columns:58px 1fr auto;align-items:baseline;gap:22px;padding:22px 4px;border-bottom:1px solid var(--line);transition:background .15s;}
+.toc a:hover{background:var(--card);}
+.toc .tn{font-family:var(--serif);font-style:italic;font-size:20px;color:var(--accent);}
+.toc .tt{font-family:var(--serif);font-size:23px;font-weight:560;color:var(--ink);letter-spacing:-0.014em;}
+.toc a:hover .tt{color:var(--accent);}
+.toc .tk{font-family:var(--sans);font-size:13px;color:var(--sub);font-weight:600;white-space:nowrap;}
+.toc .tk b{font-family:var(--serif);color:var(--ink);font-weight:600;font-size:16px;}
+
+/* ───────── CASES ───────── */
+.cases .case{padding:80px 0;border-top:1px solid var(--line);}
+.cases .case:first-child{border-top:none;padding-top:8px;}
+.case-eyebrow{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent);margin-bottom:18px;}
+.case-eyebrow .co{color:var(--ink);}
+.case-eyebrow .role,.case-eyebrow .yr{color:var(--muted);}
+.case-eyebrow .num-badge{font-family:var(--serif);font-style:italic;font-size:18px;color:var(--quiet);text-transform:none;letter-spacing:0;margin-right:4px;}
+.case-title{font-family:var(--serif);font-size:clamp(28px,3.4vw,42px);font-weight:560;color:var(--ink);letter-spacing:-0.02em;line-height:1.14;margin-bottom:16px;max-width:20ch;}
+.case-title em{font-style:italic;color:var(--accent);font-weight:500;}
+.case-headline{font-family:var(--serif);font-style:italic;font-size:20px;color:var(--sub);line-height:1.5;font-weight:380;max-width:60ch;}
+
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px;}
+.chip{display:inline-flex;align-items:baseline;gap:7px;border:1px solid var(--line);background:var(--card);padding:8px 13px;font-family:var(--sans);font-size:12.5px;font-weight:600;color:var(--body);letter-spacing:-0.005em;}
+.chip b{font-family:var(--serif);font-size:16px;font-weight:600;color:var(--accent);letter-spacing:-0.01em;}
+
+.case-shots{margin-top:34px;}
+
+/* Movements */
+.movements{margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line);}
+.move{padding:32px 40px;border-right:1px solid var(--line);}
+.move:first-child{padding-left:0;}
+.move:last-child{border-right:none;padding-right:0;}
+.move .beat{margin-bottom:16px;padding-bottom:16px;border-bottom:1px solid var(--line-2);}
+.move .beat:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none;}
+.move .beat .bl{display:block;font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:7px;}
+/* Result band — full width KPI */
+.result{margin-top:0;padding:30px 0 0;}
+.result .move-label{margin-bottom:18px;}
+.result .kpi-ledger{grid-template-columns:repeat(4,1fr);border-top:2px solid var(--ink);}
+.result .kpi-ledger .k{border-right:1px solid var(--line);border-bottom:none;padding:20px 18px 0;}
+.result .kpi-ledger .k:first-child{padding-left:0;}
+.result .kpi-ledger .k:last-child{border-right:none;padding-right:0;}
+.result .kpi-ledger .kn{font-size:32px;}
+.move-label{font-family:var(--sans);font-size:10.5px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent);margin-bottom:18px;display:flex;align-items:baseline;gap:10px;}
+.move-label .rn{font-family:var(--serif);font-style:italic;font-size:17px;color:var(--quiet);text-transform:none;letter-spacing:0;}
+.move p{font-family:var(--serif);font-size:16px;line-height:1.62;color:var(--body);font-weight:380;letter-spacing:-0.006em;margin-bottom:14px;}
+.move p:last-child{margin-bottom:0;}
+.move p b{color:var(--ink);font-weight:600;}
+.move p em{font-style:italic;color:var(--accent);font-weight:500;}
+
+/* KPI ledger inside result movement */
+.kpi-ledger{margin-top:6px;display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line-2);}
+.kpi-ledger .k{padding:16px 14px 16px 0;border-right:1px solid var(--line-2);border-bottom:1px solid var(--line-2);}
+.kpi-ledger .k:nth-child(2n){border-right:none;}
+.kpi-ledger .kn{font-family:var(--serif);font-size:27px;font-weight:560;color:var(--ink);letter-spacing:-0.02em;line-height:1;}
+.kpi-ledger .kn .u{font-size:0.5em;color:var(--accent);}
+.kpi-ledger .kt{font-family:var(--sans);font-size:11px;color:var(--sub);font-weight:600;margin-top:8px;line-height:1.4;}
+
+.case-meta{margin-top:30px;display:grid;grid-template-columns:1fr 1fr;gap:36px;padding-top:24px;border-top:1px solid var(--line);}
+.case-meta .ml{font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;}
+.case-meta p{font-family:var(--sans);font-size:13px;color:var(--body);line-height:1.62;}
+.case-meta p b{color:var(--ink);font-weight:700;}
+
+.pullquote{margin:0;padding:56px 0;text-align:center;}
+.pullquote .q{font-family:var(--serif);font-style:italic;font-size:clamp(24px,2.8vw,32px);line-height:1.36;color:var(--ink);letter-spacing:-0.014em;max-width:26ch;margin:0 auto;font-weight:420;}
+.pullquote .q b{color:var(--accent);font-weight:560;font-style:normal;}
+
+/* ───────── PROPOSALS ───────── */
+.proposals{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:2px solid var(--ink);border-bottom:1px solid var(--line);}
+.prop{padding:30px 26px;border-right:1px solid var(--line);}
+.prop:first-child{padding-left:0;}
+.prop:last-child{border-right:none;padding-right:0;}
+.prop .py{font-family:var(--sans);font-size:10.5px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;}
+.prop h4{font-family:var(--serif);font-size:23px;font-weight:580;color:var(--ink);line-height:1.12;margin-bottom:12px;letter-spacing:-0.014em;}
+.prop p{font-family:var(--sans);font-size:12.5px;color:var(--sub);line-height:1.55;}
+.prop p b{color:var(--accent);font-weight:700;}
+
+/* ───────── ARCHIVE ───────── */
+.arch-head{display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--ink);padding-bottom:14px;margin:54px 0 28px;}
+.arch-head .ah{font-family:var(--serif);font-size:26px;font-weight:560;color:var(--ink);letter-spacing:-0.016em;}
+.arch-head .ah .en{font-style:italic;color:var(--muted);font-weight:420;font-size:0.62em;margin-left:8px;}
+.arch-head .am{font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);}
+.arch-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:stretch;}
+.arch{border:1px solid var(--line);background:var(--card);padding:26px 26px 0;display:flex;flex-direction:column;}
+.arch .at{font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;}
+.arch h4{font-family:var(--serif);font-size:21px;font-weight:580;color:var(--ink);letter-spacing:-0.014em;line-height:1.2;margin-bottom:10px;}
+.arch .as{font-family:var(--serif);font-size:15.5px;color:var(--body);line-height:1.55;font-weight:380;margin-bottom:14px;}
+.arch .ak{list-style:none;margin-bottom:18px;}
+.arch .ak li{position:relative;padding-left:16px;font-family:var(--sans);font-size:13px;color:var(--ink);line-height:1.55;margin-bottom:6px;font-weight:500;}
+.arch .ak li::before{content:"";position:absolute;left:0;top:10px;width:6px;height:1px;background:var(--accent);}
+.arch .plate{margin:auto -26px 0;border-top:1px solid var(--line);background:var(--paper);padding:18px 26px;}
+.arch.solo{grid-column:1 / -1;}
+
+/* ───────── APPROACH ───────── */
+.approach{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line);}
+.app-card{padding:34px 34px;border-right:1px solid var(--line);}
+.app-card:first-child{padding-left:0;}
+.app-card:last-child{border-right:none;padding-right:0;}
+.app-card .rn{font-family:var(--serif);font-style:italic;font-size:17px;color:var(--accent);margin-bottom:16px;}
+.app-card h3{font-family:var(--serif);font-size:20px;font-weight:580;color:var(--ink);margin-bottom:12px;letter-spacing:-0.014em;line-height:1.22;}
+.app-card p{font-family:var(--sans);font-size:13.5px;line-height:1.68;color:var(--body);}
+.app-card p b{color:var(--ink);font-weight:700;}
+
+/* ───────── CONTACT ───────── */
+.contact{padding:120px 0 90px;text-align:center;background:var(--paper-2);border-top:2px solid var(--ink);}
+.contact .eyebrow{justify-content:center;margin-bottom:26px;}
+.contact h2{font-family:var(--serif);font-size:clamp(36px,5vw,64px);line-height:1.22;letter-spacing:-0.022em;font-weight:560;color:var(--ink);margin-bottom:24px;padding-bottom:0.12em;}
+.contact h2 em{font-style:italic;color:var(--accent);}
+.contact p{font-family:var(--serif);font-size:20px;color:var(--sub);max-width:600px;margin:0 auto 40px;line-height:1.55;font-weight:380;}
+.contact-actions{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;}
+.contact-ledger{max-width:760px;margin:60px auto 0;padding-top:30px;border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(4,1fr);gap:0;}
+.contact-ledger .item{padding:0 18px;border-right:1px solid var(--line);}
+.contact-ledger .item:last-child{border-right:none;}
+.contact-ledger .l{font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;}
+.contact-ledger .v{font-family:var(--serif);font-size:14px;color:var(--ink);font-weight:500;white-space:nowrap;}
+.foot{padding:30px 0;}
+
+/* ───────── RESPONSIVE ───────── */
+@media (max-width:920px){
+  .wrap{padding:0 22px;}
+  .ledger{grid-template-columns:1fr 1fr;}
+  .ledger .cell{padding:24px 20px 24px 0;}
+  .ledger .cell:nth-child(2){border-right:none;padding-right:0;}
+  .prologue{grid-template-columns:1fr;gap:40px;}
+  .movements{grid-template-columns:1fr;}
+  .move{border-right:none;border-bottom:1px solid var(--line);padding:26px 0;}
+  .move:last-child{border-bottom:none;}
+  .case-meta{grid-template-columns:1fr;gap:20px;}
+  .proposals{grid-template-columns:1fr 1fr;}
+  .prop{border-bottom:1px solid var(--line);padding:24px 20px 24px 0;}
+  .prop:nth-child(2n){border-right:none;}
+  .arch-grid{grid-template-columns:1fr;}
+  .approach{grid-template-columns:1fr;}
+  .app-card{border-right:none;border-bottom:1px solid var(--line);padding:26px 0;}
+  .app-card:last-child{border-bottom:none;}
+  .contact-ledger{grid-template-columns:1fr 1fr;gap:22px 0;}
+  .contact-ledger .item:nth-child(2){border-right:none;}
+  .mh-links{display:none;}
+  .toc a{grid-template-columns:40px 1fr;gap:14px;}
+  .toc .tk{grid-column:2;}
+}
+@media (max-width:560px){
+  .cover h1{font-size:33px;}
+  .ledger{grid-template-columns:1fr;}
+  .ledger .cell{border-right:none;padding:20px 0;border-bottom:1px solid var(--line);}
+  .kpi-ledger{grid-template-columns:1fr;}
+  .kpi-ledger .k{border-right:none;}
+  .contact-ledger{grid-template-columns:1fr;}
+  .contact-ledger .item{border-right:none;padding:14px 0;border-bottom:1px solid var(--line);}
+}
+
+/* plates sizing tuned for cases (reuse editorial .plates) */
+.plates.q4{grid-template-columns:repeat(4,1fr);}
+@media (max-width:560px){.plates,.plates.q4{grid-template-columns:repeat(3,1fr);}}
+
+/* ── negotiation evidence docs ── */
+.nego-docs{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:14px;}
+.nego-doc{margin:0;border:1px solid var(--line);background:#fff;box-shadow:var(--sh-2,0 1px 3px rgba(27,26,22,.06));}
+.nego-doc .nd-bar{display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid var(--line);background:var(--paper-2);}
+.nego-doc .nd-bar i{width:9px;height:9px;border-radius:50%;background:#D8D1BF;display:block;}
+.nego-doc .nd-bar span{font-family:var(--sans);font-size:11.5px;font-weight:600;color:var(--sub);letter-spacing:.02em;}
+.nego-doc iframe{width:100%;height:540px;border:0;display:block;background:#fff;}
+.nego-doc figcaption{padding:11px 14px;border-top:1px solid var(--line);font-family:var(--sans);font-size:12.5px;font-weight:600;}
+.nego-doc figcaption a{color:var(--accent);text-decoration:none;}
+.nego-doc figcaption a:hover{text-decoration:underline;}
+@media (max-width:780px){.nego-docs{grid-template-columns:1fr;}.nego-doc iframe{height:420px;}}
+@media print{.nego-wrap{display:none!important;}}
+
+/* ───────── MOTION ───────── */
+@media (prefers-reduced-motion:no-preference){
+  html.anim .cover-eyebrow,html.anim .cover-lede,html.anim .cover-meta,html.anim .cover-actions,html.anim .cover .ledger{opacity:0;transform:translateY(26px);animation:heroRise 1s cubic-bezier(.19,1,.22,1) forwards;}
+  html.anim .cover-lede{animation-delay:.22s;}
+  html.anim .cover-meta{animation-delay:.34s;}
+  html.anim .cover-actions{animation-delay:.44s;}
+  html.anim .cover .ledger{animation-delay:.54s;}
+  @keyframes heroRise{to{opacity:1;transform:none;}}
+  html.anim .case .beat{opacity:0;transform:translateY(12px);transition:opacity .6s cubic-bezier(.2,.7,.2,1),transform .6s cubic-bezier(.2,.7,.2,1);}
+  html.anim .case.in .beat{opacity:1;transform:none;}
+  html.anim .case.in .move .beat:nth-child(2){transition-delay:.06s;}
+  html.anim .case.in .move .beat:nth-child(3){transition-delay:.14s;}
+  html.anim .case.in .move .beat:nth-child(4){transition-delay:.22s;}
+  html.anim .case .result{opacity:0;transform:translateY(12px);transition:opacity .7s cubic-bezier(.2,.7,.2,1) .26s,transform .7s cubic-bezier(.2,.7,.2,1) .26s;}
+  html.anim .case.in .result{opacity:1;transform:none;}
+  html.anim .chips .chip{opacity:0;transform:translateY(8px);transition:opacity .5s cubic-bezier(.2,.7,.2,1),transform .5s cubic-bezier(.2,.7,.2,1);}
+  html.anim .case.in .chips .chip{opacity:1;transform:none;}
+  html.anim .case.in .chips .chip:nth-child(2){transition-delay:.05s;}
+  html.anim .case.in .chips .chip:nth-child(3){transition-delay:.10s;}
+  html.anim .case.in .chips .chip:nth-child(4){transition-delay:.15s;}
+  html.anim .plates .pframe{opacity:0;}
+  @keyframes plateIn{from{opacity:0;transform:translateY(14px) scale(.985);}to{opacity:1;transform:none;}}
+  html.anim .plates.shown .pframe{animation:plateIn .6s cubic-bezier(.2,.7,.2,1) both;}
+}
+@media print{
+  html.anim .reveal,html.anim .case .beat,html.anim .case .result,html.anim .chips .chip,html.anim .plates .pframe,html.anim .plates img,
+  html.anim .cover-eyebrow,html.anim .cover h1,html.anim .cover-lede,html.anim .cover-meta,html.anim .cover-actions,html.anim .cover .ledger{opacity:1!important;transform:none!important;animation:none!important;}
+}
+#progress{position:fixed;top:0;left:0;right:0;height:2px;background:transparent;z-index:60;pointer-events:none;}
+#progress span{display:block;height:100%;width:0;background:var(--accent);box-shadow:0 0 8px rgba(30,90,64,0.4);transition:width .12s linear;}
+@media (prefers-reduced-motion:reduce){#progress span{transition:none;}}
+/* ───────── PREMIUM MOTION ───────── */
+@media (prefers-reduced-motion:no-preference){
+  html.anim .cover h1 .wr{display:inline-block;overflow:hidden;vertical-align:top;line-height:1.06;padding:0.18em 0.06em 0.16em;margin:-0.18em -0.06em -0.16em;}
+  html.anim .cover h1.reveal-done .wr{overflow:visible;}
+  html.anim .cover h1 .wr>span{display:inline-block;transform:translateY(116%);transition:transform 1s cubic-bezier(.16,1,.3,1);}
+  html.anim .cover h1.words-in .wr>span{transform:none;}
+  html.anim .contact h2{opacity:0;clip-path:inset(0 0 110% 0);}
+  html.anim .contact.in h2{opacity:1;clip-path:inset(-12% 0 -30% 0);transition:opacity .2s linear,clip-path 1.1s cubic-bezier(.16,1,.3,1);}
+  html.anim .sec-head .eyebrow,html.anim .sec-head .title,html.anim .sec-head .desc{opacity:0;transform:translateY(22px);transition:opacity .85s cubic-bezier(.16,1,.3,1),transform .85s cubic-bezier(.16,1,.3,1);}
+  html.anim .sec-head.in .eyebrow{opacity:1;transform:none;}
+  html.anim .sec-head.in .title{opacity:1;transform:none;transition-delay:.08s;}
+  html.anim .sec-head.in .desc{opacity:1;transform:none;transition-delay:.16s;}
+  html.anim .result .kpi-ledger .k{opacity:0;transform:translateY(14px);transition:opacity .6s cubic-bezier(.16,1,.3,1),transform .6s cubic-bezier(.16,1,.3,1);}
+  html.anim .case.in .result .kpi-ledger .k{opacity:1;transform:none;}
+  html.anim .case.in .result .kpi-ledger .k:nth-child(2){transition-delay:.07s;}
+  html.anim .case.in .result .kpi-ledger .k:nth-child(3){transition-delay:.14s;}
+  html.anim .case.in .result .kpi-ledger .k:nth-child(4){transition-delay:.21s;}
+}
+.mh-links a{position:relative;}
+.mh-links a::after{content:"";position:absolute;left:0;right:100%;bottom:-3px;height:1px;background:var(--accent);transition:right .35s cubic-bezier(.16,1,.3,1);}
+.mh-links a:hover::after{right:0;}
+.mh-links a:hover{color:var(--accent);}
+/* grid column counts */
+.plates.dash{grid-template-columns:repeat(2,1fr);gap:22px;align-items:start;}
+.arch .plates.tmap{grid-template-columns:repeat(4,1fr)!important;gap:14px;align-items:start;}
+.arch .plates.tmap .pframe:nth-child(n+2){display:block!important;}
+/* Archive: lead plate only, rest live in the lightbox */
+.arch .plates{grid-template-columns:1fr!important;gap:0;max-width:760px;}
+.arch .plates .pframe:nth-child(n+2){display:none;}
+.arch .plates.gal-phone:not(.tmap){max-width:300px;}
+.plates.aimob{grid-template-columns:repeat(2,1fr)!important;gap:18px;max-width:480px;}
+.plates.q4,.plates:not(.land):not(.dash){align-items:start;}
+
+/* ─────────── Device frames — uniform per gallery (phone OR pc, fixed ratio across page) ─────────── */
+.plates .pframe{aspect-ratio:auto;overflow:hidden;background:var(--paper-2);border:0;box-shadow:none;padding:0;cursor:zoom-in;transition:transform .2s,box-shadow .2s;align-self:start;}
+.plates .pframe img{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;display:block;object-fit:cover!important;object-position:top center;border-radius:inherit;}
+.plates .pframe:hover{transform:translateY(-3px);}
+
+/* loading skeleton (before gallery device resolves) */
+.plates:not(.gal-phone):not(.gal-pc) .pframe{border:1px solid var(--line);border-radius:10px;min-height:150px;}
+
+/* PHONE gallery — uniform tall phone, thin bezel */
+.plates.gal-phone .pframe{aspect-ratio:108/228!important;background:#1b1b1d;border:3px solid #1b1b1d;border-radius:26px;box-shadow:0 1px 2px rgba(27,26,22,.06),0 14px 32px rgba(27,26,22,.15);}
+.plates.gal-phone .pframe img{border-radius:21px;}
+.plates.gal-phone .pframe::before{content:"";position:absolute;top:8px;left:50%;transform:translateX(-50%);width:24%;max-width:52px;height:8px;background:#0c0c0e;border-radius:99px;z-index:4;}
+.plates.gal-phone .pframe:hover{box-shadow:0 3px 6px rgba(27,26,22,.09),0 20px 44px rgba(27,26,22,.20);}
+
+/* PC gallery — uniform browser window */
+.plates.gal-pc .pframe{aspect-ratio:16/10!important;background:#fff;border:1px solid var(--line);border-radius:11px;box-shadow:0 2px 4px rgba(27,26,22,.06),0 16px 34px rgba(27,26,22,.10);}
+.plates.gal-pc .pframe img{border-radius:10px;}
+.plates.gal-pc .pframe::before{content:"";position:absolute;top:11px;left:13px;z-index:4;width:48px;height:13px;border-radius:99px;background:rgba(255,255,255,.92);box-shadow:0 1px 3px rgba(0,0,0,.18);background-image:radial-gradient(circle 3px at 12px 6.5px,#e0655a 98%,transparent),radial-gradient(circle 3px at 24px 6.5px,#e7b14e 98%,transparent),radial-gradient(circle 3px at 36px 6.5px,#5bbb5e 98%,transparent);background-repeat:no-repeat;}
+.plates.gal-pc .pframe:hover{box-shadow:0 4px 8px rgba(27,26,22,.08),0 22px 46px rgba(27,26,22,.13);}
+
+/* mobile chat gallery (case-04): show FULL screenshot in bezel, no crop — frame ratio follows image */
+.plates.aimob{grid-template-columns:repeat(2,1fr)!important;gap:22px;max-width:430px;}
+.plates.aimob .pframe{aspect-ratio:var(--ar, 108/228)!important;background:#1b1b1d;border:3px solid #1b1b1d;border-radius:26px;box-shadow:0 1px 2px rgba(27,26,22,.06),0 14px 32px rgba(27,26,22,.15);}
+.plates.aimob .pframe img{object-fit:contain!important;object-position:center!important;background:#fff;border-radius:21px;}
+.plates.aimob .pframe::before{content:"";position:absolute;top:8px;left:50%;transform:translateX(-50%);width:24%;max-width:52px;height:8px;background:#0c0c0e;border-radius:99px;z-index:4;}
+
+/* shimmer follows the frame shape */
+.plates .pframe::after{border-radius:inherit;}
+
+/* ── Unified phone size across the whole page (consistent device scale) ── */
+.plates.gal-phone .pframe{width:100%;max-width:232px;margin-left:auto;margin-right:auto;}
+.arch .plates.gal-phone:not(.tmap){max-width:232px;}
+.arch .plates.tmap{max-width:none;grid-template-columns:repeat(4,1fr)!important;justify-content:stretch;gap:14px;}
+.plates.tmap.gal-phone .pframe{max-width:208px;margin:0 auto;}
+.plates.aimob{max-width:520px;}
+/* AI chat (case-04): 4 phone frames in one row, uniform page-standard size */
+.plates.aimob.aichat4{grid-template-columns:repeat(4,1fr)!important;gap:16px;max-width:none;}
+.plates.aimob.aichat4 .pframe{aspect-ratio:108/228!important;max-width:232px;margin:0 auto;}
+.plates.aimob.aichat4 .pframe img{object-fit:cover!important;object-position:top center!important;}
+/* AI chat shots are wider than a phone screen → contain so nothing is cropped */
+.plates.aimob.aichat-contain .pframe{background:#0b0b0d!important;}
+.plates.aimob.aichat-contain .pframe img{object-fit:contain!important;object-position:center!important;background:#fff;}
+/* dash landscape cards — UNIFORM size across the page (16/10, contain, no crop) */
+.plates.dash .pframe{aspect-ratio:16/10!important;}
+.plates.dash.dash-contain .pframe{aspect-ratio:16/10!important;background:#fff!important;}
+.plates.dash.dash-contain .pframe img{object-fit:contain!important;object-position:center!important;background:#fff;}
+@media (max-width:760px){.plates.aimob.aichat4{grid-template-columns:repeat(2,1fr)!important;}}
+
+/* ───────── Collapsible gallery (cover poster + “더 보기”) ───────── */
+.gview{margin-top:8px;}
+.gview .gbody{display:none;}
+.gcover{position:relative;display:flex;align-items:center;justify-content:center;text-align:center;width:100%;aspect-ratio:16/7;border:1px solid var(--line);border-radius:4px;overflow:hidden;cursor:pointer;background:linear-gradient(160deg,var(--card) 0%,var(--paper-2) 100%);transition:box-shadow .25s,transform .25s,border-color .25s;box-shadow:var(--sh-2);}
+.gcover::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--accent);}
+.gcover.gcover-af{background:linear-gradient(160deg,var(--card) 0%,var(--accent-soft) 130%);}
+.gcover:hover{transform:translateY(-2px);box-shadow:var(--sh-3);border-color:var(--accent-line);}
+.gcover .gc-inner{position:relative;z-index:1;padding:26px;}
+.gcover .gc-kicker{font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;}
+.gcover .gc-title{font-family:var(--serif);font-size:clamp(22px,2.7vw,32px);font-weight:600;color:var(--ink);letter-spacing:-0.02em;line-height:1.12;}
+.gcover .gc-more{margin-top:20px;display:inline-flex;align-items:center;gap:9px;font-family:var(--sans);font-size:11.5px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink);border:1px solid var(--ink);border-radius:1px;padding:11px 20px;background:transparent;transition:background .18s,color .18s,border-color .18s;}
+.gcover:hover .gc-more{background:var(--accent);border-color:var(--accent);color:#fff;}
+.gcover .gc-more .chev{transition:transform .25s;}
+.gcover:hover .gc-more .chev{transform:translateX(4px);}
+@media print{.gview .gbody{display:block!important;}.gcover{display:none!important;}}
+.mh-cta{display:flex;gap:7px;flex-wrap:wrap;align-items:center;}
+.mh-dl{font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);display:inline-flex;align-items:center;gap:3px;margin-right:4px;padding-right:8px;border-right:1px solid var(--line);}
+.mh-dl .ar{font-size:12px;color:var(--accent);}
+</style>
+</head>
+<body data-edit-root>
+
+<div id="progress" class="no-print"><span id="progress-bar"></span></div>
+
+<!-- ───────── MASTHEAD ───────── -->
+<nav class="masthead no-print">
+  <div class="masthead-inner">
+    <a href="#top" class="mh-brand">서현일<span class="en">Hyunil Seo</span></a>
+    <div class="mh-links">
+      <a href="#cases">케이스</a>
+      <a href="#proposals">정부지원</a>
+      <a href="#archive">아카이브</a>
+      <a href="#approach">일하는 방식</a>
+      <a href="#contact">연락</a>
+    </div>
+    <div class="mh-cta">
+      <span class="mh-dl">PDF<span class="ar">↓</span></span>
+      <a href="pdf/resume-payments.pdf" download="서현일_이력서_결제.pdf" type="application/pdf" class="btn ghost">이력서</a>
+      <a href="pdf/career-statement-payments.pdf" download="서현일_경력기술서_결제.pdf" type="application/pdf" class="btn ghost">경력기술서</a>
+      <a href="pdf/portfolio-deck-payments.pdf" download="서현일_포트폴리오덱_결제.pdf" type="application/pdf" class="btn ghost">덱</a>
+      <a href="pdf/portfolio-payments.pdf" download="서현일_포트폴리오_결제.pdf" type="application/pdf" class="btn primary">포트폴리오</a>
+      </div>
+  </div>
+</nav>
+
+<!-- ───────── COVER ───────── -->
+<header class="cover wrap" id="top">
+  <div class="cover-eyebrow">
+    <span class="eyebrow"><span class="tick"></span>Portfolio — Payments Product</span>
+    <span class="issue">No. 2026 · Open to opportunities</span>
+  </div>
+
+  <h1>결제는 되돌릴 수 없기에,<br/><em>구조부터</em> 검증합니다.</h1>
+
+  <p class="lede cover-lede">
+    <b>결제·머니·정산을 0→1로 설계하고 PG와 직접 협상한 프로덕트 오너</b>입니다. 토스페이먼츠와 <b>수수료 2.53%(VAT 포함)</b> 인하와 <b>월정산 → 주정산 W+5</b>를 협상으로 만들고, 선불충전 '머니'를 규제 검토부터 설계해 결제 락인을 만들었습니다. 9개 도메인 슈퍼앱은 이 결제 구조가 작동한 무대입니다.
+  </p>
+
+  <div class="cover-meta">
+    <div class="item"><span class="l">경력</span><span class="v">7년차</span></div>
+    <div class="item"><span class="l">현재</span><span class="v">어바웃피싱 · 등기이사 · CPO</span></div>
+    <div class="item"><span class="l">전문</span><span class="v">Payments · 정산 · 선불충전</span></div>
+    <div class="item"><span class="l">상태</span><span class="v it">Open to opportunities</span></div>
+  </div>
+
+  <div class="cover-actions">
+    <a href="#cases" class="btn primary">케이스 읽기</a>
+    <a href="resume-payments.html" class="btn">이력서</a>
+    <a href="career-statement-payments.html" class="btn">경력기술서</a>
+    <a href="portfolio-deck-payments.html" class="btn">포트폴리오 덱</a>
+  </div>
+
+  <div class="ledger">
+    <div class="cell">
+      <div class="cap">PG 수수료 협상</div>
+      <div class="stat-num">2.53<span class="u">%</span></div>
+      <div class="lbl">토스페이먼츠 · VAT 포함</div>
+      <div class="sub">정산도 월정산 → 주정산 W+5로 단축</div>
+    </div>
+    <div class="cell">
+      <div class="cap">선불충전 머니</div>
+      <div class="stat-num">0→1</div>
+      <div class="lbl">선불전자지급수단 구축</div>
+      <div class="sub">전자금융 규제 검토부터 설계</div>
+    </div>
+    <div class="cell">
+      <div class="cap">머니 사용률</div>
+      <div class="stat-num">30<span class="u">%</span></div>
+      <div class="lbl">결제 회원 매출 대비</div>
+      <div class="sub">보상이 결제를 묶는 락인 구조</div>
+    </div>
+    <div class="cell">
+      <div class="cap">자사몰 ARPPU</div>
+      <div class="stat-num">89,925<span class="u">원</span></div>
+      <div class="lbl">결제 1인 평균 매출</div>
+      <div class="sub">전년 67,000원 대비 34% 상승</div>
+    </div>
+  </div>
+</header>
+
+<!-- ───────── PROLOGUE ───────── -->
+<section class="band recess" id="why">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow"><span class="tick"></span>Prologue</div>
+      <h2 class="title">건설에서 낚시로,<br/><em>같은 사고</em>의 다른 시장.</h2>
+      <p class="desc">절대 규모가 아니라 <b>의사결정의 질</b>로 증명해 왔습니다 — 제한된 자원에서 가장 비싼 문제부터 풀었습니다.</p>
+    </div>
+
+    <div class="prologue">
+      <div class="body reveal">
+        <p>지난 7년간 제가 다룬 일은 하나로 모입니다 — <b>오프라인의 거래를 앱 안으로 옮기는 일</b>입니다. 아키마켓과 가다에서는 건설 현장의 일감과 사람을 이었고, 지금 어바웃피싱에서는 낚시의 경험과 거래를 잇습니다. 시장은 건설에서 낚시로 바뀌었지만, 풀어야 할 문제의 구조는 같았습니다.</p>
+        <p>방식도 늘 같았습니다. <b>전부 만들지 않고, 가장 비싼 문제부터 풉니다.</b> 가다에서는 시스템 전체 대신 청구·지급만 떼어내 운영 인력을 절반으로 줄였고, 어바웃피싱에서는 자사 직판 대신 외부 사업자 입점만 먼저 열어 월 거래를 86배로 키웠습니다. 손대는 순서가 결과를 갈랐습니다.</p>
+        <p>낚시 시장은 그 한 수가 특히 중요한 곳입니다. 시즌과 대회 문화, 고관여 장비, 세대별 습관이 한꺼번에 맞물려, 단순 커머스나 커뮤니티 하나로는 시장을 잡지 못합니다. <b>아홉 개 도메인을 하나의 슈퍼앱으로 묶을 때 비로소 선점이 가능</b>합니다. 그래서 등기이사·CPO로서 그 아홉 개를 동시에 총괄하고 있습니다.</p>
+      </div>
+
+      <aside class="case-card reveal">
+        <div class="ct">Same Thinking · Two Outcomes</div>
+        <h3>가장 비싼 곳부터.</h3>
+        <svg viewBox="0 0 320 210" xmlns="http://www.w3.org/2000/svg" style="width:100%;display:block;">
+          <text x="62" y="20" text-anchor="middle" font-family="Pretendard,sans-serif" font-size="10" font-weight="700" fill="#938C7B">가다 · ERP</text>
+          <rect x="42" y="44" width="22" height="116" fill="#1B1A16"/>
+          <text x="53" y="38" text-anchor="middle" font-family="Newsreader,serif" font-size="13" font-weight="600" fill="#1B1A16">6명</text>
+          <rect x="74" y="102" width="22" height="58" fill="#1E5A40"/>
+          <text x="85" y="96" text-anchor="middle" font-family="Newsreader,serif" font-size="13" font-weight="600" fill="#1E5A40">3명</text>
+          <text x="68" y="184" text-anchor="middle" font-family="Newsreader,serif" font-style="italic" font-size="20" font-weight="600" fill="#1B1A16">−50%</text>
+          <line x1="160" y1="44" x2="160" y2="172" stroke="#D8D1BF" stroke-width="1" stroke-dasharray="3 3"/>
+          <text x="258" y="20" text-anchor="middle" font-family="Pretendard,sans-serif" font-size="10" font-weight="700" fill="#938C7B">어바웃피싱 · 예약</text>
+          <rect x="226" y="155" width="22" height="5" fill="#938C7B"/>
+          <text x="237" y="149" text-anchor="middle" font-family="Newsreader,serif" font-size="13" font-weight="600" fill="#938C7B">10건</text>
+          <rect x="268" y="58" width="22" height="102" fill="#1E5A40"/>
+          <text x="279" y="52" text-anchor="middle" font-family="Newsreader,serif" font-size="13" font-weight="600" fill="#1E5A40">865건</text>
+          <text x="258" y="184" text-anchor="middle" font-family="Newsreader,serif" font-style="italic" font-size="20" font-weight="600" fill="#1B1A16">86×</text>
+        </svg>
+        <div class="cap">가다 ERP는 시스템 전체가 아닌 청구·지급만, 예약은 자사 직판이 아닌 외부 입점만 풀었습니다. 가장 비싼 문제부터 푸는 같은 방식입니다.</div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── TABLE OF CONTENTS ───────── -->
+<section class="band" id="contents" style="padding-top:72px;padding-bottom:0;">
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:32px;">
+      <div class="eyebrow"><span class="tick"></span>Featured Cases · 결제 먼저</div>
+      <h2 class="title">열한 개의 <em>결정</em>.</h2>
+      <p class="desc">각 케이스를 <b>왜 했나 · 어떻게 했나 · 무엇이 남았나</b> 세 마디로 폈습니다. 결제·머니·정산을 먼저, 그 결제 구조가 작동한 플랫폼 케이스가 뒤따릅니다.</p>
+    </div>
+    <nav class="toc">
+      <a href="#case-1"><span class="tn">01</span><span class="tt">PG 수수료·정산 협상</span><span class="tk"><b>2.53%</b> · W+5 직접 협상</span></a>
+      <a href="#case-2"><span class="tn">02</span><span class="tt">선불충전 '머니' 0→1</span><span class="tk">사용률 <b>30%</b> 락인 · 규제 검토</span></a>
+      <a href="#case-3"><span class="tn">03</span><span class="tt">예약 · 얼라이언스</span><span class="tk">탐색→결제→<b>후기</b> 플로우</span></a>
+      <a href="#case-4"><span class="tn">04</span><span class="tt">쇼핑 · 자사몰</span><span class="tk">ARPPU <b>+34%</b> 분리 KPI</span></a>
+      <a href="#case-5"><span class="tn">05</span><span class="tt">AI 추천·예약 모델</span><span class="tk">Gemini · <b>실서비스</b></span></a>
+      <a href="#case-6"><span class="tn">06</span><span class="tt">AI 기획 파이프라인</span><span class="tk">백로그→<b>핸드오프</b> AI화</span></a>
+      <a href="#case-7"><span class="tn">07</span><span class="tt">사내 운영 대시보드</span><span class="tk">외주 없이 <b>직접 빌드</b></span></a>
+      <a href="#case-8"><span class="tn">08</span><span class="tt">홈 · 가입</span><span class="tk">회원 전환율 <b>65%</b></span></a>
+      <a href="#case-9"><span class="tn">09</span><span class="tt">커뮤니티 · 중고장터</span><span class="tk">사기 리스크 먼저 차단</span></a>
+      <a href="#case-10"><span class="tn">10</span><span class="tt">청구·지급 ERP MVP</span><span class="tk">운영 인력 <b>−50%</b></span></a>
+      <a href="#case-11"><span class="tn">11</span><span class="tt">v2→v4 3축 풀리뉴얼</span><span class="tk">PM → PO 승격</span></a>
+    </nav>
+  </div>
+</section>
+
+<!-- ───────── CASES ───────── -->
+<section class="band cases" id="cases" style="padding-top:40px;">
+  <div class="wrap" data-edit-list="cases">
+
+    <!-- CASE 01 -->
+    <article class="case reveal" id="case-1">
+      <div class="case-eyebrow"><span class="num-badge">01</span><span class="co">AboutFishing · Payments</span><span class="role">CPO · 단독 협상</span><span class="yr">토스페이먼츠</span></div>
+      <h2 class="case-title">PG 수수료·정산 협상 — <em>2.53% · W+5</em>를 받아내기까지.</h2>
+      <p class="case-headline">거래액·건단가·환불률 데이터로 협상 근거를 만들어, 토스페이먼츠와 수수료·정산 주기를 직접 협상했습니다.</p>
+      <div class="chips">
+        <span class="chip"><b>2.53%</b> 수수료 · VAT 포함</span>
+        <span class="chip"><b>W+5</b> 주정산 전환</span>
+        <span class="chip"><b>단독</b> 협상 수행</span>
+      </div>
+      <div class="case-shots nego-wrap"><div class="plate-cap">협상 문서 — 실제 사용 원본 (라이브 미리보기 · 스크롤해서 읽을 수 있습니다)</div>
+        <div class="nego-docs" data-no-edit>
+          <figure class="nego-doc"><div class="nd-bar"><i></i><span>정산 조건 재검토 요청 · 주식회사 어바웃피싱</span></div><iframe src="https://banns0104.github.io/tosspayments-negotiation/" loading="lazy" title="정산 조건 재검토 요청서"></iframe><figcaption><a href="https://banns0104.github.io/tosspayments-negotiation/" target="_blank" rel="noopener">새 탭에서 원본 보기 ↗</a></figcaption></figure>
+          <figure class="nego-doc"><div class="nd-bar"><i></i><span>정산 주기 비교 — 대기일수 관점 재검토 (W+N 분석)</span></div><iframe src="https://banns0104.github.io/tosspayments-negotiation/2026-04-20/" loading="lazy" title="정산 주기 W+N 비교 분석"></iframe><figcaption><a href="https://banns0104.github.io/tosspayments-negotiation/2026-04-20/" target="_blank" rel="noopener">새 탭에서 원본 보기 ↗</a></figcaption></figure>
+        </div>
+      </div>
+      <div class="movements">
+        <div class="move">
+          <div class="move-label"><span class="rn">i.</span>왜 했나</div>
+          <div class="beat"><span class="bl">현상</span><p>월정산 구조라 판매가 늘수록 현금이 오래 묶였습니다. 정산 협의를 요청하자 토스페이먼츠의 첫 제안은 <b>W+20 주정산</b> — 빈도는 좋아지지만 지연이 긴 조건이었습니다.</p></div>
+          <div class="beat"><span class="bl">진짜 병목</span><p>결제 조건은 한 번 정해지면 <b>모든 거래에 곱해지는 고정 레버</b>입니다. 분석해 보니 <b>수수료 인하 효과의 상당분이 정산 지연으로 상쇄</b>되는 구조 — 요율과 정산을 함께 풀어야 했습니다.</p></div>
+          <div class="beat"><span class="bl">그래서 이 방향</span><p>기능 출시를 멈추지 않으면서, 결제 조건 재협상을 별도 트랙으로 분리해 CPO가 직접 들고 갔습니다.</p></div>
+        </div>
+        <div class="move">
+          <div class="move-label"><span class="rn">ii.</span>어떻게 했나</div>
+          <div class="beat"><span class="bl">근거 만들기</span><p>거래액 추이·건단가·환불률을 정리해 우리 거래의 질을 숫자로 보여줬습니다. 협상은 부탁이 아니라 <b>데이터</b>로 했습니다.</p></div>
+          <div class="beat"><span class="bl">조건의 우선순위</span><p>정산 <b>빈도(월→주)와 지연 일수를 분리</b>해 지연일의 자금 기회비용을 산정했고, <b>보증보험 증액을 조건으로 W+20 제안을 W+5까지</b> 당겼습니다.</p></div>
+          <div class="beat"><span class="bl">다음 수 준비</span><p>협상과 별개로 기존 PG → 신규 PG + 자체 선불 결합 구조의 <b>PG 교체 프로젝트를 설계 중</b>입니다 — 의존을 줄여야 다음 협상의 지렛대가 생깁니다.</p></div>
+        </div>
+      </div>
+      <div class="result">
+          <div class="move-label"><span class="rn">iii.</span>무엇이 남았나</div>
+          <div class="kpi-ledger">
+            <div class="k"><div class="kn">2.53<span class="u">%</span></div><div class="kt">PG 수수료 (VAT 포함)</div></div>
+            <div class="k"><div class="kn">W+5</div><div class="kt">주정산 전환 — 첫 제안 W+20 대비 15일 단축</div></div>
+            <div class="k"><div class="kn">설계 중</div><div class="kt">PG 교체 — 신규 PG + 자체 선불 결합</div></div>
+          </div>
+        </div>
+      <div class="case-meta">
+        <div><div class="ml">본인 역할</div><p>협상 전략·근거 데이터 구성·조건 협상 전 과정을 <b>단독 수행</b>. 정산 정책과 회계 처리 흐름까지 함께 확정했습니다.</p></div>
+        <div><div class="ml">이번에 안 한 결정</div><p>성급한 PG 즉시 교체. 교체는 자체 선불 구조와 함께 가야 효과가 커서, <b>설계를 끝낸 뒤 단계적으로</b> 진행하고 있습니다.</p></div>
+        <div><div class="ml">협상 문서 (원본 공개)</div><p><a href="https://banns0104.github.io/tosspayments-negotiation/" target="_blank" rel="noopener">정산 조건 재검토 요청서 ↗</a> · <a href="https://banns0104.github.io/tosspayments-negotiation/2026-04-20/" target="_blank" rel="noopener">정산 주기 W+N 비교 분석 ↗</a></p></div>
+      </div>
+    </article>
+
+    <!-- CASE 02 -->
+    <article class="case reveal" id="case-2">
+      <div class="case-eyebrow"><span class="num-badge">02</span><span class="co">AboutFishing · Payments</span><span class="role">CPO · 설계 총괄</span><span class="yr">운영 중</span></div>
+      <h2 class="case-title">선불충전 '머니' 0→1 — 보상이 <em>결제를 묶는</em> 구조.</h2>
+      <p class="case-headline">전자금융 규제 검토부터 충전·소멸·전환 정책까지, 선불충전 수단을 처음부터 설계해 결제 락인을 만들었습니다.</p>
+      <div class="chips">
+        <span class="chip"><b>0→1</b> 선불충전 구축</span>
+        <span class="chip"><b>30%</b> 머니 사용률</span>
+        <span class="chip"><b>+34%</b> 자사몰 ARPPU</span>
+      </div>
+      <div class="case-shots"><div class="plate-cap">Plates — 충전 → 적립 → 사용 → 락인</div><div class="plates aimob aichat4"><img src="images/af_money_flow/1.png" loading="lazy" alt="① 머니 홈 · 잔액·충전"><img src="images/af_money_flow/2.png" loading="lazy" alt="② 충전 금액 선택"><img src="images/af_money_flow/3.png" loading="lazy" alt="③ 적립·사용 내역"><img src="images/af_money_flow/4.png" loading="lazy" alt="④ 결제 시 머니 사용"><img src="images/af_money_flow/5.png" loading="lazy" alt="⑤ 출석·보상 연계"><img src="images/af_money_flow/7.png" loading="lazy" alt="⑥ 머니 충전 · 수단·금액 선택"><img src="images/af_money_flow/8.png" loading="lazy" alt="⑦ 결제수단 · 머니 자동 충전"><img src="images/af_money_flow/9.png" loading="lazy" alt="⑧ 결제 정보 · 페이백 적립"></div></div>
+      <div class="movements">
+        <div class="move">
+          <div class="move-label"><span class="rn">i.</span>왜 했나</div>
+          <div class="beat"><span class="bl">현상</span><p>보상 포인트가 단순 비용으로만 빠져나가고, 리텐션·결제로 이어지지 않았습니다. 충성 사용자일수록 보상을 받기만 하고 재구매로 돌아오지 않는 구조였습니다.</p></div>
+          <div class="beat"><span class="bl">진짜 병목</span><p>선불충전은 기능이 아니라 <b>규제 판단이 선행되는 영역</b>입니다. 전자금융거래법과 선불전자지급수단 등록 요건을 모르고 설계하면, 출시 후 되돌릴 수 없는 리스크가 됩니다.</p></div>
+          <div class="beat"><span class="bl">그래서 이 방향</span><p>화면보다 규제를 먼저 검토했습니다. 등록 요건의 경계 안에서 설계 범위를 확정한 뒤에 정책과 UI에 들어갔습니다.</p></div>
+        </div>
+        <div class="move">
+          <div class="move-label"><span class="rn">ii.</span>어떻게 했나</div>
+          <div class="beat"><span class="bl">규제 검토</span><p>전자금융거래법·선불전자지급수단·선불업 등록 요건을 직접 검토해, <b>어디까지 설계해도 되는지</b>의 경계를 먼저 그었습니다.</p></div>
+          <div class="beat"><span class="bl">정책 설계</span><p>충전·적립·소멸·전환 정책과 어뷰징 방어를 한 묶음으로 설계했습니다. 보상이 새는 구멍을 막아야 락인이 작동합니다.</p></div>
+          <div class="beat"><span class="bl">락인 메커니즘</span><p>도메인별 적립률을 차등화해 머니가 쌓일수록 자사몰 결제로 돌아오게 만들었습니다 — 보상이 <em>결제를 묶는 장치</em>가 됐습니다.</p></div>
+        </div>
+      </div>
+      <div class="result">
+          <div class="move-label"><span class="rn">iii.</span>무엇이 남았나</div>
+          <div class="kpi-ledger">
+            <div class="k"><div class="kn">30<span class="u">%</span></div><div class="kt">머니 사용률 (결제 회원 매출 대비 · 2026 1분기)</div></div>
+            <div class="k"><div class="kn">89,925<span class="u">원</span></div><div class="kt">자사몰 ARPPU (+34%)</div></div>
+            <div class="k"><div class="kn">0<span class="u">건</span></div><div class="kt">규제 이슈 — 설계 단계 차단</div></div>
+          </div>
+        </div>
+      <div class="case-meta">
+        <div><div class="ml">본인 역할</div><p>규제 검토·정책 설계·적립률 차등 구조를 <b>설계 총괄</b>. 운영 핸드오프와 어뷰징 모니터링 기준까지 확정했습니다.</p></div>
+        <div><div class="ml">이번에 안 한 결정</div><p>머니의 현금 환급 개방. 선불업 등록 요건과 직결되는 영역이라, <b>요건 검토가 끝나기 전에는 열지 않았습니다.</b></p></div>
+      </div>
+    </article>
+
+    <!-- CASE 03 -->
+    <article class="case reveal" id="case-3">
+      <div class="case-eyebrow"><span class="num-badge">03</span><span class="co">AboutFishing</span><span class="role">CPO · PO</span><span class="yr">2026 · Q1</span></div>
+      <h2 class="case-title">예약 / 얼라이언스 — 한 달 10건이 <em>865건</em>이 되기까지.</h2>
+      <p class="case-headline">선박 예약 플랫폼을 직접 구현해, 탐색→결제→이용→후기로 이어지는 오프라인 경험을 앱 안으로 가져왔습니다.</p>
+      <div class="chips">
+        <span class="chip"><b>3.63억</b> 4개월 누적</span>
+        <span class="chip"><b>86×</b> 월 판매 건</span>
+        <span class="chip"><b>24.87만</b> 예약 ARPPU</span>
+        <span class="chip"><b>19.5%</b> 4월 재구매</span>
+      </div>
+      <div class="case-shots"><div class="plate-cap">Plates — 탐색 → 선박 → 쿠폰 → 결제 → 후기</div><div class="plates aimob aichat4"><img src="images/af_booking_flow/1.png" loading="lazy" alt="① 예약 홈 · 선박 검색"><img src="images/af_booking_flow/2.png" loading="lazy" alt="② 선박 상세 · 상품·업체 정보"><img src="images/af_booking_flow/3.png" loading="lazy" alt="③ 예약 탐색 · 웰컴 쿠폰팩"><img src="images/af_booking_flow/4.png" loading="lazy" alt="④ 쿠폰 획득 · 선박 추천"><img src="images/af_booking_flow/5.png" loading="lazy" alt="⑤ 출조일 · 자리 선택"><img src="images/af_booking_flow/6.png" loading="lazy" alt="⑥ 예약 신청 완료"><img src="images/af_booking_flow/7.png" loading="lazy" alt="⑦ 챔피언십 · 현장 이용"><img src="images/af_booking_flow/8.png" loading="lazy" alt="⑧ 업체 정보 · 후기·위치"></div></div>
+      <div class="movements">
+        <div class="move">
+          <div class="move-label"><span class="rn">i.</span>왜 했나</div>
+          <div class="beat"><span class="bl">현상</span><p>선상 낚시는 결제까지 거치는 의사결정 단계가 가장 많은 도메인입니다. 어떤 배에서, 어떤 어종을, 얼마에 가는지가 한 화면에서 정리되지 않으면 사용자는 단톡방과 전화 예약으로 되돌아갔습니다.</p></div>
+          <div class="beat"><span class="bl">진짜 병목</span><p>시장을 키우는 병목은 수요가 아니라 <b>공급의 분산</b>이었습니다. 4조 규모의 선박과 선장이 흩어져 있고, 예약과 조황 정보가 카카오톡에 묶여 있었습니다.</p></div>
+          <div class="beat"><span class="bl">그래서 이 방향</span><p>오프라인 전화·단톡 예약을 <em>선박 예약 플랫폼</em>으로 옮겼습니다. 원하는 선박 탐색→결제→쿠폰→현장 이용→후기까지 한 흐름으로 잇고, 공급은 자사 직판이 아닌 <em>외부 선장 입점</em>으로 채웠습니다 — 86배 성장은 직판으로는 불가능했습니다.</p></div>
+        </div>
+        <div class="move">
+          <div class="move-label"><span class="rn">ii.</span>어떻게 했나</div>
+          <div class="beat"><span class="bl">공급 유인 설계</span><p>선장이 직접 모객하는 것보다 우리 앱에 올리는 게 이득이 되도록, 입점 선장에게 <b>예약 알림·정산 자동화·조황 연계</b>를 묶어 제공했습니다.</p></div>
+          <div class="beat"><span class="bl">전환 레버</span><p>동선(검색→상세→옵션→결제) 중 이탈이 가장 큰 <b>옵션 분기</b>를 먼저 손봤습니다. 어종·인원·승선일이 가격에 미치는 영향을 한 화면에 보여주자 다음 단계로 넘어갔습니다.</p></div>
+          <div class="beat"><span class="bl">결정의 한 점</span><p>마지막 관문은 신뢰였습니다. 사용자가 사진을 믿어야 결제까지 갑니다. 조황 카드를 <em>사진 우선·어종 태그·선박 링크</em> 세 축으로 재설계해 신뢰 지표를 끌어올렸습니다.</p></div>
+        </div>
+      </div>
+      <div class="result">
+          <div class="move-label"><span class="rn">iii.</span>무엇이 남았나</div>
+          <div class="kpi-ledger">
+            <div class="k"><div class="kn">3.63<span class="u">억</span></div><div class="kt">4개월 누적 거래액</div></div>
+            <div class="k"><div class="kn">865<span class="u">건</span></div><div class="kt">3월 예약 (86×)</div></div>
+            <div class="k"><div class="kn">24.87<span class="u">만</span></div><div class="kt">예약 ARPPU</div></div>
+            <div class="k"><div class="kn">19.5<span class="u">%</span></div><div class="kt">4월 재구매율</div></div>
+          </div>
+        </div>
+      <div class="case-meta">
+        <div><div class="ml">함께 만든 사람</div><p>PM 1 · BE 2 · FE 2 · Designer 1 · QA 1 · 얼라이언스 운영 2. <b>본인 역할</b> — 사업 모델, 예약 IA, 결제·정산 정책, KPI 트래킹, 운영 핸드오프.</p></div>
+        <div><div class="ml">이번에 안 한 결정</div><p>자사 선박 직판 인벤토리. 마진은 컸지만 시장의 분산 구조와 맞지 않아 <b>일정 단계 회전 이후로 미뤘습니다.</b></p></div>
+      </div>
+    </article>
+
+    <!-- CASE 04 -->
+    <article class="case reveal" id="case-4">
+      <div class="case-eyebrow"><span class="num-badge">04</span><span class="co">AboutFishing</span><span class="role">CPO · PM</span><span class="yr">2025 — 2026</span></div>
+      <h2 class="case-title">쇼핑 / 자사몰 — <em>외부 쇼핑몰</em>로 새던 매출을 회수.</h2>
+      <p class="case-headline">외부 채널 매출은 그대로 둔 채, 자사몰 ARPPU만 따로 떼어 넉 달 만에 34% 올렸습니다.</p>
+      <div class="chips">
+        <span class="chip"><b>14.26억</b> 2025 연매출</span>
+        <span class="chip"><b>+34%</b> 자사몰 ARPPU</span>
+        <span class="chip"><b>597건</b> 자사몰 주문</span>
+        <span class="chip"><b>+10×</b> 1→4월 단월</span>
+      </div>
+      <div class="case-shots"><div class="plate-cap">Plates — 진열 → 상품 상세 → 장바구니 → 결제</div><div class="plates aimob aichat4"><img src="images/af_shop_flow/1.png" loading="lazy" alt="① 쇼핑 홈 · 어종별 진열"><img src="images/af_shop_flow/2.png" loading="lazy" alt="② 상품 상세 · 가격·머니 페이백"><img src="images/af_shop_flow/3.png" loading="lazy" alt="③ 장바구니 · 쿠폰·즉시할인"><img src="images/af_shop_flow/4.png" loading="lazy" alt="④ 주문·결제 · 쿠폰 자동 적용"></div></div>
+      <div class="movements">
+        <div class="move">
+          <div class="move-label"><span class="rn">i.</span>왜 했나</div>
+          <div class="beat"><span class="bl">현상</span><p>커뮤니티만으로는 매출이 나지 않았고, 사용자의 구매 동선은 외부 쇼핑몰로 새고 있었습니다.</p></div>
+          <div class="beat"><span class="bl">진짜 병목</span><p>매출은 스마트스토어에 73% 쏠려 있었습니다. 외부 채널 매출에 묻혀 <b>자사몰 개선이 보이지도 않는</b> 게 더 큰 문제였습니다.</p></div>
+          <div class="beat"><span class="bl">그래서 이 방향</span><p>외부 채널을 끊는 대신, 쇼핑부터 결제까지를 앱 안에서 끝내 <em>매출과 행동 데이터를 함께</em> 우리 몰로 가져오기로 했습니다.</p></div>
+        </div>
+        <div class="move">
+          <div class="move-label"><span class="rn">ii.</span>어떻게 했나</div>
+          <div class="beat"><span class="bl">계측 설계</span><p>스마트스토어 매출은 그대로 받으면서, <b>자사몰 ARPPU만 별도 KPI로 분리</b>했습니다. 합산하면 안 보이던 학습이 떼니 바로 나왔습니다.</p></div>
+          <div class="beat"><span class="bl">전환 레버</span><p>가장 비싼 이탈점은 가격 인지였습니다. 쿠폰·할인 표기를 두 색 규칙으로 정리하고, 결제수단 분기와 실패 처리를 한 화면에 통합했습니다.</p></div>
+          <div class="beat"><span class="bl">퍼널 운영</span><p>진열→상세→장바구니→결제의 <b>단계별 이탈률을 매주·매월 데이터로 추적</b>했습니다. 가장 많이 빠지는 구간을 백로그로 올려 끊임없이 개선하는 사이클을 정착시켰습니다.</p></div>
+          <div class="beat"><span class="bl">결정의 한 점</span><p>카테고리를 <em>어종·장비</em> 두 축으로 다시 짜고 관심어종 데이터를 홈으로 끌어왔습니다. 이 IA 변경 하나가 재방문 곡선을 들어 올렸습니다.</p></div>
+        </div>
+      </div>
+      <div class="result">
+          <div class="move-label"><span class="rn">iii.</span>무엇이 남았나</div>
+          <div class="kpi-ledger">
+            <div class="k"><div class="kn">4채널 분산</div><div class="kt">단일 쇼핑몰 의존 해소</div></div>
+            <div class="k"><div class="kn">+34<span class="u">%</span></div><div class="kt">자사몰 ARPPU — 분리 KPI로 개선</div></div>
+            <div class="k"><div class="kn">+10<span class="u">×</span></div><div class="kt">1→4월 자사몰 단월</div></div>
+            <div class="k"><div class="kn">14.26<span class="u">억</span></div><div class="kt">2025 연매출 (KPI 97.6%)</div></div>
+          </div>
+        </div>
+      <div class="case-meta">
+        <div><div class="ml">함께 만든 사람</div><p>PM 1 · BE 2 · FE 2 · QA 1 · Designer 1. <b>본인 역할</b> — 풀퍼널 IA, 쿠폰·결제 정책, 카테고리 큐레이션, ARPPU·재방문 KPI 운영.</p></div>
+        <div><div class="ml">이번에 안 한 결정</div><p>스마트스토어 의존 축소. 채널을 합산하면 안 보이던 학습이 <b>분리 KPI</b>로 떼니 빠르게 나왔습니다.</p></div>
+      </div>
+    </article>
+
+    <!-- CASE 05 -->
+    <article class="case reveal" id="case-5">
+      <div class="case-eyebrow"><span class="num-badge">05</span><span class="co">AboutFishing · 실서비스</span><span class="role">CPO · Builder</span><span class="yr">AI × Gemini · GCP</span></div>
+      <h2 class="case-title">AI 추천·예약 — <em>대화 한 줄</em>로 나만의 선박을.</h2>
+      <p class="case-headline">예약·쇼핑·이벤트·낚시 플랜을 한 화면에 묶고, 자연어 한 줄이면 AI가 끝냅니다. Gemini API와 GCP·자사 DB를 연동해 실제 동작하는 서비스로 구현했습니다.</p>
+      <div class="chips">
+        <span class="chip"><b>예약·쇼핑·이벤트·플랜</b> 한곳 통합</span>
+        <span class="chip"><b>Gemini API</b> 자연어 입력</span>
+        <span class="chip"><b>GCP × 자사 DB</b> 실데이터 연동</span>
+        <span class="chip"><b>실서비스</b> 직접 빌드</span>
+      </div>
+      <div class="case-shots"><div class="plate-cap">Plates — 어바웃피싱 AI · 낚시기획 / 채비추천 / 어종지도 / 입문</div><div class="plates aimob aichat4 aichat-contain"><img src="images/af_aichat_v2/1.png" loading="lazy" alt="어피 종합 AI — 어종 안내 · 예약 · 포인트 지도"><img src="images/af_aichat_v2/2.png" loading="lazy" alt="채비추천 — 인기 채비 TOP3 · 쇼핑 연계"><img src="images/af_aichat_v2/3.png" loading="lazy" alt="채비추천 — 선박 추천 · 커플 코스"><img src="images/af_aichat_v2/4.png" loading="lazy" alt="예약전문 — 초보자 맞춤 입문 선박 추천"></div></div>
+      <div class="movements">
+        <div class="move">
+          <div class="move-label"><span class="rn">i.</span>왜 했나</div>
+          <div class="beat"><span class="bl">현상</span><p>예약 전환의 가장 큰 벽은 탐색이었습니다. "어디서·뭘·얼마에" 타려는지 정하지 못한 사용자가 목록과 필터 사이에서 이탈했습니다.</p></div>
+          <div class="beat"><span class="bl">진짜 병목</span><p>고관여·고단가 상품일수록 <b>선택을 도와주는 안내</b>가 결제를 가릅니다. 검색·필터는 이미 아는 사람만을 위한 도구였습니다.</p></div>
+          <div class="beat"><span class="bl">그래서 이 방향</span><p>한 줄 대화로 어종·지역·예산을 말하면 <em>나를 위한 선박을 추천받고 그 자리에서 예약</em>까지 잇는 모델로 트랜잭션을 극대화했습니다.</p></div>
+        </div>
+        <div class="move">
+          <div class="move-label"><span class="rn">ii.</span>어떻게 했나</div>
+          <div class="beat"><span class="bl">아키텍처</span><p><b>Gemini API</b>로 자연어를 해석하고, <b>GCP</b>에서 <em>자사 선박·조황·예약 DB</em>를 끌어와 실데이터 기반 추천을 생성하도록 연결했습니다.</p></div>
+          <div class="beat"><span class="bl">한 화면 통합</span><p>흩어져 있던 <b>예약·쇼핑·이벤트·낚시 플랜</b>을 하나의 대화로 묶었습니다. 낚시 여행 플래너가 코스를, 채비 전문가가 장비·쇼핑을 추천하고, 잔여석·요금·바로 예약까지 같은 흐름에서 끝냅니다.</p></div>
+          <div class="beat"><span class="bl">결정의 한 점</span><p>검색·필터에 얹는 대신, 대화가 곧 예약이 되는 <em>독립 서비스로 실제 구현</em>했습니다. 추천 정확도와 예약 전환을 실사용 환경에서 검증합니다.</p></div>
+        </div>
+      </div>
+      <div class="result">
+          <div class="move-label"><span class="rn">iii.</span>무엇이 남았나</div>
+          <div class="kpi-ledger">
+            <div class="k"><div class="kn">탐색→0</div><div class="kt">고단가 예약 전환의 최대 벽을 제거</div></div>
+            <div class="k"><div class="kn">대화→예약</div><div class="kt">한 줄로 단일 전환 동선</div></div>
+            <div class="k"><div class="kn">자체 DB</div><div class="kt">외부 의존 없이 추천·재고 정합</div></div>
+            <div class="k"><div class="kn">실서비스</div><div class="kt">가설 검증을 실사용으로</div></div>
+          </div>
+        </div>
+      <div class="case-meta">
+        <div><div class="ml">함께 만든 도구</div><p>CPO(본인) + Gemini API + GCP. 자연어 해석·추천 로직과 자사 DB 연동, 예약 연계까지 <b>실서비스로 직접 빌드</b>. 실데이터로 동작하며, 고도화는 팀과 함께 진행합니다.</p></div>
+        <div><div class="ml">현재 상태</div><p><b>실제 동작하는 서비스.</b> Gemini·GCP·자사 DB가 연동된 형태로 추천부터 예약까지 작동하며, 전환 지표를 실사용에서 측정합니다.</p></div>
+      </div>
+    </article>
+
+    <!-- CASE 06 -->
+    <article class="case reveal" id="case-6">
+      <div class="case-eyebrow"><span class="num-badge">06</span><span class="co">Process · 2025 — Present</span><span class="role">CPO · Builder</span><span class="yr">AI × Planning</span></div>
+      <h2 class="case-title">AI 기획 파이프라인 — 백로그부터 핸드오프까지, 기간을 <em>며칠</em>로.</h2>
+      <p class="case-headline">기획의 여섯 단계 전 과정에 AI를 붙여 공수와 기간을 크게 줄였고, 간단한 기획은 프로토타입까지 직접 빌드했습니다.</p>
+      <div class="chips">
+        <span class="chip"><b>6단계</b> 기획 파이프라인</span>
+        <span class="chip"><b>PRD·스토리보드</b> 자동 초안</span>
+        <span class="chip"><b>정책 정합</b> 자동 비교</span>
+        <span class="chip"><b>간단 기획</b> 직접 빌드</span>
+      </div>
+      <div class="case-shots"><div class="plate-cap">Plates — PRD · 스토리보드 · 정책 매핑 · 프로토타입</div><div class="plates dash"><img src="images/af_planning/1.png" loading="lazy" alt="임베디드 보험 핸드오프 스토리보드"><img src="images/af_planning/2.png" loading="lazy" alt="예약 쿠폰팩 LP 시나리오 + 화면 매핑"><img src="images/af_planning/3.png" loading="lazy" alt="새소식 화면 기획 의도 스토리보드"><img src="images/af_planning/4.png" loading="lazy" alt="상품 일괄 수정 모달 상세 정책"></div></div>
+      <div class="movements">
+        <div class="move">
+          <div class="move-label"><span class="rn">i.</span>왜 했나</div>
+          <div class="beat"><span class="bl">현상</span><p>기획 한 건에도 백로그 정리 → 요구사항 → PRD → 정책 확인 → 스토리보드 → 프로토타입 → 핸드오프가 줄줄이 붙어, 산출물 작성에만 며칠이 들었습니다.</p></div>
+          <div class="beat"><span class="bl">진짜 병목</span><p>반복되는 문서 작업이 시간을 묶어, 정작 <b>의사결정과 사용자 검증에 쓸 시간</b>이 부족했습니다.</p></div>
+          <div class="beat"><span class="bl">그래서 이 방향</span><p>여섯 단계 전 과정에 AI를 붙이고, <em>간단한 기획은 프로토타입까지 직접 빌드</em>하기로 했습니다.</p></div>
+        </div>
+        <div class="move">
+          <div class="move-label"><span class="rn">ii.</span>어떻게 했나</div>
+          <div class="beat"><span class="bl">파이프라인</span><p>백로그·운영 → 요구사항·PRD → 기존 정책 확인·수정점 → 화면기획·스토리보드 → 프로토타입 → 운영 핸드오프, 각 단계의 초안을 AI가 만들고 사람이 판단합니다.</p></div>
+          <div class="beat"><span class="bl">표준화</span><p>기존 정책과 수정점을 <em>자동으로 비교</em>해 빠뜨림을 막고, PRD·스토리보드를 같은 템플릿으로 찍어 핸드오프 정합을 유지했습니다.</p></div>
+          <div class="beat"><span class="bl">결정의 한 점</span><p>반복 산출물은 AI에 위임하되 <b>정책 판단과 최종 검증은 사람</b>이 합니다. 간단한 화면은 직접 빌드해 검증 사이클을 더 줄였습니다.</p></div>
+        </div>
+      </div>
+      <div class="result">
+          <div class="move-label"><span class="rn">iii.</span>무엇이 남았나</div>
+          <div class="kpi-ledger">
+            <div class="k"><div class="kn">며칠→당일</div><div class="kt">기획 산출물 제작 기간</div></div>
+            <div class="k"><div class="kn">검증으로</div><div class="kt">절감한 공수를 사용자 검증에 재투입</div></div>
+            <div class="k"><div class="kn">정책 정합</div><div class="kt">자동 비교로 누락·충돌 사전 감지</div></div>
+            <div class="k"><div class="kn">간단 기획</div><div class="kt">프로토타입 직접 빌드로 개발 큐 절약</div></div>
+          </div>
+        </div>
+      <div class="case-meta">
+        <div><div class="ml">함께 만든 도구</div><p>CPO(본인) + Claude. 백로그부터 핸드오프까지 초안을 AI로 만들고 판단·검증은 본인이. 디자이너·개발자에게 <b>정합 잡힌 PRD·스토리보드</b>로 넘깁니다.</p></div>
+        <div><div class="ml">이번에 안 한 결정</div><p>전 기획의 풀 자동화. 복잡한 정책·UX 판단은 사람이 쥐고, <b>반복 산출물과 간단 기획만</b> AI·직접 빌드로 가져갔습니다.</p></div>
+      </div>
+    </article>
+
+    <!-- CASE 07 -->
+    <article class="case reveal" id="case-7">
+      <div class="case-eyebrow"><span class="num-badge">07</span><span class="co">AboutFishing · Internal Tools</span><span class="role">CPO · Builder</span><span class="yr">직접 빌드</span></div>
+      <h2 class="case-title">AI 일정관리 빌드 — <em>외주 없이</em> 직접 빌드.</h2>
+      <p class="case-headline">기성 도구가 팀 워크플로에 안 맞아, 스케줄·배포·이슈를 한 화면에서 운영하는 사내 대시보드를 직접 만들어 운영합니다.</p>
+      <div class="chips">
+        <span class="chip"><b>8명·122배포</b> 단일 화면 운영</span>
+        <span class="chip"><b>7개 탭</b> 스케줄·프로젝트·이슈</span>
+        <span class="chip"><b>5개 트랙</b> 부하 시각화</span>
+        <span class="chip"><b>외주 없이</b> 직접 빌드</span>
+      </div>
+      <div class="case-shots"><div class="plate-cap">Plates — 사내 운영 대시보드 · 직접 빌드</div><div class="plates dash"><img src="images/af_dashboard/1.png" loading="lazy" alt="스케줄 간트 차트"><img src="images/af_dashboard/2.png" loading="lazy" alt="개요 대시보드"><img src="images/af_dashboard/3.png" loading="lazy" alt="팀 업무 현황"><img src="images/af_dashboard/4.png" loading="lazy" alt="이슈 트래커"></div></div>
+      <div class="movements">
+        <div class="move">
+          <div class="move-label"><span class="rn">i.</span>왜 했나</div>
+          <div class="beat"><span class="bl">현상</span><p>PM 그룹·배포·회고를 함께 관리해야 했는데, 사람·배포·프로젝트 상태가 여러 도구에 흩어져 있었습니다.</p></div>
+          <div class="beat"><span class="bl">진짜 병목</span><p>기성 도구(Notion·Asana·Monday)는 우리 팀 흐름과 핏이 안 맞았고, <b>외주 빌드는 4~8주</b>가 걸렸습니다.</p></div>
+          <div class="beat"><span class="bl">그래서 이 방향</span><p><em>우리 팀 워크플로에 정확히 맞춘 단일 운영 화면</em>을 직접 만들기로 했습니다.</p></div>
+        </div>
+        <div class="move">
+          <div class="move-label"><span class="rn">ii.</span>어떻게 했나</div>
+          <div class="beat"><span class="bl">구성</span><p>스케줄·프로젝트·이슈·배포·팀·이력·릴리즈 7개 탭으로, 실시간 동기화되는 단일 운영 화면을 만들었습니다.</p></div>
+          <div class="beat"><span class="bl">설계 원칙</span><p>우선순위 등급과 5개 트랙(기획·디자인·FE·BE·QA)별 일정을 겹쳐, 팀 8명의 과부하를 한 화면에 시각화했습니다.</p></div>
+          <div class="beat"><span class="bl">결정의 한 점</span><p>필요한 도구를 기다리는 대신 <b>직접 만들어 바로 운영</b>했고, 반복 작업은 AI를 가속기로 써 제작 시간을 줄였습니다.</p></div>
+        </div>
+      </div>
+      <div class="result">
+          <div class="move-label"><span class="rn">iii.</span>무엇이 남았나</div>
+          <div class="kpi-ledger">
+            <div class="k"><div class="kn">4~8주→0</div><div class="kt">외주 제작기간 → 즉시 운영</div></div>
+            <div class="k"><div class="kn">롤백 0.8%</div><div class="kt">122배포 중 1건 — 배포 신뢰성 가시화</div></div>
+            <div class="k"><div class="kn">8명 부하</div><div class="kt">과부하 조기 발견→재배분</div></div>
+            <div class="k"><div class="kn">외주비 0</div><div class="kt">도구 외주 예산 절감</div></div>
+          </div>
+        </div>
+      <div class="case-meta">
+        <div><div class="ml">만든 사람</div><p>CPO(본인)가 설계부터 화면 구현까지 직접 빌드하고 운영하며 팀 피드백으로 고도화했습니다. 반복 작업엔 AI를 <b>가속기</b>로 활용.</p></div>
+        <div><div class="ml">이번에 안 한 결정</div><p>풀스코프 외주. 필요한 기능만 빠르게 직접 만들고, 과도한 자동화는 운영 데이터를 본 뒤로 미뤘습니다.</p></div>
+      </div>
+    </article>
+
+    <!-- CASE 08 -->
+    <article class="case reveal" id="case-8">
+      <div class="case-eyebrow"><span class="num-badge">08</span><span class="co">AboutFishing</span><span class="role">CPO · PO</span><span class="yr">2025 — 2026</span></div>
+      <h2 class="case-title">홈 / 가입 — 회원 전환율 <em>65%</em>.</h2>
+      <p class="case-headline">가입 마찰이 큰 두 단계를 동시에 없애고, 가입의 마지막 입력이 개인화의 첫 단계가 되게 했습니다.</p>
+      <div class="chips">
+        <span class="chip"><b>65%</b> 회원 전환율</span>
+        <span class="chip"><b>10,329명</b> 4개월 가입</span>
+        <span class="chip"><b>3단</b> 가입 압축</span>
+        <span class="chip"><b>관심어종</b> 개인화 키</span>
+      </div>
+      <div class="case-shots"><div class="plate-cap">Plates — 로그인 → 본인인증 → 장소 → 관심어종</div><div class="plates aimob aichat4"><img src="images/af_home_flow/1.png" loading="lazy" alt="① 로그인 · 카카오·Apple 시작"><img src="images/af_home_flow/2.png" loading="lazy" alt="② 휴대폰 점유인증"><img src="images/af_home_flow/3.png" loading="lazy" alt="③ 낚시 장소 선택"><img src="images/af_home_flow/4.png" loading="lazy" alt="④ 관심 어종 선택"></div></div>
+      <div class="movements">
+        <div class="move">
+          <div class="move-label"><span class="rn">i.</span>왜 했나</div>
+          <div class="beat"><span class="bl">현상</span><p>신규 사용자가 가장 많이 이탈하는 곳이 가입 단계였습니다. 이메일·비밀번호·약관·인증·프로필로 이어지는 다단 가입이 문제였습니다.</p></div>
+          <div class="beat"><span class="bl">딜레마</span><p>단순화만 하면 개인화에 쓸 정보가 사라집니다. <b>마찰은 줄이되 최소 취향 정보는 남겨야</b> 했습니다.</p></div>
+          <div class="beat"><span class="bl">그래서 이 방향</span><p>가입의 마지막 입력을 <em>개인화의 첫 입력</em>으로 쓰기로 방향을 잡았습니다.</p></div>
+        </div>
+        <div class="move">
+          <div class="move-label"><span class="rn">ii.</span>어떻게 했나</div>
+          <div class="beat"><span class="bl">마찰 제거</span><p><b>카카오 로그인</b>으로 이메일·비밀번호를, <b>휴대폰 점유인증</b>으로 본인확인을 한 번에 끝냈습니다. 마찰이 큰 두 단계를 동시에 없앴습니다.</p></div>
+          <div class="beat"><span class="bl">압축</span><p>늘어지던 가입을 <em>닉네임·관심어종·지역</em> 3단으로 줄였습니다.</p></div>
+          <div class="beat"><span class="bl">결정의 한 점</span><p>관심어종 한 입력값을 홈·예약·쇼핑·커뮤니티 <b>네 도메인의 추천 공통 키</b>로 묶었습니다. 가입 직후 첫 홈이 사용자마다 다르게 구성됩니다.</p></div>
+        </div>
+      </div>
+      <div class="result">
+          <div class="move-label"><span class="rn">iii.</span>무엇이 남았나</div>
+          <div class="kpi-ledger">
+            <div class="k"><div class="kn">65<span class="u">%</span></div><div class="kt">회원 전환율</div></div>
+            <div class="k"><div class="kn">10,329<span class="u">명</span></div><div class="kt">4개월 누적 가입</div></div>
+            <div class="k"><div class="kn">51<span class="u">%</span></div><div class="kt">4월 AOS 가입률</div></div>
+            <div class="k"><div class="kn">D+1</div><div class="kt">재방문 우상향</div></div>
+          </div>
+        </div>
+      <div class="case-meta">
+        <div><div class="ml">함께 만든 사람</div><p>CPO·PO(본인) · Designer 1 · FE 1 · BE 1. <b>본인 역할</b> — 가입 플로우 재설계, 인증 도입 결정, 취향 데이터 모델, 개인화 홈 키 정의.</p></div>
+        <div><div class="ml">이번에 안 한 결정</div><p>첫 화면에 9개 도메인 전부 노출. <b>점진 노출</b>이 더 강했습니다. 머니·중고·알림은 필요할 때 나타나게 미뤘습니다.</p></div>
+      </div>
+    </article>
+
+    <!-- CASE 09 -->
+    <article class="case reveal" id="case-9">
+      <div class="case-eyebrow"><span class="num-badge">09</span><span class="co">AboutFishing</span><span class="role">CPO · PO</span><span class="yr">2025</span></div>
+      <h2 class="case-title">커뮤니티 / 중고장터 — 사기 리스크를 <em>먼저 잘라낸</em> C2C.</h2>
+      <p class="case-headline">기능보다 운영 정책을 먼저 설계해, 고가 장비 거래의 사기·분쟁을 앞단에서 차단했습니다.</p>
+      <div class="chips">
+        <span class="chip"><b>더치트</b> 사기 이력 검증</span>
+        <span class="chip"><b>필수</b> 상세 정보 입력</span>
+        <span class="chip"><b>5축</b> 신고 카테고리</span>
+        <span class="chip"><b>교차사용</b> 비중 증가</span>
+      </div>
+      <div class="case-shots"><div class="plate-cap">Plates — 커뮤니티 피드 / 중고장터 채팅 · 매물 상세</div><div class="plates aimob aichat4"><img src="images/af_community/1.jpg" loading="lazy" alt="① 커뮤니티 피드"><img src="images/af_community/2.jpg" loading="lazy" alt="② 커뮤니티 글"><img src="images/af_market_flow/3.png" loading="lazy" alt="③ 중고장터 거래 채팅 목록"><img src="images/af_market_flow/4.png" loading="lazy" alt="④ 매물 상세 · 더치트 검사"></div></div>
+      <div class="movements">
+        <div class="move">
+          <div class="move-label"><span class="rn">i.</span>왜 했나</div>
+          <div class="beat"><span class="bl">현상</span><p>낚시 장비는 값이 나가고 회전이 빨라 C2C 수요가 크지만, 사기·분쟁 리스크도 그만큼 큰 도메인입니다.</p></div>
+          <div class="beat"><span class="bl">진짜 병목</span><p>C2C는 분쟁·CS 비용이 빠르게 쌓입니다. <b>기능을 먼저 늘리면 운영이 감당하지 못합니다.</b></p></div>
+          <div class="beat"><span class="bl">그래서 이 방향</span><p>기능보다 <em>운영 정책을 먼저</em> 설계해, 리스크를 거래 시작 전에 잘라내기로 했습니다.</p></div>
+        </div>
+        <div class="move">
+          <div class="move-label"><span class="rn">ii.</span>어떻게 했나</div>
+          <div class="beat"><span class="bl">앞단 차단</span><p>거래 시작 전 <b>더치트</b>로 판매자 이력을 검증하고, 버티컬의 강점을 살려 장비명·연식·상태·사진을 등록 시점에 필수로 받았습니다.</p></div>
+          <div class="beat"><span class="bl">책임 분리</span><p>거래 단계마다 책임 소재를 끊어 정의했습니다 — <em>등록·대화·거래완료·분쟁·신고</em>. 어디까지가 사용자 책임이고 어디부터 운영 개입인지 명확히 했습니다.</p></div>
+          <div class="beat"><span class="bl">결정의 한 점</span><p>신고 카테고리를 5축으로 좁히고, 응답이 빠른 카테고리일수록 재거래율이 오른다는 걸 데이터로 확인해 <b>CS 응답 SLA를 차등 운영</b>했습니다.</p></div>
+        </div>
+      </div>
+      <div class="result">
+          <div class="move-label"><span class="rn">iii.</span>무엇이 남았나</div>
+          <div class="kpi-ledger">
+            <div class="k"><div class="kn">DAU</div><div class="kt">우상향 · 체류 증가</div></div>
+            <div class="k"><div class="kn">완료↑</div><div class="kt">거래 도달율</div></div>
+            <div class="k"><div class="kn">응답↓</div><div class="kt">분쟁 처리 시간</div></div>
+            <div class="k"><div class="kn">교차↑</div><div class="kt">커뮤니티↔중고</div></div>
+          </div>
+        </div>
+      <div class="case-meta">
+        <div><div class="ml">함께 만든 사람</div><p>PO(본인) · Designer 1 · FE 1 · BE 1 · CS 운영 1. <b>본인 역할</b> — 더치트 연동 결정, 등록 폼 정보 구조, 분쟁·신고 5축 정책, UX 라이팅, 운영 SLA 합의.</p></div>
+        <div><div class="ml">이번에 안 한 결정</div><p>중고 에스크로(직접 결제). 운영 비용과 신뢰 사이에서 한 발 미뤘습니다. 지금은 <b>분쟁 응답 단축</b>이 더 빠른 ROI였습니다.</p></div>
+      </div>
+    </article>
+
+    <!-- CASE 10 -->
+    <article class="case reveal" id="case-10">
+      <div class="case-eyebrow"><span class="num-badge">10</span><span class="co">Workmate · GADA</span><span class="role">PO · PM</span><span class="yr">2022 — 2023</span></div>
+      <h2 class="case-title">청구·지급 ERP MVP — 엑셀 6명이 <em>3명</em>이 된 달.</h2>
+      <p class="case-headline">시스템 전체를 짓기 전에 가장 비싼 청구·지급만 잘라, 운영 인력을 절반으로 줄였습니다.</p>
+      <div class="chips">
+        <span class="chip"><b>−50%</b> 운영 인력</span>
+        <span class="chip"><b>6→3</b> 인/월</span>
+        <span class="chip"><b>100%</b> 데이터화</span>
+        <span class="chip"><b>0</b> 해고</span>
+      </div>
+      <div class="case-shots"><div class="plate-cap">Plates — 청구 업무 IA · 월별청구·미수금 · 청구문서 발송 · 일출역·지급 · 지급제외 · 지급기록</div><div class="plates dash dash-contain"><img src="images/wm_erp_flow/1.png" loading="lazy" alt="청구 업무 IA — 영업그룹·청구팀 플로우"><img src="images/wm_erp_flow/2.png" loading="lazy" alt="월별청구 — 청구내역 및 미수금 관리"><img src="images/wm_erp_flow/3.png" loading="lazy" alt="청구 문서 발송 — 세금계산서·메일 일괄"><img src="images/wm_erp_flow/4.png" loading="lazy" alt="일출역(날짜별) — 지급 요약·필터"><img src="images/wm_erp_flow/5.png" loading="lazy" alt="지급제외 목록 — 일괄지급"><img src="images/wm_erp_flow/6.png" loading="lazy" alt="지급기록 — 공수·단가 변경 이력"></div></div>
+      <div class="movements">
+        <div class="move">
+          <div class="move-label"><span class="rn">i.</span>왜 했나</div>
+          <div class="beat"><span class="bl">현상</span><p>청구·지급이 전부 수작업이라 직원 6명이 매달 매달려 있었고, 종이와 엑셀로 흐르는 돈은 데이터로 남지 않았습니다.</p></div>
+          <div class="beat"><span class="bl">트레이드오프</span><p>풀스코프 SCM을 한 번에 지으면 1년이 걸릴 일이었습니다. 그동안 <b>현금흐름의 통증은 그대로</b> 남습니다.</p></div>
+          <div class="beat"><span class="bl">그래서 이 방향</span><p>통증이 가장 큰 청구·지급만 잘라, <em>0.5개월 압축 사이클의 MVP</em>로 먼저 검증하기로 했습니다.</p></div>
+        </div>
+        <div class="move">
+          <div class="move-label"><span class="rn">ii.</span>어떻게 했나</div>
+          <div class="beat"><span class="bl">한 화면 정합</span><p>실수령→청구 자동생성→지급 결재→정산의 정합을 한 화면에 시각화해, 운영팀이 한 줄에서 조회·수정·결재를 끝내게 했습니다.</p></div>
+          <div class="beat"><span class="bl">핵심 레버</span><p>부서 간 핸드오프를 줄이는 일이 <b>곧 인력 절감</b>이었습니다.</p></div>
+          <div class="beat"><span class="bl">결정의 한 점</span><p>부서가 보는 청구서를 같은 그리드로 묶고 고유 컬럼은 접었습니다. <em>공통 입력 포맷 합의</em>가 ERP 정착의 핵심 조건이었습니다.</p></div>
+        </div>
+      </div>
+      <div class="result">
+          <div class="move-label"><span class="rn">iii.</span>무엇이 남았나</div>
+          <div class="kpi-ledger">
+            <div class="k"><div class="kn">6→3</div><div class="kt">운영 인력 (−50%)</div></div>
+            <div class="k"><div class="kn">100<span class="u">%</span></div><div class="kt">청구·지급 데이터화</div></div>
+            <div class="k"><div class="kn">0<span class="u">건</span></div><div class="kt">해고 · 전원 재배치</div></div>
+            <div class="k"><div class="kn">+18<span class="u">개월</span></div><div class="kt">잔여 인원 평균 근속</div></div>
+          </div>
+        </div>
+      <div class="case-meta">
+        <div><div class="ml">함께 만든 사람</div><p>PM(본인) · BE 2 · FE 1 · Designer 1 · 운영 3축 인터뷰. 전담 6명 중 3명은 영업·재고 트랙으로 재배치. <b>본인 역할</b> — 스코프 정의, 포맷 합의, MVP→SCM 로드맵.</p></div>
+        <div><div class="ml">이번에 안 한 결정</div><p>SCM 풀 스코프. 통증 1순위만 자르고 영업·재고는 다음 분기로 미뤘습니다. <b>한 단계씩 자르는 게 더 빨랐습니다.</b></p></div>
+      </div>
+    </article>
+
+    <!-- CASE 11 -->
+    <article class="case reveal" id="case-11">
+      <div class="case-eyebrow"><span class="num-badge">11</span><span class="co">Workmate · GADA</span><span class="role">PM → PO</span><span class="yr">2021 — 2024</span></div>
+      <h2 class="case-title">v2 → v4 3축 풀리뉴얼 — <em>50대 근로자</em>가 멈추지 않은 화면.</h2>
+      <p class="case-headline">내 위치 주변 일자리를 지도로 보여주고, 까다로운 인증을 가입 한 번에 묶어 — 회원·인증·지원 전환율을 동시에 끌어올린 v4 풀리뉴얼입니다.</p>
+      <div class="chips">
+        <span class="chip"><b>GPS 지도</b> 주변 일자리 탐색</span>
+        <span class="chip"><b>점유인증</b> 회원 전환↑</span>
+        <span class="chip"><b>가입 시 인증 통합</b> 인증 전환↑</span>
+        <span class="chip"><b>96.8%</b> 지원 전환</span>
+      </div>
+      <div class="case-shots"><div class="plate-cap">Plates — v4 근로자앱 · 로그인 / 홈·지도 / 지원내역 / 지급내역 / 내정보 / 인터뷰</div><div class="plates dash dash-contain"><img src="images/wm_renewal/login.png" loading="lazy" alt="로그인·회원가입"><img src="images/wm_renewal/home.png" loading="lazy" alt="홈·지도 일자리 탐색"><img src="images/wm_renewal/apply.png" loading="lazy" alt="지원내역 타임라인"><img src="images/wm_renewal/pay.png" loading="lazy" alt="지급내역 캘린더·리스트"><img src="images/wm_renewal/myinfo.png" loading="lazy" alt="내정보 프로필 완성도"><img src="images/wm_renewal/interview.png" loading="lazy" alt="인터뷰·맞춤정보"></div></div><div class="case-shots" style="margin-top:12px;"><div class="plate-cap">Plates — 데이터 · 유입 퍼널 / 3.0 런칭 전·후 지표</div><div class="plates dash"><img src="images/wm_renewal/funnel.png" loading="lazy" alt="유입경로 탐색 — 가입→일자리→지원 퍼널 이탈률"><img src="images/wm_renewal/metrics_beforeafter.png" loading="lazy" alt="3.0 런칭 전·후 주요 근로자 지표"></div></div>
+      <div class="movements">
+        <div class="move">
+          <div class="move-label"><span class="rn">i.</span>왜 했나</div>
+          <div class="beat"><span class="bl">현상</span><p>O2O 매칭은 <b>일자리와 근로자가 양쪽 다 충분</b>해야 돕니다. 일자리는 영업이 채웠지만, 정작 나갈 근로자의 가입·인증이 막혀 매칭이 비었습니다.</p></div>
+          <div class="beat"><span class="bl">진짜 병목</span><p>주 사용자는 40~50대입니다. 일자리를 나가려면 <b>계좌·이수증 인증</b>을 거쳐야 했는데, 이 번거로운 단계에서 대거 이탈했습니다.</p></div>
+          <div class="beat"><span class="bl">그래서 이 방향</span><p>제품이 책임질 한쪽은 분명했습니다 — <em>가입·인증 마찰을 없애 근로자 공급을 채우는 것</em>. 영업의 일자리 확보와 맞물려 양면을 동시에 메웠습니다.</p></div>
+        </div>
+        <div class="move">
+          <div class="move-label"><span class="rn">ii.</span>어떻게 했나</div>
+          <div class="beat"><span class="bl">GPS 일자리 지도</span><p>근로자가 일을 고르는 첫 기준은 <b>거리</b>입니다. 현재 위치 기반으로 <em>주변 일자리를 홈에서 리스트·지도로 직관 표기</em>해, 나갈 현장을 쉽게 탐색하게 했습니다.</p></div>
+          <div class="beat"><span class="bl">점유인증으로 회원 전환</span><p>40~50대에 맞춰 회원가입을 <b>휴대폰 점유인증</b>으로 바꾸고, 일자리에 필요한 <em>계좌·이수증 인증까지 가입 단계에서 함께</em> 받게 했습니다. 번거로운 관문을 앞으로 당겨 전환율을 끌어올렸습니다.</p></div>
+          <div class="beat"><span class="bl">퍼널로 검증</span><p>GA 유입경로로 가입→조회→지원 이탈을 추적하며 백로그로 개선했고, <b>일자리 조회 후 지원 전환 96.8%</b>를 기록했습니다.</p></div>
+        </div>
+      </div>
+      <div class="result">
+          <div class="move-label"><span class="rn">iii.</span>무엇이 남았나</div>
+          <div class="kpi-ledger">
+            <div class="k"><div class="kn">96.8<span class="u">%</span></div><div class="kt">일자리 조회→지원 전환</div></div>
+            <div class="k"><div class="kn">점유인증</div><div class="kt">회원 전환율 상승</div></div>
+            <div class="k"><div class="kn">가입 통합</div><div class="kt">계좌·이수증 인증 전환↑</div></div>
+            <div class="k"><div class="kn">양면 충족</div><div class="kt">일자리(영업)+근로자(제품)</div></div>
+          </div>
+        </div>
+      <div class="case-meta">
+        <div><div class="ml">함께 만든 사람 · 인계</div><p>PM(본인) → 후반 PO 승격 · FE 1 · BE 1 · QA 1 · Designer 1 × 3트랙 · 7개월. 승격 직후 후임 PM 2명에게 근로자·관리자 트랙을 위임하고 본인은 백오피스로 이동. <b>인계가 늦었으면 3축이 다시 깨졌습니다.</b></p></div>
+        <div><div class="ml">역할 분담</div><p>O2O의 양면 중 <b>일자리 공급은 영업 전략</b>이, <b>근로자 공급은 가입·인증·탐색 재설계</b>가 맡았습니다. 제품이 책임질 한쪽을 분명히 하고 거기서 전환율로 증명했습니다.</p></div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ───────── PROPOSALS ───────── -->
+<section class="band recess" id="proposals">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow"><span class="tick"></span>Proposals · 정부지원 4건 100% 선정</div>
+      <h2 class="title">자금은 <em>직접</em> 끌어왔습니다.</h2>
+      <p class="desc">외주 컨설팅 없이 사업계획서와 재무·R&amp;D 트랙을 직접 쓰고 발표·선정까지 마쳤습니다.</p>
+    </div>
+    <div class="proposals" data-edit-list="proposals">
+      <div class="prop"><div class="py">2025 · 어바웃피싱</div><h4>창업도약<br/>패키지</h4><p>중기부 · 단독 작성·선정<br/><b>운영·R&amp;D 자금</b> 확보</p></div>
+      <div class="prop"><div class="py">2021 · 웍스메이트</div><h4>TIPS<br/>프로그램</h4><p>중기부 · 약 100p 단독<br/><b>VC 후속 라운드</b> 신뢰</p></div>
+      <div class="prop"><div class="py">2022 · 웍스메이트</div><h4>NH 디지털<br/>챌린지플러스</h4><p>NH농협 · 단독 작성·선정<br/><b>P2P 대출</b>로 연결</p></div>
+      <div class="prop"><div class="py">2023 · 웍스메이트</div><h4>NIPA<br/>AI 바우처</h4><p>NIPA · 단독 작성·선정<br/><b>매칭 AI R&amp;D</b> 자금</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── ARCHIVE ───────── -->
+<section class="band" id="archive">
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:8px;">
+      <div class="eyebrow"><span class="tick"></span>Archive · 전체 프로젝트</div>
+      <h2 class="title">남은 도메인과 <em>기록</em>.</h2>
+      <p class="desc">케이스로 다루지 않은 도메인의 실제 화면과 결과입니다. 이미지를 누르면 크게 볼 수 있습니다.</p>
+    </div>
+
+    <div class="arch-head"><div class="ah">어바웃피싱 <span class="en">AboutFishing</span></div><div class="am">2024.08 — 현재</div></div>
+    <div class="arch-grid" data-edit-list="arch-af">
+      <article class="arch reveal">
+        <div class="at">Loyalty · CPO·PO</div>
+        <h4>머니 · 출석체크 — 결제를 묶는 리텐션 보상</h4>
+        <p class="as">리텐션을 묶는 보상 구조. 적립·소멸·전환 정책과 어뷰징 방어를 함께 설계했습니다.</p>
+        <ul class="ak"><li>출석 7일 연속 사용자 비율 증가</li><li>발행 대비 사용 99% — 결제 락인으로 검증</li><li>어뷰징 의심 거래 자동 차단</li></ul>
+        <div class="plate"><div class="plate-cap">Plates — 출석머니 · 머니 더 받기 · 적립/사용 내역 · 충전 · 결제 락인</div><div class="plates aimob aichat4"><img src="images/af_money_flow/1.png" loading="lazy" alt="6월 출석머니 — 출석체크 캘린더"><img src="images/af_money_flow/2.png" loading="lazy" alt="머니 더 받기 — 응원·댓글·조과등록"><img src="images/af_money_flow/3.png" loading="lazy" alt="머니 적립/사용 내역"><img src="images/af_money_flow/4.png" loading="lazy" alt="머니 충전 — 간편충전"><img src="images/af_money_flow/5.png" loading="lazy" alt="머니 충전 — 신용카드·금액"><img src="images/af_money_flow/6.png" loading="lazy" alt="결제수단 — 머니 6% 페이백"></div></div>
+      </article>
+      <article class="arch reveal">
+        <div class="at">Acquisition · CPO·PO</div>
+        <h4>포인트맵 — 검색 수요를 앱으로 끌어온 유입 통로</h4>
+        <p class="as">낚시인은 "어디서·어떤 어종이·언제 잘 잡히는지"를 끊임없이 검색합니다. 이 검색 수요를 잡으려 <b>어종·지역·시기 기반 포인트맵</b>을 별도 웹(map.aboutfishing.kr)으로 구현해, 검색 유입을 조황 상세→장비·낚시터 추천→앱으로 잇는 <b>신규 유입 통로</b>를 만들었습니다.</p>
+        <ul class="ak"><li>어종명 검색 + 지역별 조황 클러스터 지도 (네이버맵 연동)</li><li>조황 상세 → 인기 장비 TOP5·핫한 낚시터로 커머스·예약 연결</li><li>검색 유입 → 조황 열람 → 앱 설치·예약으로 이어지는 퍼널 설계</li></ul>
+        <div class="plate"><div class="plate-cap">Plates — 포인트맵 검색 · 조황 상세 · 장비·낚시터 추천 · 내 장소 저장</div><div class="plates aimob aichat4"><img src="images/af_pointmap/1.png" loading="lazy" alt="포인트맵 — 어종 검색·조황 클러스터 지도"><img src="images/af_pointmap/2.png" loading="lazy" alt="조황 상세 — 어종·위치·날짜"><img src="images/af_pointmap/3.png" loading="lazy" alt="조황 기반 인기 장비 TOP5·핫한 낚시터"><img src="images/af_pointmap/4.png" loading="lazy" alt="내 장소 저장 — 주요 조황 그룹"></div></div>
+      </article>
+      <article class="arch reveal solo">
+        <div class="at">Partnership · CPO 주도</div>
+        <h4>SK텔레콤 TMAP 협업</h4>
+        <p class="as">창업도약패키지 대기업 협업형 파트너로 SK텔레콤 TMAP과 위치 데이터를 연동해 검색→예약→길안내를 한 흐름으로 함께 설계했습니다. 자사 구축 대비 ROI가 높은 선박·조황 데이터를 근거로 대기업과의 협업을 이끌었습니다.</p>
+        <ul class="ak"><li>창업도약패키지 대기업 협업형으로 TMAP 데이터 연동 추진</li><li>검색→예약→길안내 단일 퍼널 설계</li><li>가족 단위 이동 흐름에서 낚시를 가성비 카테고리로 제안</li></ul>
+        <div class="case-shots" style="margin-top:8px;"><div class="plate-cap">Plates — 포인트맵 · 출조 플랜 · T map 길찾기</div><div class="plates q4 tmap dev-phone"><img src="images/af_tmap/1.png" loading="lazy" alt="경남 최근 조과 — 포인트맵"><img src="images/af_tmap/2.png" loading="lazy" alt="출조 플랜 — 날짜·인원·경험 선택"><img src="images/af_tmap/3.png" loading="lazy" alt="T map 길찾기 — 상세 일정"><img src="images/af_tmap/4.png" loading="lazy" alt="플랜 생성 — TMAP·조황 데이터 분석"></div></div>
+      </article>
+    </div>
+
+    <div class="arch-head"><div class="ah">웍스메이트 <span class="en">Workmate · GADA</span></div><div class="am">2020.12 — 2024.08</div></div>
+    <div class="arch-grid" data-edit-list="arch-wm">
+      <article class="arch reveal">
+        <div class="at">Partnership · PM</div>
+        <h4>P2P 대출 — 한화 EBC × 피플펀드</h4>
+        <p class="as">근로 성실도가 상환 성실도로 이어지는지 실데이터로 검증했습니다. 실작업은 0.5개월로 압축했습니다.</p>
+        <ul class="ak"><li>대상 300명 전원 상환 완료 · 이자율 6%</li><li>장기연체 0건</li><li>근로–상환 상관관계를 신규 금융상품 가설로 연결</li></ul>
+        <div class="plate"><div class="plate-cap">Plates — P2P</div><div class="plates land"><img src="images/wm_p2p/1.jpg" loading="lazy" alt="P2P"><img src="images/wm_p2p/2.jpg" loading="lazy" alt=""><img src="images/wm_p2p/3.jpg" loading="lazy" alt=""></div></div>
+      </article>
+      <article class="arch reveal">
+        <div class="at">New · PM</div>
+        <h4>Noti — 통합 알림 시스템</h4>
+        <p class="as">부서별로 흩어진 알림 도구를 통합하고, 문자에서 푸시로 전환해 비용을 줄였습니다.</p>
+        <ul class="ak"><li>문자 비중 감소 / 푸시 비중 증가</li><li>발송 데이터 100% 카테고리·태그화</li><li>매칭·마케팅 도구 통합 완료</li></ul>
+        <div class="plate"><div class="plate-cap">Plates — 메뉴구조 IA · 푸시/문자 발송·내역 · 발송대상 · 템플릿·세그먼트</div><div class="plates dash dash-contain"><img src="images/wm_noti_flow/01.png" loading="lazy" alt="메뉴구조 IA — 푸시·문자·발송대상"><img src="images/wm_noti_flow/02.png" loading="lazy" alt="푸시 발송내역 · 만들기"><img src="images/wm_noti_flow/03.png" loading="lazy" alt="푸시 발송내역(통합·전체)"><img src="images/wm_noti_flow/04.png" loading="lazy" alt="푸시 수정 — 예약상태"><img src="images/wm_noti_flow/05.png" loading="lazy" alt="발송유형 선택 모달"><img src="images/wm_noti_flow/06.png" loading="lazy" alt="발송대상 조회 모달"><img src="images/wm_noti_flow/07.png" loading="lazy" alt="문자 발송내역(전체)"><img src="images/wm_noti_flow/08.png" loading="lazy" alt="문자 수정 — MMS·발신번호"><img src="images/wm_noti_flow/09.png" loading="lazy" alt="발송대상 내역 — 동의·OS·국적"><img src="images/wm_noti_flow/10.png" loading="lazy" alt="템플릿 내역 — 푸시/문자"><img src="images/wm_noti_flow/11.png" loading="lazy" alt="푸시 템플릿 만들기"><img src="images/wm_noti_flow/12.png" loading="lazy" alt="템플릿 그룹 설정"><img src="images/wm_noti_flow/13.png" loading="lazy" alt="세그먼트 만들기 — 타겟 조건"><img src="images/wm_noti_flow/14.png" loading="lazy" alt="푸시 발송내역 — 통합·성과지표"></div></div>
+      </article>
+      <article class="arch reveal">
+        <div class="at">New Frame · PM</div>
+        <h4>A/B 테스트 프레임</h4>
+        <p class="as">PM의 직감을 가설–실험–결과–의사결정 사이클로 바꿨습니다.</p>
+        <ul class="ak"><li>단계별 이탈 분석 정착</li><li>이탈 후 재진입 10,730명 직접 추출</li><li>GA 밖 데이터 분석 가능</li></ul>
+        <div class="plate"><div class="plate-cap">Plates — A/B Test</div><div class="plates land"><img src="images/wm_abtest/1.jpg" loading="lazy" alt="A/B"><img src="images/wm_abtest/2.jpg" loading="lazy" alt=""><img src="images/wm_abtest/3.jpg" loading="lazy" alt=""></div></div>
+      </article>
+      <article class="arch reveal">
+        <div class="at">Research · PM</div>
+        <h4>Persona · Journey · UX Writing</h4>
+        <p class="as">인터뷰로 타겟을 정립하고, 흩어진 표현을 하나의 언어로 통일했습니다.</p>
+        <ul class="ak"><li>전사 사업 목표 정렬 기준 문서</li><li>플랫폼 전 영역 언어 일관성 확보</li><li>운영 CS 응대 표현 통일</li></ul>
+        <div class="plate"><div class="plate-cap">Plates — 페르소나 / UX 라이팅</div><div class="plates land"><img src="images/wm_persona/1.jpg" loading="lazy" alt="페르소나"><img src="images/wm_persona/2.jpg" loading="lazy" alt=""><img src="images/wm_uxwriting/1.jpg" loading="lazy" alt="UX 라이팅"></div></div>
+      </article>
+      <article class="arch reveal">
+        <div class="at">Process · PO</div>
+        <h4>백로그 운영 개선</h4>
+        <p class="as">접수를 슬랙 워크플로로 자동화해 요청 진입 장벽을 낮추고 도달 시간을 줄였습니다.</p>
+        <ul class="ak"><li>요청 접수 → PO 도달 시간 단축</li><li>긴급도·사이즈로 프로젝트/비정기 분기</li><li>분기 회고(3Ls) 정착</li></ul>
+        <div class="plate"><div class="plate-cap">Plates — 슬랙 워크플로 · 개선사항 접수 폼 · 분기 회고(3Ls)</div><div class="plates dash dash-contain"><img src="images/wm_backlog_flow/1.png" loading="lazy" alt="① 개선사항 접수 — 슬랙 워크플로 계정 연결"><img src="images/wm_backlog_flow/2.png" loading="lazy" alt="② 개선사항 접수 폼 — 부서·우선순위·목적 구조화"><img src="images/wm_backlog_flow/3.png" loading="lazy" alt="③ 공제회 프로젝트 회고 워크샵 — 3Ls 보드"></div></div>
+      </article>
+      <article class="arch reveal">
+        <div class="at">Grant · Collab · PM</div>
+        <h4>TIPS 발췌 · 공제회 협업</h4>
+        <p class="as">TIPS 사업계획서를 약 100쪽 단독 집필했고, 공공기관과 9개월 협업했습니다.</p>
+        <ul class="ak"><li>TIPS 선정 (중기부, 2021)</li><li>공제회 요구사항 합치 → 기능 정의</li><li>정책 데이터(이수증·등급) 확보</li></ul>
+        <div class="plate"><div class="plate-cap">Plates — TIPS / 공제회</div><div class="plates land"><img src="images/wm_tips/1.jpg" loading="lazy" alt="TIPS"><img src="images/wm_tips/2.jpg" loading="lazy" alt=""><img src="images/wm_kjc/1.jpg" loading="lazy" alt="공제회"></div></div>
+      </article>
+      <article class="arch reveal">
+        <div class="at">B2B · 영업 · PM</div>
+        <h4>가다 매니저 — 건설사 B2B 관리자 웹</h4>
+        <p class="as">근로자(B2C)만으로는 O2O의 양면이 채워지지 않았습니다. 건설사·현장 관리자를 위한 <b>B2B 관리자 웹 '가다 매니저'</b>를 신규 구축해, 일자리 공급을 끌어오는 <b>영업 채널</b>로 활용했습니다. 작업확인서·근로계약서·퇴직공제신고서를 자동 생성·서명·다운로드하는 현장관리 자동화로 "매일 서명 고민"을 없앴고, 영업 리드 관리(CRM)·알림·세그먼트까지 묶었습니다.</p>
+        <ul class="ak"><li>현장 관리자 가입→인증→작업등록→문서 자동화 전 플로우 설계</li><li>작업확인서·근로계약서·퇴직공제신고서 자동 생성·전자서명·PDF</li><li>영업 리드 13.5만 건 관리 CRM · 슬랙 알림 연동으로 영업 채널화</li></ul>
+        <div class="plate"><div class="plate-cap">Plates — 디자인 시스템 · 로그인/가입 · 작업확인서 · 리드 CRM · 문서관리 · 정책 <span class="hint"></span></div><div class="plates dash dash-contain"><img src="images/wm_b2b/cover.png" loading="lazy" alt="B2B WEB 신규구축 2023.12–2024.04"><img src="images/wm_b2b/02.png" loading="lazy" alt="가다 BMC — 목표 고객(건설사·현장 관리자)"><img src="images/wm_b2b/03.png" loading="lazy" alt="가다 B2B Problem — 현장 관리자 불편"><img src="images/wm_b2b/04.png" loading="lazy" alt="가다 B2B 사용행태"><img src="images/wm_b2b/05.png" loading="lazy" alt="왜 사용하지 않을까 — 플로우 진단"><img src="images/wm_b2b/06.png" loading="lazy" alt="현장 관리자 인터뷰 설계"><img src="images/wm_b2b/08.png" loading="lazy" alt="로그인 — 현장관리 자동시스템"><img src="images/wm_b2b/09.png" loading="lazy" alt="회원가입 — 담당자 정보·전자서명"><img src="images/wm_b2b/10.png" loading="lazy" alt="회원가입 — 건설사 정보 검색"><img src="images/wm_b2b/11.png" loading="lazy" alt="회원가입 — 작업정보 입력"><img src="images/wm_b2b/12.png" loading="lazy" alt="리드 정보 CRM — 13.5만 건"><img src="images/wm_b2b/13.png" loading="lazy" alt="슬랙 알림 — 관리자웹 가입·인증 연동"><img src="images/wm_b2b/14.png" loading="lazy" alt="회원가입 완료 — 가다 오피스 신청"><img src="images/wm_b2b/15.png" loading="lazy" alt="문서관리 — 작업확인서 조회·필터"><img src="images/wm_b2b/17.png" loading="lazy" alt="작업확인서 PDF — 자동 생성·서명"><img src="images/wm_b2b/16.png" loading="lazy" alt="근로계약서 정책 — 도급사/현장별"><img src="images/wm_b2b/18.png" loading="lazy" alt="퇴직공제신고서 — 그룹/개별현장 정책"><img src="images/wm_b2b/19.png" loading="lazy" alt="설정 — 내정보·건설사·청구 정보"><img src="images/wm_b2b/01.png" loading="lazy" alt="디자인 시스템 — 컴포넌트"><img src="images/wm_b2b/07.png" loading="lazy" alt="설정 내정보 LNB"><img src="images/wm_b2b/20.png" loading="lazy" alt="알림내역 — 문서·공지"></div></div>
+      </article>
+      <article class="arch reveal">
+        <div class="at">Renewal · UX · PO·PM</div>
+        <h4>백오피스 v2 리뉴얼 — 운영자의 화면을 다시 짓다</h4>
+        <p class="as">기존 백오피스는 버튼이 상하좌우로 흩어지고, 의미를 알 수 없는 색과 과한 여백, 상세·수정 화면의 비대칭, 뒤섞인 명칭(현장담당자·가다 매니저·인솔자·명단전송대상…)으로 운영자가 매 화면을 새로 학습해야 했습니다. <b>전 메뉴 IA를 재정의</b>하고 공통 GNB·표·카드·버튼·토스트를 <b>디자인 시스템으로 토큰화</b>해, 근로자·현장·작업·지급·청구·이력 전 영역을 한 언어로 통일했습니다.</p>
+        <ul class="ak"><li>기존↔리뉴얼 메뉴를 1:1 매핑한 IA 전면 재설계 (이식·UI개선·신규구축 분류)</li><li>공통 레이아웃·카드·버튼·토스트·필터 컴포넌트 토큰화로 학습비용↓</li><li>근로자 상세/수정 비대칭 해소 · 만료 데이터 정리 · 명칭 통일</li></ul>
+        <div class="plate"><div class="plate-cap">Plates — 문제 진단 · IA · 공통 컴포넌트 · 근로자/현장/작업/지급/청구/이력 전 영역 <span class="hint"></span></div><div class="plates dash dash-contain"><img src="images/wm_backoffice_v2/01.png" loading="lazy" alt="기존 백오피스 문제 진단 — 7가지"><img src="images/wm_backoffice_v2/02.png" loading="lazy" alt="백오피스 리뉴얼 IA — 기존↔리뉴얼 매핑"><img src="images/wm_backoffice_v2/03.png" loading="lazy" alt="공통 레이아웃 — GNB·표"><img src="images/wm_backoffice_v2/04.png" loading="lazy" alt="공통 카드 UI·검색 팝업·상세 레이아웃"><img src="images/wm_backoffice_v2/05.png" loading="lazy" alt="공통 토스트·버튼·Width 케이스"><img src="images/wm_backoffice_v2/06.png" loading="lazy" alt="근로자 정보 메뉴"><img src="images/wm_backoffice_v2/07.png" loading="lazy" alt="근로자 정보 상세"><img src="images/wm_backoffice_v2/08.png" loading="lazy" alt="근로자 정보 수정"><img src="images/wm_backoffice_v2/09.png" loading="lazy" alt="현장 정보"><img src="images/wm_backoffice_v2/10.png" loading="lazy" alt="현장 정보 수정"><img src="images/wm_backoffice_v2/11.png" loading="lazy" alt="작업 정보"><img src="images/wm_backoffice_v2/12.png" loading="lazy" alt="일간 출역 현황"><img src="images/wm_backoffice_v2/13.png" loading="lazy" alt="근로자 상태 변경 이력"><img src="images/wm_backoffice_v2/14.png" loading="lazy" alt="인증 처리 이력"><img src="images/wm_backoffice_v2/15.png" loading="lazy" alt="현장 정보 변경 이력"><img src="images/wm_backoffice_v2/16.png" loading="lazy" alt="알림톡 발송 이력"><img src="images/wm_backoffice_v2/17.png" loading="lazy" alt="일일 마감"><img src="images/wm_backoffice_v2/18.png" loading="lazy" alt="지급 처리 내역"><img src="images/wm_backoffice_v2/19.png" loading="lazy" alt="지급 보류 이력"><img src="images/wm_backoffice_v2/20.png" loading="lazy" alt="현장별 공수"><img src="images/wm_backoffice_v2/21.png" loading="lazy" alt="월별 청구"><img src="images/wm_backoffice_v2/22.png" loading="lazy" alt="입금내역 조회"><img src="images/wm_backoffice_v2/23.png" loading="lazy" alt="영업 정보 — 건설사·리드 CRM"></div></div>
+      </article>
+    </div>
+    <div class="arch-grid">
+      <article class="arch reveal solo" style="padding-bottom:26px;">
+        <div class="at">Foundation · 서비스 기획</div>
+        <h4>인력 매칭 + 자재 커머스 동시 기획</h4>
+        <p class="as">건설 기능공 매칭 '아키맨'과 자재 커머스 '아키마켓'을 함께 기획·운영했습니다. 이때의 경험이 이후 가다와 어바웃피싱으로 이어지는 O2O·마켓플레이스 사고의 출발점이 되었습니다. 스마트스토어·자사몰 B2C와 기업회원 B2B를 함께 운영하고 SEO·상세페이지까지 폭넓게 다뤘습니다.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── APPROACH ───────── -->
+<section class="band recess" id="approach">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow"><span class="tick"></span>How I Work</div>
+      <h2 class="title">일하는 <em>방식</em>.</h2>
+      <p class="desc">도메인이 바뀌어도 변하지 않는 네 가지 원칙.</p>
+    </div>
+    <div class="approach" data-edit-list="approach">
+      <div class="app-card reveal">
+        <div class="rn">I.</div>
+        <h3>규제와 정산은 가장 먼저 검증한다</h3>
+        <p>결제는 되돌릴 수 없습니다. 선불충전은 화면보다 <b>전금법·선불업 요건부터</b> 검토했고, 정산 조건은 출시 후가 아니라 협상 단계에서 확정했습니다.</p>
+      </div>
+      <div class="app-card reveal">
+        <div class="rn">II.</div>
+        <h3>가장 비싼 문제부터 푸다</h3>
+        <p>자원이 적을수록 무엇을 <b>안 만들지</b> 먼저 정합니다. ERP는 청구·지급만, 예약은 외부 입점만 잘라 가장 큰 통증을 먼저 검증했습니다. 그게 제한된 자원의 해법입니다.</p>
+      </div>
+      <div class="app-card reveal">
+        <div class="rn">III.</div>
+        <h3>분리 KPI로 학습을 뽑는다</h3>
+        <p>합산하면 안 보이는 신호를 뗼어냅니다. 자사몰 ARPPU를 별도 KPI로 분리하자 개선점이 보였고, 인터뷰·VOC와 GA·DB 원본을 함께 봤습니다. <b>같은 숫자도 어떻게 쪼개느냐가 판단</b>입니다.</p>
+      </div>
+      <div class="app-card reveal">
+        <div class="rn">IV.</div>
+        <h3>외부 결정으로 증명한다</h3>
+        <p>성과는 말이 아니라 외부의 결정이 증명합니다. 대기업 협업(SK텔레콤 TMAP), 정부지원 4건 선정, 투자 유치까지 — 제 주장이 아닌 <b>계약·심사·자본</b>이 검증한 트랙입니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── CONTACT ───────── -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="eyebrow"><span class="tick"></span>Let's build</div>
+    <h2>다음 시장도,<br/><em>함께</em>.</h2>
+    <p>제약이 분명한 시장일수록 더 잘 풉니다. 함께 풀 문제가 있다면 언제든 연락 주세요.</p>
+    <div class="contact-actions">
+      <a href="mailto:banns0104@gmail.com" class="btn primary">이메일 보내기</a>
+      <a href="resume-payments.html" class="btn">이력서</a>
+      <a href="career-statement-payments.html" class="btn">경력기술서</a>
+      <a href="portfolio-deck-payments.html" class="btn">포트폴리오 덱</a>
+    </div>
+    <div class="contact-ledger">
+      <div class="item"><div class="l">Email</div><div class="v">banns0104@gmail.com</div></div>
+      <div class="item"><div class="l">Phone</div><div class="v">010-3333-3768</div></div>
+      <div class="item"><div class="l">Based</div><div class="v">Seoul, Korea</div></div>
+      <div class="item"><div class="l">Status</div><div class="v it">Open</div></div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot wrap">
+  <div class="colophon">
+    <span>© Hyunil Seo · 2026</span>
+    <span>Last revised 2026.05</span>
+    <span>Set in Newsreader · Noto Serif KR · Pretendard</span>
+  </div>
+</footer>
+
+<!-- ───────── LIGHTBOX ───────── -->
+<div id="imglb" aria-hidden="true">
+  <div class="lb-top">
+    <span class="lb-cap" id="lb-cap"></span>
+    <span class="lb-count" id="lb-count"></span>
+    <button class="lb-close" id="lb-close">닫기 ✕</button>
+  </div>
+  <div class="lb-stage" id="lb-stage">
+    <button class="lb-arrow prev" id="lb-prev" aria-label="이전">‹</button>
+    <img id="lb-img" src="" alt="" />
+    <button class="lb-arrow next" id="lb-next" aria-label="다음">›</button>
+  </div>
+  <div class="lb-strip" id="lb-strip"></div>
+</div>
+
+<script>
+(function(){
+  var lb = document.getElementById('imglb');
+  var stage = document.getElementById('lb-stage');
+  var lbImg = document.getElementById('lb-img');
+  var lbCap = document.getElementById('lb-cap');
+  var lbCount = document.getElementById('lb-count');
+  var lbStrip = document.getElementById('lb-strip');
+  var group = [];     /* current set of <img> in the clicked gallery */
+  var idx = -1;
+  var caption = '';
+
+  function buildStrip(){
+    lbStrip.innerHTML = '';
+    group.forEach(function(src, i){
+      var t = document.createElement('img');
+      t.src = src;
+      if(i===idx) t.className = 'active';
+      t.addEventListener('click', function(e){ e.stopPropagation(); show(i); });
+      lbStrip.appendChild(t);
+    });
+  }
+  function unzoom(){ stage.classList.remove('zoomed'); lbImg.style.transform=''; lbImg.style.transformOrigin='center center'; }
+  function show(i){
+    if(i<0) i = group.length-1;
+    if(i>=group.length) i = 0;
+    idx = i;
+    unzoom();
+    lbImg.src = group[idx];
+    lbCap.textContent = caption;
+    lbCount.textContent = (idx+1) + ' / ' + group.length;
+    Array.prototype.forEach.call(lbStrip.children, function(c, k){ c.className = (k===idx?'active':''); });
+    var act = lbStrip.children[idx];
+    if(act && act.scrollIntoView) act.scrollIntoView({inline:'center', block:'nearest'});
+  }
+  function open(container, startSrc){
+    group = Array.prototype.map.call(container.querySelectorAll('img'), function(im){ return im.src; });
+    var capEl = container.parentElement.querySelector('.plate-cap');
+    caption = capEl ? capEl.childNodes[0].textContent.trim() : '';
+    idx = group.indexOf(startSrc); if(idx<0) idx = 0;
+    buildStrip();
+    show(idx);
+    lb.classList.add('open');
+  }
+  function close(){ lb.classList.remove('open'); unzoom(); }
+  window.__openLB = function(container, startSrc){ open(container, startSrc); };
+
+  /* delegate clicks on any plate image */
+  document.addEventListener('click', function(e){
+    var img = e.target.closest('.plates img');
+    if(!img) return;
+    var container = img.closest('.plates');
+    if(!container) return;
+    e.stopPropagation();
+    open(container, img.src);
+  });
+
+  document.getElementById('lb-prev').addEventListener('click', function(e){ e.stopPropagation(); show(idx-1); });
+  document.getElementById('lb-next').addEventListener('click', function(e){ e.stopPropagation(); show(idx+1); });
+  document.getElementById('lb-close').addEventListener('click', function(e){ e.stopPropagation(); close(); });
+
+  /* click-to-zoom with pan */
+  stage.addEventListener('click', function(e){
+    if(e.target !== lbImg) return;
+    if(stage.classList.contains('zoomed')){ unzoom(); return; }
+    stage.classList.add('zoomed');
+    var r = lbImg.getBoundingClientRect();
+    var ox = ((e.clientX - r.left)/r.width)*100;
+    var oy = ((e.clientY - r.top)/r.height)*100;
+    lbImg.style.transformOrigin = ox+'% '+oy+'%';
+    lbImg.style.transform = 'scale(2.2)';
+  });
+  stage.addEventListener('mousemove', function(e){
+    if(!stage.classList.contains('zoomed')) return;
+    var r = stage.getBoundingClientRect();
+    var ox = ((e.clientX - r.left)/r.width)*100;
+    var oy = ((e.clientY - r.top)/r.height)*100;
+    lbImg.style.transformOrigin = ox+'% '+oy+'%';
+  });
+
+  document.addEventListener('keydown', function(e){
+    if(!lb.classList.contains('open')) return;
+    if(e.key==='Escape') close();
+    else if(e.key==='ArrowLeft') show(idx-1);
+    else if(e.key==='ArrowRight') show(idx+1);
+  });
+
+  var rev = document.querySelectorAll('.reveal');
+
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var id = a.getAttribute('href');
+      if(id.length>1){ var t=document.querySelector(id); if(t){ e.preventDefault(); t.scrollIntoView({behavior:'smooth',block:'start'}); } }
+    });
+  });
+})();
+</script>
+
+<script>
+/* ───────── IMAGE LOADING: skeleton wrap + fade-in ───────── */
+(function(){
+  var imgs=document.querySelectorAll('.plates img');
+  for(var i=0;i<imgs.length;i++){(function(img){
+    if(img.parentNode && img.parentNode.classList && img.parentNode.classList.contains('pframe')) return;
+    var f=document.createElement('span'); f.className='pframe';
+    img.parentNode.insertBefore(f,img); f.appendChild(img);
+    function orient(){ var w=img.naturalWidth, h=img.naturalHeight; if(w>0&&h>0){ f.classList.add(h>=w ? 'is-portrait' : 'is-landscape'); if(f.closest('.plates.aimob')){ f.style.setProperty('--ar', w + ' / ' + h); } } }
+    function ready(){orient();f.classList.add('ready');}
+    function fail(){f.classList.add('err');f.classList.add('is-landscape');f.classList.add('ready');}
+    if(img.complete && img.naturalWidth>0){ready();}
+    else { img.addEventListener('load',ready); img.addEventListener('error',fail); }
+  })(imgs[i]);}
+  document.querySelectorAll('.plates').forEach(function(p){
+    var first=p.querySelector('img');
+    if(first){ var sd=function(){var w=first.naturalWidth,h=first.naturalHeight;if(p.classList.contains('gal-phone')||p.classList.contains('gal-pc'))return;if(w>0&&h>0){p.classList.add(h>=w?'gal-phone':'gal-pc');}};
+      // dash galleries are ALWAYS desktop frames; aimob are ALWAYS phone frames (don't trust first-image orientation)
+      if(p.classList.contains('dash')||p.classList.contains('dev-pc')){p.classList.add('gal-pc');}
+      else if(p.classList.contains('aimob')||p.classList.contains('dev-phone')){p.classList.add('gal-phone');}
+      else if(first.complete&&first.naturalWidth>0)sd(); else first.addEventListener('load',sd); }
+    var n=p.querySelectorAll('img').length;
+    var cap=p.parentNode.querySelector('.plate-cap');
+    if(cap && n>1 && !cap.querySelector('.hint')){ var s=document.createElement('span'); s.className='hint'; s.textContent='\uC804\uCCB4 '+n+'\uC7A5 \u00B7 \uD074\uB9AD\uD558\uC5EC \uD655\uB300'; cap.appendChild(s); }
+  });
+})();
+</script>
+
+<script>
+/* ───────── Archive galleries → green cover poster, 1-click opens lightbox at image 1 ───────── */
+(function(){
+  var sections = [].slice.call(document.querySelectorAll('#archive .arch-head'));
+  sections.forEach(function(head){
+    var isWM = head.textContent.indexOf('Workmate')>=0 || head.textContent.indexOf('웍스메이트')>=0;
+    var isAF = head.textContent.indexOf('AboutFishing')>=0 || head.textContent.indexOf('어바웃피싱')>=0;
+    if(!isWM && !isAF) return;
+    var kicker = isWM ? 'Worksmate · 실제 구현 화면' : 'AboutFishing · 실제 앱 화면';
+    var grid = head.nextElementSibling;
+    if(!grid) return;
+    [].slice.call(grid.querySelectorAll('.arch')).forEach(function(card){
+      var plate = card.querySelector('.plate, .case-shots');
+      if(!plate) return;
+      var plates = plate.querySelector('.plates');
+      if(!plates) return;
+      var imgs = [].slice.call(plates.querySelectorAll('img'));
+      var n = imgs.length;
+      if(n < 1) return;
+      var title = ((card.querySelector('h4')||{}).textContent || '구현 화면').replace(/[—-].*$/,'').trim();
+      var view = document.createElement('div'); view.className='gview';
+      var cover = document.createElement('div'); cover.className='gcover'+(isAF?' gcover-af':'');
+      cover.innerHTML = '<div class="gc-inner"><div class="gc-kicker">'+kicker+'</div>'
+        + '<div class="gc-title">'+title+'</div>'
+        + '<div class="gc-more">구현 화면 '+n+'장 보기 <span class="chev">→</span></div></div>';
+      var body = document.createElement('div'); body.className='gbody';
+      var capEl = plate.querySelector('.plate-cap');
+      if(capEl) body.appendChild(capEl);
+      body.appendChild(plates);
+      view.appendChild(cover); view.appendChild(body);
+      plate.appendChild(view);
+      cover.addEventListener('click', function(){
+        var firstSrc = imgs[0] ? imgs[0].src : null;
+        if(window.__openLB) window.__openLB(plates, firstSrc);
+      });
+    });
+  });
+})();
+</script>
+
+<script>
+/* ───────── MOTION: scroll reveal + count-up + plate stagger ───────── */
+(function(){
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches || /[?&](print|noanim)/.test(location.search);
+  var revEls = [].slice.call(document.querySelectorAll('.reveal, .sec-head, .contact'));
+  var plateEls = [].slice.call(document.querySelectorAll('.plates'));
+  var numEls = [].slice.call(document.querySelectorAll('.stat-num, .kpi-ledger .kn'));
+  if(reduce){
+    revEls.forEach(function(e){e.classList.add('in');});
+    plateEls.forEach(function(e){e.classList.add('shown');});
+    return;
+  }
+  document.documentElement.classList.add('anim');
+  var bar=document.getElementById('progress-bar');
+  /* split cover headline into word-mask spans */
+  (function(){
+    var h1=document.querySelector('.cover h1'); if(!h1) return;
+    var nodes=Array.prototype.slice.call(h1.childNodes), out=[], idx=0;
+    function word(node,isText,text){var w=document.createElement('span');w.className='wr';var i=document.createElement('span');i.style.transitionDelay=(idx*0.06)+'s';idx++;if(isText){i.textContent=text;}else{i.appendChild(node.cloneNode(true));}w.appendChild(i);return w;}
+    nodes.forEach(function(n){
+      if(n.nodeType===3){ n.textContent.split(/(\s+)/).forEach(function(p){ if(p==='')return; if(/^\s+$/.test(p)){out.push(document.createTextNode(p));} else {out.push(word(n,true,p));} }); }
+      else if(n.tagName==='BR'){ out.push(n.cloneNode()); }
+      else { out.push(word(n,false)); }
+    });
+    h1.innerHTML=''; out.forEach(function(c){h1.appendChild(c);});
+    requestAnimationFrame(function(){requestAnimationFrame(function(){h1.classList.add('words-in');});});
+    setTimeout(function(){h1.classList.add('words-in');},450);
+    setTimeout(function(){h1.classList.add('reveal-done');},1700);
+  })();
+  function fmt(v,dec,comma){var s=v.toFixed(dec);if(comma){var p=s.split('.');p[0]=p[0].replace(/\B(?=(\d{3})+(?!\d))/g,',');s=p.join('.');}return s;}
+  function countUp(el){
+    var node=el.firstChild; if(!node||node.nodeType!==3) return;
+    var raw=node.textContent.trim();
+    if(!/^[+\-]?[\d,]+(\.\d+)?$/.test(raw)) return;
+    var sign=/^[+\-]/.test(raw)?raw[0]:''; var ns=raw.replace(/^[+\-]/,'');
+    var comma=ns.indexOf(',')>=0; var dec=(ns.split('.')[1]||'').length;
+    var target=parseFloat(ns.replace(/,/g,'')); if(isNaN(target)) return;
+    var dur=1100,t0=null;
+    function step(ts){if(!t0)t0=ts;var p=Math.min(1,(ts-t0)/dur);var e=1-Math.pow(1-p,3);node.textContent=sign+fmt(target*e,dec,comma);if(p<1)requestAnimationFrame(step);else node.textContent=sign+fmt(target,dec,comma);}
+    node.textContent=sign+fmt(0,dec,comma); requestAnimationFrame(step);
+  }
+  var ticking=false;
+  function check(){
+    ticking=false;
+    var vh=window.innerHeight, trig=vh*0.88;
+    if(bar){var de=document.documentElement;var sp=de.scrollTop||document.body.scrollTop||0;bar.style.width=Math.max(0,Math.min(1,sp/((de.scrollHeight-de.clientHeight)||1)))*100+'%';}
+    for(var i=revEls.length-1;i>=0;i--){var r=revEls[i].getBoundingClientRect();if(r.top<trig){revEls[i].classList.add('in');revEls.splice(i,1);}}
+    for(var j=plateEls.length-1;j>=0;j--){var p=plateEls[j],pr=p.getBoundingClientRect();if(pr.top<trig){var im=p.querySelectorAll('.pframe');for(var k=0;k<im.length;k++){im[k].style.animationDelay=(k*0.05)+'s';}p.classList.add('shown');plateEls.splice(j,1);}}
+    for(var m=numEls.length-1;m>=0;m--){var nr=numEls[m].getBoundingClientRect();if(nr.top<vh*0.96){countUp(numEls[m]);numEls.splice(m,1);}}
+  }
+  function onScroll(){ if(!ticking){ticking=true;requestAnimationFrame(check);} }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll);
+  window.addEventListener('load', check);
+  check();
+  // settle: re-check a few times after layout/fonts settle
+  var settle=0, si=setInterval(function(){check();if(++settle>6)clearInterval(si);},250);
+  // hard safety: nothing stays hidden past 4s
+  setTimeout(function(){
+    while(revEls.length){revEls.pop().classList.add('in');}
+    while(plateEls.length){plateEls.pop().classList.add('shown');}
+    while(numEls.length){countUp(numEls.pop());}
+  },4000);
+})();
+</script>
+
+<script src="assets/analytics.js"></script>
+<script src="cms/firebase-config.js"></script>
+<script src="cms/edit-engine.js"></script>
+</body>
+</html>

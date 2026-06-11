@@ -1,0 +1,117 @@
+/* ============================================================
+   Toss White — shared stylesheet
+   Used by portfolio.html · resume.html · career-statement.html
+   ============================================================ */
+
+:root{
+  /* Toss palette */
+  --ink:#191F28;
+  --body:#4E5968;
+  --sub:#6B7684;
+  --muted:#8B95A1;
+  --quiet:#B0B8C1;
+  --line:#E5E8EB;
+  --line-2:#F2F4F6;
+  --soft:#F9FAFB;
+  --soft-2:#F2F4F6;
+  --card:#FFFFFF;
+  --bg:#FFFFFF;
+  --bg-warm:#FBFBFC;
+  --brand:#3182F6;
+  --brand-strong:#1B64DA;
+  --brand-soft:#E8F1FF;
+  --good:#15803D;
+  --good-soft:#DCFCE7;
+  --warn:#D97706;
+  --danger:#E11D48;
+
+  /* Spacing — 8pt */
+  --s-1:8px; --s-2:16px; --s-3:24px; --s-4:32px;
+  --s-5:48px; --s-6:64px; --s-7:88px; --s-8:112px;
+
+  /* Shadows — Toss soft */
+  --sh-1:0 1px 0 rgba(0,0,0,0.04);
+  --sh-2:0 1px 0 rgba(0,0,0,0.04), 0 2px 8px rgba(20,28,40,0.04);
+  --sh-3:0 1px 0 rgba(0,0,0,0.04), 0 6px 20px rgba(20,28,40,0.06);
+  --sh-4:0 4px 16px rgba(20,28,40,0.06), 0 16px 48px rgba(20,28,40,0.08);
+
+  /* Radius */
+  --r-1:8px; --r-2:12px; --r-3:16px; --r-4:20px; --r-5:24px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0;}
+html,body{
+  font-family:'Pretendard','Pretendard Variable',-apple-system,BlinkMacSystemFont,sans-serif;
+  font-size:15.5px;line-height:1.65;letter-spacing:-0.015em;
+  color:var(--body);background:var(--bg);
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  font-feature-settings:"kern" 1, "ss01" 1;
+}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;display:block;}
+
+.tnum,.num{font-variant-numeric:tabular-nums;font-feature-settings:"tnum";}
+.inter{font-family:'Inter','Pretendard',sans-serif;font-variant-numeric:tabular-nums;}
+
+/* ── Buttons ────────── */
+.btn{
+  font-family:inherit;font-size:13.5px;font-weight:700;letter-spacing:-0.01em;
+  padding:11px 18px;border:1px solid var(--line);border-radius:var(--r-2);
+  background:var(--card);color:var(--ink);cursor:pointer;text-decoration:none;
+  display:inline-flex;align-items:center;gap:6px;line-height:1;
+  transition:background .15s, border-color .15s, color .15s, transform .05s;
+}
+.btn:active{transform:translateY(1px);}
+.btn:hover{background:var(--soft);}
+.btn.primary{background:var(--ink);color:#fff;border-color:var(--ink);}
+.btn.primary:hover{background:#000;}
+.btn.brand{background:var(--brand);color:#fff;border-color:var(--brand);}
+.btn.brand:hover{background:var(--brand-strong);border-color:var(--brand-strong);}
+
+/* ── Pills ────────── */
+.pill{
+  display:inline-flex;align-items:center;gap:6px;
+  background:var(--soft-2);color:var(--sub);
+  padding:5px 11px;border-radius:99px;
+  font-size:12px;font-weight:600;letter-spacing:-0.005em;
+}
+.pill.brand{background:var(--brand-soft);color:var(--brand-strong);}
+.pill.good{background:var(--good-soft);color:var(--good);}
+.pill.dark{background:var(--ink);color:#fff;}
+.pill.outline{background:transparent;border:1px solid var(--line);color:var(--ink);}
+
+/* ── Section heads ────────── */
+.section-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12px;font-weight:700;color:var(--brand);
+  letter-spacing:0.02em;margin-bottom:14px;
+}
+.section-eyebrow::before{
+  content:"";width:24px;height:2px;background:var(--brand);border-radius:2px;
+}
+.section-title{
+  font-size:36px;font-weight:800;color:var(--ink);
+  letter-spacing:-0.032em;line-height:1.18;
+}
+.section-title em{font-style:normal;color:var(--brand);}
+.section-desc{
+  margin-top:14px;font-size:15.5px;color:var(--sub);max-width:680px;line-height:1.7;
+}
+
+/* ── Hairline divider ────────── */
+hr.hair{border:none;height:1px;background:var(--line);margin:var(--s-3) 0;}
+
+/* ── Lightbox ────────── */
+#imglb{
+  position:fixed;inset:0;background:rgba(15,20,28,0.92);display:none;
+  align-items:center;justify-content:center;padding:32px;z-index:9000;cursor:zoom-out;
+}
+#imglb img{max-width:100%;max-height:100%;border-radius:8px;}
+
+/* ── Print ────────── */
+@media print{
+  html,body{background:#fff;font-size:11pt;}
+  .no-print,.toolbar,.nav{display:none!important;}
+  .page,section{break-inside:avoid;page-break-inside:avoid;}
+  .section-head{break-after:avoid;}
+}

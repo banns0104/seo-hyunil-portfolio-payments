@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S2C9BC9JKH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-S2C9BC9JKH');
+</script>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>서현일 — Payments Portfolio Deck · 결제 프로덕트 오너</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..600&family=Noto+Serif+KR:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&display=swap">
+<style>
+deck-stage:not(:defined){visibility:hidden;}
+:root{
+  --paper:#FBFAF7; --paper-2:#F4F2EB; --card:#FFFFFF;
+  --ink:#1B1A16; --ink-2:#2E2B23; --body:#46423A; --sub:#6E695C; --muted:#938C7B; --quiet:#B6AF9D;
+  --line:#E6E1D4; --line-2:#F0ECE2;
+  --accent:#1E5A40; --accent-deep:#143E2C; --accent-soft:#E5EAE1;
+  --serif:'Newsreader','Noto Serif KR',Georgia,serif;
+  --sans:'Pretendard','Pretendard Variable',-apple-system,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:#0d0c0a;font-family:var(--sans);}
+deck-stage{display:block;}
+section{background:var(--paper);overflow:hidden;}
+section.recess{background:var(--paper-2);}
+
+.pad{position:relative;height:100%;padding:104px 120px 96px;display:flex;flex-direction:column;}
+.runner{position:absolute;left:120px;right:120px;bottom:54px;display:flex;justify-content:space-between;align-items:baseline;font-family:var(--sans);font-size:24px;color:var(--muted);font-weight:600;letter-spacing:0.03em;}
+.runner .pg{font-family:var(--serif);font-style:italic;color:var(--accent);font-size:24px;}
+
+/* eyebrow */
+.eb{font-family:var(--sans);font-size:24px;font-weight:700;letter-spacing:0.24em;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;gap:16px;}
+.eb::before{content:"";width:42px;height:2px;background:var(--accent);}
+.eb.muted{color:var(--muted);}
+.eb.muted::before{background:var(--muted);}
+
+h1,h2,h3{font-family:var(--serif);color:var(--ink);font-weight:560;letter-spacing:-0.02em;}
+.serif{font-family:var(--serif);}
+em{font-style:italic;color:var(--accent);font-weight:500;}
+
+.tnum{font-variant-numeric:tabular-nums lining-nums;}
+
+/* COVER */
+.cover{justify-content:center;}
+.cover .topline{position:absolute;top:104px;left:120px;right:120px;display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--ink);padding-bottom:24px;}
+.cover .topline .n{font-family:var(--serif);font-size:30px;color:var(--ink);font-weight:560;}
+.cover .topline .n .en{font-style:italic;color:var(--muted);font-weight:420;margin-left:12px;font-size:0.8em;}
+.cover .topline .iss{font-family:var(--serif);font-style:italic;font-size:24px;color:var(--muted);}
+.cover h1{font-size:118px;line-height:1.02;letter-spacing:-0.03em;margin-bottom:44px;max-width:20ch;}
+.cover .sub{font-family:var(--serif);font-size:34px;color:var(--sub);font-weight:380;line-height:1.5;max-width:30ch;}
+.cover .sub b{color:var(--ink);font-weight:600;}
+.cover-nums{margin-top:66px;display:flex;border-top:2px solid var(--ink);}
+.cover-nums .cn{padding:34px 56px 0 0;border-right:1px solid var(--line);margin-right:56px;}
+.cover-nums .cn:last-child{border-right:none;margin-right:0;}
+.cover-nums .cn .v{font-family:var(--serif);font-size:66px;font-weight:540;color:var(--ink);letter-spacing:-0.03em;line-height:0.92;}
+.cover-nums .cn .v .u{font-size:0.4em;color:var(--accent);margin-left:2px;}
+.cover-nums .cn .l{font-family:var(--sans);font-size:24px;color:var(--sub);font-weight:600;margin-top:16px;letter-spacing:0.01em;}
+
+/* big numbers ledger */
+.ledger{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--ink);margin-top:auto;}
+.ledger .cell{padding:48px 44px 0 0;border-right:1px solid var(--line);}
+.ledger .cell:last-child{border-right:none;}
+.ledger .cap{font-family:var(--sans);font-size:24px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);margin-bottom:26px;}
+.ledger .big{font-family:var(--serif);font-size:128px;line-height:0.9;font-weight:520;color:var(--ink);letter-spacing:-0.03em;}
+.ledger .big .u{font-size:0.4em;color:var(--accent);}
+.ledger .lbl{font-family:var(--serif);font-size:27px;color:var(--ink);font-weight:480;margin-top:24px;line-height:1.35;}
+.ledger .note{font-family:var(--sans);font-size:24px;color:var(--sub);margin-top:10px;line-height:1.5;}
+
+/* section header */
+.shead{justify-content:center;}
+.shead .ix{font-family:var(--serif);font-style:italic;font-size:60px;color:var(--accent);margin-bottom:28px;}
+.shead h2{font-size:104px;line-height:1.04;letter-spacing:-0.03em;margin-bottom:36px;}
+.shead .desc{font-family:var(--serif);font-size:34px;color:var(--sub);font-weight:380;line-height:1.5;max-width:34ch;}
+.shead .desc b{color:var(--ink);font-weight:600;}
+
+/* generic title slide */
+.title-h{font-size:74px;line-height:1.08;letter-spacing:-0.024em;margin:30px 0 0;max-width:24ch;}
+.lead{font-family:var(--serif);font-size:33px;color:var(--body);font-weight:380;line-height:1.5;max-width:40ch;margin-top:30px;}
+.lead b{color:var(--ink);font-weight:600;}
+
+/* stat row */
+.statrow{display:grid;gap:0;margin-top:auto;border-top:2px solid var(--ink);}
+.statrow.c3{grid-template-columns:repeat(3,1fr);}
+.statrow.c2{grid-template-columns:repeat(2,1fr);}
+.statrow.c4{grid-template-columns:repeat(4,1fr);}
+.statrow .s{padding:46px 40px 0 0;border-right:1px solid var(--line);}
+.statrow .s:last-child{border-right:none;}
+.statrow .num{font-family:var(--serif);font-size:90px;line-height:0.92;font-weight:520;color:var(--ink);letter-spacing:-0.028em;}
+.statrow .num .u{font-size:0.36em;color:var(--accent);}
+.statrow .t{font-family:var(--serif);font-size:25px;color:var(--ink);font-weight:480;margin-top:22px;line-height:1.35;}
+.statrow .d{font-family:var(--sans);font-size:24px;color:var(--sub);margin-top:9px;line-height:1.4;}
+
+/* domains grid */
+.domains{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:54px;border-top:1px solid var(--line);border-left:1px solid var(--line);}
+.domains .d{padding:34px 36px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);}
+.domains .d .no{font-family:var(--serif);font-style:italic;font-size:26px;color:var(--accent);}
+.domains .d h3{font-family:var(--serif);font-size:36px;font-weight:560;color:var(--ink);margin:10px 0 8px;letter-spacing:-0.018em;}
+.domains .d p{font-family:var(--sans);font-size:24px;color:var(--sub);line-height:1.4;}
+
+/* two-col */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;flex:1;margin-top:40px;}
+.two.narrow{grid-template-columns:1.2fr 1fr;}
+.bullets{list-style:none;}
+.bullets li{position:relative;padding-left:34px;font-family:var(--serif);font-size:31px;color:var(--body);line-height:1.42;margin-bottom:26px;font-weight:400;}
+.bullets li::before{content:"";position:absolute;left:0;top:22px;width:18px;height:2px;background:var(--accent);}
+.bullets li b{color:var(--ink);font-weight:640;}
+
+/* pull quote slide */
+.quote-slide{justify-content:center;}
+.quote-slide .q{font-family:var(--serif);font-style:italic;font-size:76px;line-height:1.24;color:var(--ink);letter-spacing:-0.02em;font-weight:440;max-width:24ch;}
+.quote-slide .q .hi{color:var(--accent);}
+.quote-slide .by{font-family:var(--sans);font-size:24px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-top:48px;}
+
+/* principles */
+.principles{display:grid;grid-template-columns:repeat(3,1fr);gap:0;flex:1;margin-top:50px;border-top:1px solid var(--line);}
+.principles .p{padding:48px 44px 0 0;border-right:1px solid var(--line);}
+.principles .p:last-child{border-right:none;}
+.principles .rn{font-family:var(--serif);font-style:italic;font-size:40px;color:var(--accent);margin-bottom:30px;}
+.principles .p h3{font-family:var(--serif);font-size:40px;font-weight:560;color:var(--ink);margin-bottom:22px;line-height:1.14;letter-spacing:-0.018em;}
+.principles .p p{font-family:var(--sans);font-size:24px;color:var(--body);line-height:1.55;}
+
+/* chart */
+.chartwrap{flex:1;display:flex;flex-direction:column;justify-content:center;margin-top:30px;}
+
+/* context: market & service two-col */
+.context{display:grid;grid-template-columns:1fr 1fr;gap:0;flex:1;margin-top:44px;border-top:1px solid var(--line);}
+.context .cc{padding:44px 56px 0 0;border-right:1px solid var(--line);}
+.context .cc:last-child{border-right:none;padding-right:0;padding-left:56px;}
+.context .cc h3{font-family:var(--serif);font-size:38px;font-weight:560;color:var(--ink);letter-spacing:-0.018em;margin-bottom:24px;}
+.context .cc h3 .mk{font-family:var(--sans);font-size:24px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:14px;}
+.context .cc p{font-family:var(--serif);font-size:27px;line-height:1.5;color:var(--body);font-weight:400;letter-spacing:-0.008em;margin-bottom:18px;}
+.context .cc p b{color:var(--ink);font-weight:600;}
+.context .cc p em{color:var(--accent);}
+.context .cc ul{list-style:none;}
+.context .cc li{position:relative;padding-left:30px;font-family:var(--serif);font-size:26px;line-height:1.45;color:var(--body);margin-bottom:16px;}
+.context .cc li::before{content:"";position:absolute;left:0;top:18px;width:16px;height:2px;background:var(--accent);}
+.context .cc li b{color:var(--ink);font-weight:600;}
+
+/* problem callout */
+.problem{display:flex;flex-direction:column;gap:0;flex:1;margin-top:44px;border-top:1px solid var(--line);}
+.problem .pr{display:grid;grid-template-columns:64px 1fr;gap:30px;align-items:start;padding:34px 0;border-bottom:1px solid var(--line);}
+.problem .pr:last-child{border-bottom:none;}
+.problem .pr .pn{font-family:var(--serif);font-style:italic;font-size:44px;color:var(--quiet);line-height:1;}
+.problem .pr .pt{font-family:var(--serif);font-size:36px;font-weight:560;color:var(--ink);letter-spacing:-0.016em;margin-bottom:10px;line-height:1.18;}
+.problem .pr .pd{font-family:var(--sans);font-size:25px;line-height:1.5;color:var(--body);}
+.problem .pr .pd b{color:var(--accent);font-weight:700;}
+
+/* personas */
+.personas{display:grid;grid-template-columns:repeat(3,1fr);gap:0;flex:1;margin-top:46px;border-top:1px solid var(--line);}
+.personas .pc{padding:42px 44px 0 0;border-right:1px solid var(--line);}
+.personas .pc:nth-child(2){padding-left:44px;}
+.personas .pc:nth-child(3){padding-left:44px;}
+.personas .pc:last-child{border-right:none;}
+.personas .pc .pn{font-family:var(--serif);font-size:38px;font-weight:560;color:var(--ink);letter-spacing:-0.018em;}
+.personas .pc .pm{font-family:var(--sans);font-size:24px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:var(--accent);margin:14px 0 22px;}
+.personas .pc .pq{font-family:var(--serif);font-size:27px;line-height:1.42;color:var(--ink-2);padding:22px 0;border-top:1px solid var(--line-2);font-weight:420;}
+.personas .pc .pe{font-family:var(--sans);font-size:24px;line-height:1.5;color:var(--body);margin-top:20px;}
+.personas .pc .pe b{color:var(--accent);font-weight:700;}
+
+/* ── device frames ── */
+.phone{width:300px;flex:0 0 auto;background:#16140F;border-radius:38px;padding:9px;box-shadow:0 3px 8px rgba(27,26,22,.12),0 34px 64px rgba(27,26,22,.22);}
+.phone img{display:block;width:100%;border-radius:30px;background:var(--paper-2);}
+.phone-cap{margin-top:20px;text-align:center;font-family:var(--sans);font-size:24px;font-weight:600;color:var(--sub);letter-spacing:0.01em;}
+.phone-cap b{display:block;font-family:var(--serif);font-size:28px;color:var(--ink);font-weight:560;margin-bottom:4px;letter-spacing:-0.01em;}
+.phone-row{display:flex;gap:44px;justify-content:center;align-items:flex-start;flex:1;margin-top:30px;}
+.phone-row .col{display:flex;flex-direction:column;align-items:center;}
+.phone-row.tilt .col:nth-child(odd){transform:translateY(18px);}
+.phone-row .phone img{aspect-ratio:1/2.04;object-fit:cover;object-position:top center;}
+
+/* showcase: text left + phones right */
+.showcase{display:grid;grid-template-columns:1fr 1.1fr;gap:70px;align-items:center;flex:1;margin-top:36px;}
+.showcase .phones{display:flex;gap:34px;justify-content:center;}
+.showcase .phone{width:262px;}
+.move3{display:flex;flex-direction:column;gap:24px;}
+.move3 .m{display:grid;grid-template-columns:42px 1fr;gap:18px;align-items:start;}
+.move3 .m .rn{font-family:var(--serif);font-style:italic;font-size:30px;color:var(--accent);line-height:1;}
+.move3 .m .mt{font-family:var(--sans);font-size:24px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;}
+.move3 .m p{font-family:var(--serif);font-size:25px;line-height:1.42;color:var(--body);font-weight:400;letter-spacing:-0.008em;}
+.move3 .m p b{color:var(--ink);font-weight:600;}
+.move3 .m p em{color:var(--accent);}
+
+/* laptop / browser frame for dashboards */
+.browser{background:#16140F;border-radius:16px;padding:0;overflow:hidden;box-shadow:0 4px 10px rgba(27,26,22,.12),0 40px 80px rgba(27,26,22,.24);width:100%;}
+.browser .bar{display:flex;align-items:center;gap:9px;padding:16px 20px;}
+.browser .bar i{width:13px;height:13px;border-radius:50%;background:#48443c;display:block;}
+.browser .bar .addr{margin-left:18px;height:24px;flex:1;border-radius:7px;background:#272318;}
+.browser img{display:block;width:100%;background:var(--paper-2);}
+.dash-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;flex:1;margin-top:30px;align-content:center;}
+.dash-single{flex:1;display:flex;align-items:center;margin-top:30px;}
+
+/* screenshot reveal animation when slide active */
+@media (prefers-reduced-motion:no-preference){
+  .phone,.browser{opacity:0;transform:translateY(34px) scale(.97);}
+  section[data-deck-active] .phone,section[data-deck-active] .browser{opacity:1;transform:none;transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);}
+  section[data-deck-active] .phone-row .col:nth-child(2) .phone{transition-delay:.08s;}
+  section[data-deck-active] .phone-row .col:nth-child(3) .phone{transition-delay:.16s;}
+  section[data-deck-active] .phone-row .col:nth-child(4) .phone{transition-delay:.24s;}
+  section[data-deck-active] .phone-row .col:nth-child(5) .phone{transition-delay:.32s;}
+  .phone-cap{opacity:0;}
+  section[data-deck-active] .phone-cap{opacity:1;transition:opacity .6s ease .4s;}
+}
+
+/* closing */
+.closing{justify-content:center;align-items:flex-start;}
+/* impact board */
+.impact{display:grid;grid-template-columns:repeat(3,1fr);gap:0;flex:1;margin-top:44px;border-top:2px solid var(--ink);}
+.impact .ic{padding:46px 50px 0 0;border-right:1px solid var(--line);}
+.impact .ic:nth-child(2){padding-left:50px;}
+.impact .ic:nth-child(3){padding-left:50px;}
+.impact .ic:last-child{border-right:none;padding-right:0;}
+.impact .ic .cat{font-family:var(--sans);font-size:24px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent);margin-bottom:34px;}
+.impact .ic .row{margin-bottom:30px;}
+.impact .ic .row:last-child{margin-bottom:0;}
+.impact .ic .row .n{font-family:var(--serif);font-size:56px;font-weight:540;color:var(--ink);letter-spacing:-0.026em;line-height:1;}
+.impact .ic .row .n .u{font-size:0.46em;color:var(--accent);margin-left:2px;}
+.impact .ic .row .t{font-family:var(--sans);font-size:24px;color:var(--sub);font-weight:600;margin-top:12px;line-height:1.4;}
+/* takeaway (closing) */
+.takeaway{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:2px solid var(--ink);padding-top:36px;margin:0 0 46px;}
+.takeaway .tk{padding:0 46px;border-right:1px solid var(--line);}
+.takeaway .tk:first-child{padding-left:0;}
+.takeaway .tk:last-child{border-right:none;padding-right:0;}
+.takeaway .tk .rn{font-family:var(--serif);font-style:italic;font-size:32px;color:var(--accent);}
+.takeaway .tk h4{font-family:var(--serif);font-size:32px;font-weight:560;color:var(--ink);letter-spacing:-0.016em;margin:16px 0 12px;line-height:1.16;}
+.takeaway .tk p{font-family:var(--sans);font-size:24px;line-height:1.5;color:var(--body);}
+.closing h2{font-size:104px;line-height:1.08;letter-spacing:-0.03em;margin:24px 0 40px;padding-bottom:0.04em;}
+.closing h2 .hi{color:var(--accent);}
+.closing .contact{display:grid;grid-template-columns:repeat(4,auto);gap:0;border-top:2px solid var(--ink);padding-top:40px;margin-top:30px;}
+.closing .contact .i{padding-right:56px;margin-right:56px;border-right:1px solid var(--line);}
+.closing .contact .i:last-child{border-right:none;}
+.closing .contact .l{font-family:var(--sans);font-size:24px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;}
+.closing .contact .v{font-family:var(--serif);font-size:30px;color:var(--ink);font-weight:500;}
+em,.ix,.iss,.rn{font-family:'Cormorant Garamond','Noto Serif KR',Georgia,serif!important;font-synthesis:none;}
+</style>
+</head>
+<body>
+
+<deck-stage width="1920" height="1080" no-rail data-edit-root>
+
+  <!-- 01 · COVER -->
+  <section data-label="Cover">
+    <div class="pad cover">
+      <div class="topline">
+        <div class="n">서현일 <span class="en">Hyunil Seo</span></div>
+        <div class="iss">Payments Portfolio · 2026</div>
+      </div>
+      <h1>결제는 되돌릴 수 없기에, <em>구조부터</em> 검증합니다.</h1>
+      <div class="sub"><b>결제·머니·정산을 0→1로 설계하고 PG와 직접 협상한 프로덕트 오너</b>입니다. 9개 도메인 슈퍼앱은 이 결제 구조가 작동한 무대입니다.</div>
+      <div class="cover-nums">
+        <div class="cn"><div class="v tnum">2.53<span class="u">%</span></div><div class="l">PG 수수료 협상 · VAT 포함</div></div>
+        <div class="cn"><div class="v tnum">W+5</div><div class="l">주정산 전환 · 첫 제안 W+20 단축</div></div>
+        <div class="cn"><div class="v tnum">30<span class="u">%</span></div><div class="l">머니 사용률 · 결제 회원 매출 대비</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 · THESIS -->
+  <section data-label="Thesis" class="recess">
+    <div class="pad quote-slide">
+      <div class="q">결제 조건은 한 번 정해지면,<br/><span class="hi">모든 거래에</span> 곱해집니다.</div>
+      <div class="by">Payments · 정산 · 선불충전 — 결제 프로덕트 오너 서현일</div>
+      <div class="runner"><span>Thesis</span><span class="pg">01</span></div>
+    </div>
+  </section>
+
+  <!-- 04 · PROGRESSION -->
+  <section data-label="Progression">
+    <div class="pad">
+      <div class="eb">Scope Expansion</div>
+      <h2 class="title-h">책임 범위가 <em>단계별로</em> 넓어졌습니다.</h2>
+      <div class="lead" style="margin-top:24px;max-width:48ch;">단일 도메인 기획에서 시작해 9개 도메인 총괄, 그리고 결제·자금집행까지. <b>직책이 아니라 책임 범위로</b> 읽히는 성장입니다.</div>
+      <div class="statrow c4" style="margin-top:64px;">
+        <div class="s"><div class="num">단일</div><div class="t">도메인 기획</div><div class="d">한 제품 설계·운영</div></div>
+        <div class="s"><div class="num">9개</div><div class="t">도메인 총괄</div><div class="d">슈퍼앱 전 영역</div></div>
+        <div class="s"><div class="num">결제·정산</div><div class="t">정책 책임</div><div class="d">수익 구조 설계</div></div>
+        <div class="s"><div class="num">사업</div><div class="t">의사결정·자금집행</div><div class="d">외부 파트너십 협상</div></div>
+      </div>
+      <div class="runner"><span>서현일 · PM · PO · CPO</span><span class="pg">02</span></div>
+    </div>
+  </section>
+
+  <!-- 05 · CHAPTER 1 -->
+  <section data-label="Ch.1 어바웃피싱" class="recess">
+    <div class="pad shead">
+      <div class="ix">Chapter 01 · Current</div>
+      <h2>어바웃피싱 <em>AboutFishing</em></h2>
+      <div class="desc">낚시 인구 약 800만 명을 위한 <b>커뮤니티 × 커머스 슈퍼앱</b>. 등기이사·CPO로 아홉 개 도메인을 총괄합니다.</div>
+      <div class="runner"><span>Chapter 01</span><span class="pg">03</span></div>
+    </div>
+  </section>
+
+  <!-- 05b · MARKET & SERVICE -->
+  <section data-label="시장과 서비스">
+    <div class="pad">
+      <div class="eb">Market &amp; Service — 시장과 서비스</div>
+      <h2 class="title-h" style="margin-bottom:0;">800만 낚시 인구, <em>흩어진 경험</em>.</h2>
+      <div class="context">
+        <div class="cc">
+          <h3><span class="mk">산업 구조</span>공급이 파편화된 4조 시장</h3>
+          <ul>
+            <li>국내 낚시 인구 <b>약 800만 명</b>, 시장 규모 4조원대</li>
+            <li>선박 예약은 전화·단톡방, 장비는 외부몰, 정보는 블로그로 <b>흩어져</b> 있었습니다</li>
+            <li>고관여·고단가 시장이지만 <b>한 곳에서 끝나는 경험</b>이 없었습니다</li>
+          </ul>
+        </div>
+        <div class="cc">
+          <h3><span class="mk">서비스</span>한 앱에서 끝나는 낚시 라이프</h3>
+          <p><b>커뮤니티 → 예약 → 쇼핑 → 보상</b>의 순환을 하나의 앱으로 묶었습니다.</p>
+          <p>아홉 개 도메인이 같은 경험을 공유하며, <em>커뮤니티에서 시작한 유저가 예약·결제까지</em> 한 흐름으로 이어집니다.</p>
+        </div>
+      </div>
+      <div class="runner"><span>어바웃피싱 · 시장</span><span class="pg">04</span></div>
+    </div>
+  </section>
+
+  <!-- 05c · PERSONA -->
+  <section data-label="페르소나" class="recess">
+    <div class="pad">
+      <div class="eb">Persona — 세 개의 진입점</div>
+      <h2 class="title-h" style="margin-bottom:0;">한 시장, <em>세 가지</em> 낚시인.</h2>
+      <div class="personas">
+        <div class="pc">
+          <div class="pn">김영수 · 50대</div>
+          <div class="pm">베테랑 · 예약 진입</div>
+          <div class="pq">"매주 새벽 출조합니다. 좋은 배를 잡으려 단톡방 세 개를 봐요."</div>
+          <div class="pe">예약 검색 → 조황 → 선박 예약. <b>예약 ARPPU 24.87만원</b>, 최고가 결제층.</div>
+        </div>
+        <div class="pc">
+          <div class="pn">박지훈 · 30대</div>
+          <div class="pm">입문자 · 커뮤니티 진입</div>
+          <div class="pq">"어디서 뭘 잡는지부터 모르겠고, 장비도 막막합니다."</div>
+          <div class="pe">커뮤니티 → 챔피언십 → 쇼핑. <b>머니 적립</b>으로 첫 결제를 묶습니다.</div>
+        </div>
+        <div class="pc">
+          <div class="pn">이정민 · 40대</div>
+          <div class="pm">가족형 · 홈 진입</div>
+          <div class="pq">"가족이랑 쉽게 다녀올 만한 곳을 알려주세요."</div>
+          <div class="pe">홈 → 포인트맵 → 길안내 → 예약. <b>TMAP 협업</b>의 핵심 페르소나.</div>
+        </div>
+      </div>
+      <div class="runner"><span>어바웃피싱 · 페르소나</span><span class="pg">05</span></div>
+    </div>
+  </section>
+
+  <!-- 05d · PROBLEM -->
+  <section data-label="문제 인식">
+    <div class="pad">
+      <div class="eb">Problem — CPO로서 진단한 문제</div>
+      <h2 class="title-h" style="margin-bottom:0;">합류 당시, 세 가지가 <em>비어</em> 있었습니다.</h2>
+      <div class="problem">
+        <div class="pr">
+          <div class="pn">i.</div>
+          <div><div class="pt">매출이 외부로 샜습니다</div><div class="pd">커뮤니티 트래픽은 있었지만 구매 동선이 외부몰로 흘러, <b>앱 안에서 끝나는 매출이 없었습니다</b>.</div></div>
+        </div>
+        <div class="pr">
+          <div class="pn">ii.</div>
+          <div><div class="pt">고단가 예약을 못 받고 있었습니다</div><div class="pd">가장 비싼 선상 예약이 전화·단톡으로만 이뤄져, <b>거래 데이터도 매출도 잡히지 않았습니다</b>.</div></div>
+        </div>
+        <div class="pr">
+          <div class="pn">iii.</div>
+          <div><div class="pt">아홉 도메인이 따로 놀았습니다</div><div class="pd">화면마다 경험이 달라 신규 도메인을 붙일수록 흩어졌고, <b>하나의 슈퍼앱으로 묶을 기준</b>이 없었습니다.</div></div>
+        </div>
+      </div>
+      <div class="runner"><span>어바웃피싱 · 문제</span><span class="pg">06</span></div>
+    </div>
+  </section>
+
+  <!-- P1 · PAYMENTS PROBLEM -->
+  <section data-label="결제 문제" class="recess">
+    <div class="pad">
+      <div class="eb">Payments Problem — 결제·정산·규제</div>
+      <h2 class="title-h" style="margin-bottom:0;">거래가 늘수록, 결제 구조가 <em>비싸졌습니다</em>.</h2>
+      <div class="problem">
+        <div class="pr">
+          <div class="pn">i.</div>
+          <div><div class="pt">월정산이 현금을 묶었습니다</div><div class="pd">정산 협의 요청에 돌아온 첫 제안은 <b>W+20 주정산</b> — 수수료 인하 효과가 지연으로 상쇄될 조건이었습니다.</div></div>
+        </div>
+        <div class="pr">
+          <div class="pn">ii.</div>
+          <div><div class="pt">보상이 비용으로만 샜습니다</div><div class="pd">포인트가 결제·리텐션으로 이어지지 않고 <b>일방적으로 소진되는 비용</b>이었습니다.</div></div>
+        </div>
+        <div class="pr">
+          <div class="pn">iii.</div>
+          <div><div class="pt">선불은 규제 판단이 먼저였습니다</div><div class="pd">전자금융거래법·선불업 등록 요건을 모르고 설계하면 <b>출시 후 되돌릴 수 없는 리스크</b>가 됩니다.</div></div>
+        </div>
+      </div>
+      <div class="runner"><span>Payments · 문제</span><span class="pg">07</span></div>
+    </div>
+  </section>
+
+  <!-- P2 · PG NEGOTIATION -->
+  <section data-label="PG 협상">
+    <div class="pad">
+      <div class="eb">Action 01 — PG 수수료·정산 직접 협상</div>
+      <h2 class="title-h">토스페이먼츠와 <em>2.53% · W+5</em>.</h2>
+      <div class="two narrow">
+        <ul class="bullets">
+          <li>거래액 추이·건단가·환불률을 정리해 <b>데이터로 협상</b>했습니다.</li>
+          <li>정산 <b>빈도(월→주)와 지연 일수를 분리</b>해 기회비용을 산정했습니다.</li>
+          <li><b>보증보험 증액을 조건으로 W+20 → W+5</b>로 당겼습니다.</li>
+          <li>신규 PG + 자체 선불 결합 — <b>PG 교체 설계 중</b>입니다.</li>
+          <li>협상 문서 원본 공개 — <a href="https://banns0104.github.io/tosspayments-negotiation/" target="_blank" rel="noopener" style="color:inherit;">재검토 요청서 ↗</a> · <a href="https://banns0104.github.io/tosspayments-negotiation/2026-04-20/" target="_blank" rel="noopener" style="color:inherit;">W+N 비교 분석 ↗</a></li>
+        </ul>
+        <div>
+          <div class="statrow c2" style="border-top:2px solid var(--ink);">
+            <div class="s"><div class="num tnum">2.53<span class="u">%</span></div><div class="t">PG 수수료 · VAT 포함</div></div>
+            <div class="s"><div class="num">W+5</div><div class="t">주정산 전환 · W+20 제안 단축</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="runner"><span>Payments · PG 협상</span><span class="pg">08</span></div>
+    </div>
+  </section>
+
+  <!-- P3 · MONEY 0→1 -->
+  <section data-label="머니 0→1" class="recess">
+    <div class="pad">
+      <div class="eb">Action 02 — 선불충전 '머니' 0→1</div>
+      <h2 class="title-h">보상이 <em>결제를 묶는</em> 구조.</h2>
+      <div class="two narrow">
+        <ul class="bullets">
+          <li>화면보다 <b>전자금융거래법·선불전자지급수단 등록 요건부터</b> 직접 검토해 설계 경계를 그었습니다.</li>
+          <li>충전·적립·소멸·전환 정책과 어뷰징 방어를 한 묶음으로 설계했습니다.</li>
+          <li>도메인별 적립률 차등으로 머니가 쌓일수록 <b>자사몰 결제로 돌아오게</b> 만들었습니다.</li>
+        </ul>
+        <div>
+          <div class="statrow c2" style="border-top:2px solid var(--ink);">
+            <div class="s"><div class="num tnum">30<span class="u">%</span></div><div class="t">머니 사용률 · 결제 회원 매출 대비</div></div>
+            <div class="s"><div class="num tnum">+34<span class="u">%</span></div><div class="t">자사몰 ARPPU 89,925원</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="runner"><span>Payments · 머니</span><span class="pg">09</span></div>
+    </div>
+  </section>
+
+  <!-- 06 · 9 DOMAINS -->
+  <section data-label="9 Domains">
+    <div class="pad">
+      <div class="eb">슈퍼앱 — 9개 도메인</div>
+      <h2 class="title-h">하나의 앱에서 낚시의 처음부터 끝까지.</h2>
+      <div class="domains">
+        <div class="d"><div class="no">01</div><h3>홈</h3><p>첫 30초의 진입 동선</p></div>
+        <div class="d"><div class="no">02</div><h3>쇼핑</h3><p>진열부터 결제까지 풀 퍼널</p></div>
+        <div class="d"><div class="no">03</div><h3>예약</h3><p>선박 · 조황 · 얼라이언스</p></div>
+        <div class="d"><div class="no">04</div><h3>커뮤니티</h3><p>매일 들어오는 코어</p></div>
+        <div class="d"><div class="no">05</div><h3>중고장터</h3><p>C2C 거래 상태머신</p></div>
+        <div class="d"><div class="no">06</div><h3>머니</h3><p>리텐션을 묶는 보상</p></div>
+        <div class="d"><div class="no">07</div><h3>마이 · 가입</h3><p>3단계 온보딩</p></div>
+        <div class="d"><div class="no">08</div><h3>알림 · CS</h3><p>푸시와 채널톡 통합</p></div>
+        <div class="d"><div class="no">09</div><h3>챔피언십</h3><p>대회 문화 활성화</p></div>
+      </div>
+      <div class="runner"><span>어바웃피싱</span><span class="pg">10</span></div>
+    </div>
+  </section>
+
+  <!-- 06b · APP TOUR -->
+  <section data-label="앱 투어">
+    <div class="pad">
+      <div class="eb">Product Tour — 실제 화면</div>
+      <h2 class="title-h" style="margin-bottom:0;">단순 커머스가 아닌, <em>하나의 슈퍼앱</em>.</h2>
+      <div class="phone-row tilt" style="gap:30px;margin-top:24px;">
+        <div class="col"><div class="phone" style="width:248px;"><img src="images/af_home/1.jpg" alt="홈"></div><div class="phone-cap"><b>홈</b>첫 30초 진입</div></div>
+        <div class="col"><div class="phone" style="width:248px;"><img src="images/af_booking_flow/2.png" alt="예약"></div><div class="phone-cap"><b>예약</b>선박·조황</div></div>
+        <div class="col"><div class="phone" style="width:248px;"><img src="images/af_community/1.jpg" alt="커뮤니티"></div><div class="phone-cap"><b>커뮤니티</b>매일 코어</div></div>
+        <div class="col"><div class="phone" style="width:248px;"><img src="images/af_pointmap/1.png" alt="포인트맵"></div><div class="phone-cap"><b>포인트맵</b>검색 유입</div></div>
+        <div class="col"><div class="phone" style="width:248px;"><img src="images/af_aichat_v2/2.png" alt="AI 추천"></div><div class="phone-cap"><b>AI 추천</b>대화→예약</div></div>
+      </div>
+      <div class="runner"><span>어바웃피싱 · 앱 투어</span><span class="pg">11</span></div>
+    </div>
+  </section>
+
+  <!-- 07 · REVENUE 2025 -->
+  <section data-label="2025 매출">
+    <div class="pad">
+      <div class="eb">2025 — 사업 운영</div>
+      <h2 class="title-h">연매출 <em>14.26억</em>, KPI의 97.6%.</h2>
+      <div class="two narrow">
+        <ul class="bullets">
+          <li>매출을 <b>네 채널로 다각화</b>해 단일 의존을 끊었습니다.</li>
+          <li>월별 달성률은 최고 <b>124%</b>까지 올랐습니다.</li>
+          <li>전 도메인 지표를 추적하며 마케팅·운영을 정렬했습니다.</li>
+        </ul>
+        <div>
+          <div class="statrow c2" style="border-top:2px solid var(--ink);">
+            <div class="s"><div class="num tnum">13.21<span class="u">억</span></div><div class="t">사업 KPI</div></div>
+            <div class="s"><div class="num tnum">14.26<span class="u">억</span></div><div class="t">실제 달성</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="runner"><span>어바웃피싱 · 매출</span><span class="pg">12</span></div>
+    </div>
+  </section>
+
+  <!-- 08 · 2026 BURST -->
+  <section data-label="2026 폭발성장">
+    <div class="pad">
+      <div class="eb">2026 1분기 — 단월 매출</div>
+      <h2 class="title-h">넉 달 만에 <em>10배</em>.</h2>
+      <div class="chartwrap">
+        <svg viewBox="0 0 1480 440" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;">
+          <line x1="70" y1="380" x2="1440" y2="380" stroke="#D8D1BF" stroke-width="2"/>
+          <line x1="70" y1="250" x2="1440" y2="250" stroke="#E4DECF" stroke-width="1.5" stroke-dasharray="3 8"/>
+          <line x1="70" y1="120" x2="1440" y2="120" stroke="#E4DECF" stroke-width="1.5" stroke-dasharray="3 8"/>
+          <text x="58" y="386" font-family="Newsreader,serif" font-size="24" fill="#938C7B" text-anchor="end">0</text>
+          <text x="58" y="256" font-family="Newsreader,serif" font-size="24" fill="#938C7B" text-anchor="end">80M</text>
+          <text x="58" y="126" font-family="Newsreader,serif" font-size="24" fill="#938C7B" text-anchor="end">160M</text>
+          <g fill="#1B1A16">
+            <rect x="120" y="358" width="60" height="22"/>
+            <rect x="430" y="316" width="60" height="64"/>
+          </g>
+          <g fill="#1E5A40">
+            <rect x="740" y="262" width="60" height="118"/>
+            <rect x="1050" y="148" width="60" height="232"/>
+          </g>
+          <rect x="1330" y="148" width="60" height="232" fill="#1E5A40"/>
+          <text x="150" y="416" font-family="Newsreader,serif" font-size="24" fill="#6E695C" text-anchor="middle">2026.01</text>
+          <text x="460" y="416" font-family="Newsreader,serif" font-size="24" fill="#6E695C" text-anchor="middle">02</text>
+          <text x="770" y="416" font-family="Newsreader,serif" font-size="24" fill="#6E695C" text-anchor="middle">03</text>
+          <text x="1080" y="416" font-family="Newsreader,serif" font-size="24" fill="#1E5A40" font-weight="600" text-anchor="middle">04</text>
+          <text x="160" y="345" font-family="Newsreader,serif" font-size="24" fill="#938C7B" text-anchor="middle">14.5M</text>
+          <text x="1090" y="132" font-family="Newsreader,serif" font-size="26" fill="#1E5A40" font-weight="600" text-anchor="middle">143M</text>
+          <text x="1360" y="120" font-family="Newsreader,serif" font-style="italic" font-size="64" font-weight="600" fill="#1E5A40" text-anchor="middle">×10</text>
+        </svg>
+      </div>
+      <div class="lead" style="margin-top:0;">1월 1,450만원에서 4월 1.43억으로. <b>MAU도 3배</b>로 함께 늘었습니다.</div>
+      <div class="runner"><span>어바웃피싱 · 성장</span><span class="pg">13</span></div>
+    </div>
+  </section>
+
+  <!-- 11b · AI × CPO -->
+  <section data-label="AI × CPO" class="recess">
+    <div class="pad">
+      <div class="eb">AI × CPO — 적극 활용</div>
+      <h2 class="title-h" style="margin:18px 0 0;">AI로 제품과 <em>일하는 방식</em>을 바꿉니다.</h2>
+      <div class="showcase" style="grid-template-columns:1fr 1.2fr;">
+        <ul class="bullets" style="font-size:30px;">
+          <li><b>AI 추천·예약 서비스</b> — Gemini API·GCP·자사 DB로 대화 한 줄에 선박 추천→예약.</li>
+          <li><b>AI 기획 파이프라인</b> — 백로그→PRD→정책→스토리보드→프로토타입 공수 대폭 단축.</li>
+          <li><b>직접 빌드</b> — 간단한 기획과 사내 도구는 외주 없이 직접 만듭니다.</li>
+        </ul>
+        <div class="phones"><div class="phone" style="width:264px;"><img src="images/af_aichat_v2/1.png" alt="AI 추천·예약 — 종합"></div><div class="phone" style="width:264px;"><img src="images/af_aichat_v2/3.png" alt="AI 추천·예약 — 채비추천"></div></div>
+      </div>
+      <div class="lead" style="margin-top:12px;font-size:28px;">반복 산출물은 AI에 위임하고, <b>판단·검증과 의사결정</b>에 시간을 다시 씁니다.</div>
+      <div class="runner"><span>어바웃피싱 · AI</span><span class="pg">14</span></div>
+    </div>
+  </section>
+  <!-- 09 · BOOKING -->
+  <section data-label="예약 얼라이언스">
+    <div class="pad">
+      <div class="eb">예약 · 얼라이언스</div>
+      <h2 class="title-h" style="margin-bottom:0;">새 도메인이 넉 달 만에 <em>주력</em>이 됐습니다.</h2>
+      <div class="showcase">
+        <div class="move3">
+          <div class="m"><div class="rn">i.</div><div><div class="mt">왜 했나</div><p>선상 낚시는 <b>결제까지 단계가 가장 많은</b> 도메인. 4조 시장의 본질은 공급의 분산이었습니다.</p></div></div>
+          <div class="m"><div class="rn">ii.</div><div><div class="mt">어떻게 했나</div><p>자사 직판이 아닌 <em>외부 사업자 입점</em>만 열고, 조황 데이터를 예약 동선에 붙였습니다.</p></div></div>
+          <div class="m"><div class="rn">iii.</div><div><div class="mt">무엇이 남았나</div><p>4개월 누적 <b>3.63억</b> · 월 판매 <b>86배</b> · 예약 ARPPU <b>24.87만원</b>.</p></div></div>
+        </div>
+        <div class="phones">
+          <div class="phone"><img src="images/af_booking_flow/1.png" alt="예약 탐색"></div>
+          <div class="phone"><img src="images/af_booking_flow/3.png" alt="선박·결제"></div>
+        </div>
+      </div>
+      <div class="runner"><span>어바웃피싱 · 예약</span><span class="pg">15</span></div>
+    </div>
+  </section>
+
+  <!-- 10 · LOYALTY / ARPPU -->
+  <section data-label="쇼핑 · ARPPU" class="recess">
+    <div class="pad">
+      <div class="eb">커머스 · 자사몰</div>
+      <h2 class="title-h" style="margin-bottom:0;">외부로 새던 매출을 <em>우리 몰로</em>.</h2>
+      <div class="showcase">
+        <div class="move3">
+          <div class="m"><div class="rn">i.</div><div><div class="mt">왜 했나</div><p>구매 동선이 외부 쇼핑몰로 새고, 매출의 73%가 스마트스토어에 쏠려 있었습니다.</p></div></div>
+          <div class="m"><div class="rn">ii.</div><div><div class="mt">어떻게 했나</div><p>외부 매출은 그대로 둔 채, <em>자사몰 ARPPU만 별도 KPI</em>로 떼어 개선을 보이게 했습니다.</p></div></div>
+          <div class="m"><div class="rn">iii.</div><div><div class="mt">무엇이 남았나</div><p>자사몰 ARPPU <b>89,925원</b>(+34%) · 머니 사용률 30% 정착 — 보상이 결제를 묶는 락인으로 작동.</p></div></div>
+        </div>
+        <div class="phones">
+          <div class="phone"><img src="images/af_commerce/2.jpg" alt="상품 진열"></div>
+          <div class="phone"><img src="images/af_money_flow/1.png" alt="머니 적립"></div>
+        </div>
+      </div>
+      <div class="runner"><span>어바웃피싱 · 커머스</span><span class="pg">16</span></div>
+    </div>
+  </section>
+
+  <!-- 10b · COMMUNITY × C2C -->
+  <section data-label="커뮤니티 · 중고장터">
+    <div class="pad">
+      <div class="eb">커뮤니티 · 중고장터 (C2C)</div>
+      <h2 class="title-h" style="margin-bottom:0;">매일 들어올 <em>이유</em>를 만들었습니다.</h2>
+      <div class="showcase">
+        <div class="move3">
+          <div class="m"><div class="rn">i.</div><div><div class="mt">왜 했나</div><p>커뮤니티는 <b>매일 들어오는 코어</b>. 고가·고회전 장비의 C2C는 수요가 크지만 <b>사기·분쟁 리스크</b>도 컸습니다.</p></div></div>
+          <div class="m"><div class="rn">ii.</div><div><div class="mt">어떻게 했나</div><p>기능보다 <em>운영 정책을 먼저</em> — 더치트 이력 검증·필수 등록 정보·5축 신고 카테고리로 리스크를 거래 전에 잘랐습니다.</p></div></div>
+          <div class="m"><div class="rn">iii.</div><div><div class="mt">무엇이 남았나</div><p>DAU·체류 우상향 · 분쟁 응답시간 단축 · <b>커뮤니티↔중고 교차 사용</b> 증가로 리텐션을 묶었습니다.</p></div></div>
+        </div>
+        <div class="phones">
+          <div class="phone"><img src="images/af_community/1.jpg" alt="커뮤니티 피드"></div>
+          <div class="phone"><img src="images/af_market_flow/3.png" alt="중고장터 거래"></div>
+        </div>
+      </div>
+      <div class="runner"><span>어바웃피싱 · 커뮤니티·C2C</span><span class="pg">17</span></div>
+    </div>
+  </section>
+
+  <!-- 11 · OPS RELIABILITY -->
+  <section data-label="운영 신뢰성">
+    <div class="pad">
+      <div class="eb">릴리즈 신뢰성 · 사내 대시보드 직접 빌드</div>
+      <h2 class="title-h" style="margin-bottom:0;">빠르게 내보내되, <em>되돌리지 않습니다</em>.</h2>
+      <div class="showcase" style="grid-template-columns:1fr 1.25fr;">
+        <div class="statrow c3" style="border-top:2px solid var(--ink);margin-top:0;">
+          <div class="s"><div class="num tnum">122</div><div class="t">배포 횟수</div><div class="d">1년 9개월 누적</div></div>
+          <div class="s"><div class="num tnum">1<span class="u">건</span></div><div class="t">롤백</div><div class="d">롤백률 0.8%</div></div>
+          <div class="s"><div class="num tnum">94<span class="u">%</span></div><div class="t">QA 검증율</div><div class="d">운영 도달 전 차단</div></div>
+        </div>
+        <div class="browser">
+          <div class="bar"><i></i><i></i><i></i><span class="addr"></span></div>
+          <img src="images/af_dashboard/1.png" alt="사내 일정관리 대시보드 — 간트">
+        </div>
+      </div>
+      <div class="lead" style="margin-top:34px;">기성 도구 대신 사내 운영 대시보드를 <b>직접 빌드</b>해 사람·배포·프로젝트를 한 화면에서 운영합니다.</div>
+      <div class="runner"><span>어바웃피싱 · 운영</span><span class="pg">18</span></div>
+    </div>
+  </section>
+
+  <section data-label="TMAP · 자금">
+    <div class="pad">
+      <div class="eb">파트너십 · 자금</div>
+      <h2 class="title-h" style="margin-bottom:0;">제품만으로는 <em>시장이 안 움직</em>입니다.</h2>
+      <div class="context">
+        <div class="cc">
+          <h3><span class="mk">대기업 협업</span>SK텔레콤 TMAP</h3>
+          <p><b>창업도약패키지 대기업 협업형 파트너</b>로 위치 데이터를 연동했습니다.</p>
+          <ul>
+            <li>자체 구축 대비 ROI 높은 선박·조황 데이터를 근거로 설득</li>
+            <li><b>검색→예약→길안내</b> 단일 퍼널을 함께 설계</li>
+          </ul>
+        </div>
+        <div class="cc">
+          <h3><span class="mk">정부 자금</span>창업도약패키지 선정</h3>
+          <p>중기부 사업계획서를 <b>단독으로 집필</b>해 발표를 통과했습니다.</p>
+          <ul>
+            <li>외부 컨설팅 없이 시장·솔루션·재무 전 챕터 직접 작성</li>
+            <li><b>운영·R&amp;D 자금과 시장 검증</b>을 함께 확보</li>
+          </ul>
+        </div>
+      </div>
+      <div class="runner"><span>어바웃피싱 · 파트너십</span><span class="pg">19</span></div>
+    </div>
+  </section>
+
+  <!-- 13 · CHAPTER 2 -->
+  <section data-label="Ch.2 웍스메이트" class="recess">
+    <div class="pad shead">
+      <div class="ix">Chapter 02 · 2020 — 2024</div>
+      <h2>웍스메이트 <em>GADA</em></h2>
+      <div class="desc">건설 구인구직 O2O '가다'. 일평균 1,000명 매칭으로 <b>월 매출 3억</b>을 운영하던 곳에서 PM으로 합류해 PO로 승격했습니다.</div>
+      <div class="runner"><span>Chapter 02</span><span class="pg">20</span></div>
+    </div>
+  </section>
+
+  <!-- 13b · GADA MARKET & PROBLEM -->
+  <section data-label="가다 시장·문제">
+    <div class="pad">
+      <div class="eb">Market &amp; Problem — 건설 일용직 시장</div>
+      <h2 class="title-h" style="margin-bottom:0;">하루 단위로 도는 <em>현장</em>의 일.</h2>
+      <div class="context">
+        <div class="cc">
+          <h3><span class="mk">산업 · 서비스</span>일감과 사람을 잇는 매칭</h3>
+          <ul>
+            <li>건설 근로자와 현장 관리자를 잇는 <b>O2O 매칭 플랫폼</b></li>
+            <li>일평균 <b>1,000명 매칭</b>, 월 매출 3억(연 36억) 운영</li>
+            <li>주 사용자는 <b>40~50대 근로자</b> — 큰 글자·단순 흐름이 필수</li>
+          </ul>
+        </div>
+        <div class="cc">
+          <h3><span class="mk">문제</span>합류 당시의 세 가지 통증</h3>
+          <ul>
+            <li>청구·지급이 전부 수작업 — <b>매달 6명</b>이 매달림</li>
+            <li>부분 패치로 버틴 결과 <b>IA가 깨져</b> 패치할수록 부작용</li>
+            <li>PM의 직감에 의존 — <em>실험으로 검증하는 틀</em>이 없었습니다</li>
+          </ul>
+        </div>
+      </div>
+      <div class="runner"><span>가다 · 시장·문제</span><span class="pg">21</span></div>
+    </div>
+  </section>
+
+  <!-- 14 · ERP SIGNATURE -->
+  <section data-label="ERP −50%">
+    <div class="pad">
+      <div class="eb">Signature Case · 운영 효율</div>
+      <h2 class="title-h" style="margin-bottom:0;">전체를 다 짓는 대신, <em>가장 아픈 곳</em>만 잘랐습니다.</h2>
+      <div class="showcase" style="grid-template-columns:1fr 1.25fr;">
+        <div class="move3">
+          <div class="m"><div class="rn">i.</div><div><div class="mt">왜 했나</div><p>청구·지급이 전부 수작업이라 직원 6명이 매달 매달렸습니다.</p></div></div>
+          <div class="m"><div class="rn">ii.</div><div><div class="mt">어떻게 했나</div><p>시스템 전체 대신 <em>청구·지급만</em> 잘라 0.5개월 MVP로 먼저 검증했습니다.</p></div></div>
+          <div class="m"><div class="rn">iii.</div><div><div class="mt">무엇이 남았나</div><p>운영 인력 <b>6→3명</b>(−50%) · 데이터화 <b>100%</b> · 해고 <b>0명</b>(전원 재배치).</p></div></div>
+        </div>
+        <div class="browser">
+          <div class="bar"><i></i><i></i><i></i><span class="addr"></span></div>
+          <img src="images/wm_erp/1.jpg" alt="청구·지급 ERP 화면">
+        </div>
+      </div>
+      <div class="runner"><span>가다 · ERP</span><span class="pg">22</span></div>
+    </div>
+  </section>
+
+  <!-- 14b · RENEWAL -->
+  <section data-label="v2→v4 리뉴얼">
+    <div class="pad">
+      <div class="eb">v2 → v4 풀리뉴얼 · 근로자·관리자·백오피스</div>
+      <h2 class="title-h" style="margin-bottom:0;">50대 근로자가 <em>멈추지 않은</em> 화면.</h2>
+      <div class="showcase" style="grid-template-columns:1.1fr 1fr;">
+        <div class="move3">
+          <div class="m"><div class="rn">i.</div><div><div class="mt">왜 했나</div><p>주 사용자가 40~50대 근로자. 큰 글자·단순한 흐름·큰 버튼이 필요했습니다.</p></div></div>
+          <div class="m"><div class="rn">ii.</div><div><div class="mt">어떻게 했나</div><p>부분 패치를 멈추고 <em>풀리뉴얼로 전환</em>, 세 앱을 우선순위로 줄 세웠습니다.</p></div></div>
+          <div class="m"><div class="rn">iii.</div><div><div class="mt">무엇이 남았나</div><p>가입 "매우 쉬움" <b>40.6%</b> · 이수증 등록 "매우 쉬움" <b>43.6%</b> · 가입·인증 근로자 우상향.</p></div></div>
+        </div>
+        <div class="browser">
+          <div class="bar"><i></i><i></i><i></i><span class="addr"></span></div>
+          <img src="images/wm_worker_renewal/2.jpg" alt="리뉴얼 전/후 가입월별 주요 근로자 지표">
+        </div>
+      </div>
+      <div class="runner"><span>가다 · 리뉴얼</span><span class="pg">23</span></div>
+    </div>
+  </section>
+
+  <!-- 15 · GRANTS + P2P -->
+  <section data-label="정부과제 · P2P">
+    <div class="pad">
+      <div class="eb">자금 · 외부협업</div>
+      <h2 class="title-h">자금과 신뢰를 <em>데이터로</em> 증명했습니다.</h2>
+      <div class="lead" style="margin-top:24px;max-width:50ch;">제품팀이 흔히 남에게 맡기는 두 가지를 직접 끌어왔습니다 — <b>R&amp;D 자금</b>은 정부과제 단독 집필로, <b>금융 신뢰</b>는 근로 데이터로 증명했습니다.</div>
+      <div class="statrow c3" style="margin-top:60px;">
+        <div class="s"><div class="num tnum">3<span class="u">건</span></div><div class="t">정부·엑셀러레이터 선정</div><div class="d">TIPS · NH · NIPA 단독 작성</div></div>
+        <div class="s"><div class="num tnum">300<span class="u">명</span></div><div class="t">P2P 대상 전원 상환</div><div class="d">한화 EBC × 피플펀드</div></div>
+        <div class="s"><div class="num tnum">0<span class="u">건</span></div><div class="t">장기연체</div><div class="d">근로–상환 상관관계 확보</div></div>
+      </div>
+      <div class="runner"><span>가다 · 자금</span><span class="pg">24</span></div>
+    </div>
+  </section>
+
+  <!-- 16 · PRINCIPLES -->
+  <section data-label="일하는 방식" class="recess">
+    <div class="pad">
+      <div class="eb">How I Work</div>
+      <h2 class="title-h">도메인이 바뀌어도 변하지 않는 <em>세 가지</em>.</h2>
+      <div class="principles">
+        <div class="p"><div class="rn">I.</div><h3>제약을 먼저 그린다</h3><p>예산·인력·시간의 한계를 먼저 지도로 그립니다. 무엇을 안 만들지를 정하는 것이 먼저입니다.</p></div>
+        <div class="p"><div class="rn">II.</div><h3>작게 만들어 빨리 틀린다</h3><p>가설이 틀렸다는 신호를 빨리 받습니다. ERP와 P2P 모두 0.5개월 사이클로 검증했습니다.</p></div>
+        <div class="p"><div class="rn">III.</div><h3>운영·자금·파트너십을 함께</h3><p>정부과제로 자금을, 외부 협업으로 채널을 확보해 제품의 성장을 떠받칩니다.</p></div>
+      </div>
+      <div class="runner"><span>How I Work</span><span class="pg">25</span></div>
+    </div>
+  </section>
+
+  <!-- 16b · IMPACT SUMMARY -->
+  <section data-label="성과 종합" class="recess">
+    <div class="pad">
+      <div class="eb">Impact — 1년 9개월의 합계</div>
+      <h2 class="title-h" style="margin-bottom:0;">매출·운영·자본, <em>세 축의 결과</em>.</h2>
+      <div class="impact">
+        <div class="ic">
+          <div class="cat">매출</div>
+          <div class="row"><div class="n tnum">14.26<span class="u">억</span></div><div class="t">2025 연매출 · KPI 97.6%</div></div>
+          <div class="row"><div class="n tnum">+10<span class="u">×</span></div><div class="t">2026 1→4월 단월 매출</div></div>
+          <div class="row"><div class="n tnum">3.63<span class="u">억</span></div><div class="t">예약 4개월 누적</div></div>
+        </div>
+        <div class="ic">
+          <div class="cat">운영</div>
+          <div class="row"><div class="n tnum">122<span class="u"> / 1</span></div><div class="t">배포 / 롤백 (0.8%)</div></div>
+          <div class="row"><div class="n tnum">−50<span class="u">%</span></div><div class="t">청구·지급 운영 인력</div></div>
+          <div class="row"><div class="n tnum">+34<span class="u">%</span></div><div class="t">자사몰 ARPPU</div></div>
+        </div>
+        <div class="ic">
+          <div class="cat">자본 · 파트너십</div>
+          <div class="row"><div class="n tnum">4<span class="u">건</span></div><div class="t">정부지원 100% 선정</div></div>
+          <div class="row"><div class="n tnum">300<span class="u">명</span></div><div class="t">P2P 전원 상환 · 연체 0</div></div>
+          <div class="row"><div class="n">TMAP</div><div class="t">SK텔레콤 대기업 협업</div></div>
+        </div>
+      </div>
+      <div class="runner"><span>성과 종합</span><span class="pg">26</span></div>
+    </div>
+  </section>
+
+  <!-- 17 · CLOSING -->
+  <section data-label="Closing">
+    <div class="pad closing">
+      <div class="eb">Let's build</div>
+      <h2 style="font-size:78px;">다음 시장에 <span class="hi">가져갈 것</span>.</h2>
+      <div class="takeaway">
+        <div class="tk"><div class="rn">i.</div><h4>제약을 읽는 눈</h4><p>가장 비싼 문제부터 잘라 ROI를 앞당깁니다. 무엇을 안 만들지부터 정합니다.</p></div>
+        <div class="tk"><div class="rn">ii.</div><h4>AI로 가속하는 실행</h4><p>기획·추천 프로세스에 AI를 붙이고, 간단한 건 직접 빌드합니다. 도메인이 바뀌어도 방식은 같습니다.</p></div>
+        <div class="tk"><div class="rn">iii.</div><h4>자본까지 끌어오는 책임</h4><p>제품·운영·자금·파트너십을 한 트랙으로 묶어 성장을 떠받칩니다.</p></div>
+      </div>
+      <div class="contact">
+        <div class="i"><div class="l">Name</div><div class="v">서현일 · Hyunil Seo</div></div>
+        <div class="i"><div class="l">Email</div><div class="v">banns0104@gmail.com</div></div>
+        <div class="i"><div class="l">Phone</div><div class="v">010-3333-3768</div></div>
+        <div class="i"><div class="l">Based</div><div class="v">Seoul, Korea</div></div>
+      </div>
+      <div class="runner"><span>서현일 · PM · PO · CPO</span><span class="pg">27</span></div>
+    </div>
+  </section>
+
+</deck-stage>
+
+<a id="deck-exit" href="index.html" title="닫기 (ESC)" aria-label="덱 닫기">✕</a>
+<style>
+#deck-exit{position:fixed;top:20px;right:22px;z-index:9999;width:46px;height:46px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;text-decoration:none;
+  background:rgba(20,18,14,0.55);color:#F4F1E8;font-size:20px;line-height:1;
+  border:1px solid rgba(255,255,255,0.22);backdrop-filter:blur(6px);
+  transition:background .15s,transform .15s;font-family:var(--sans);}
+#deck-exit:hover{background:rgba(30,90,64,0.92);transform:scale(1.06);}
+@media print{#deck-exit{display:none;}}
+</style>
+<script>
+(function(){
+  // ESC → 포트폴리오로 닫기 (덱에서 빠져나오는 명시적 경로)
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){ window.location.href = 'index.html'; }
+  });
+})();
+</script>
+
+<script src="deck-stage.js"></script>
+<script src="assets/analytics.js"></script>
+<script src="cms/firebase-config.js"></script>
+<script src="cms/edit-engine.js"></script>
+</body>
+</html>
